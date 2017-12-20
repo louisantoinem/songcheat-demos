@@ -1,5 +1,5 @@
 /**
- * SongCheat Viewer 1.0.0 built on 2017-12-20T06:23:34.524Z.
+ * SongCheat Viewer 1.0.0 built on 2017-12-20T07:31:42.273Z.
   * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>
  *
  * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer
@@ -204,6 +204,10 @@ class Utils {
     return result
   }
 }
+
+/**
+ * Public API
+ */
 
 let MIN_LYRICS_BARLEN = 20; // minimum length of a bar lyrics (before reducing) - not really needed but produces a clearer view when maxConsecutiveSpaces set to 0 (and thus when displaying parts with partdisplay=full) since bars with no or little text will have the same length (unless there are really many chord changes...)
 let LYRICS_SUM_DURATIONS = false; // if true "::" is equivalent to ":h:" (assuming lyrics unit is :q)
@@ -2232,6 +2236,8 @@ class Player {
   }
 }
 
+// https://github.com/rollup/rollup/issues/1803/
+// import $ from 'jQuery'
 let $$1 = window.jQuery;
 
 function PlayerUI (audioCtx, songcheat, notes, loop) {
@@ -3733,6 +3739,7 @@ var samples = [
   }
 ];
 
+// create audio context
 let audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext)();
 
 // https://github.com/rollup/rollup/issues/1803/
