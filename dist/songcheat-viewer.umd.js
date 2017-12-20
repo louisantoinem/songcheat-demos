@@ -1,5 +1,5 @@
 /**
- * SongCheat Viewer 1.0.0 built on 2017-12-20T07:39:49.680Z.
+ * SongCheat Viewer 1.0.0 built on Wed Dec 20 2017 15:37:44 GMT+0100 (CET).
   * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>
  *
  * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer
