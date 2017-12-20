@@ -1,5 +1,5 @@
 /**
- * SongCheat Viewer 1.0.0 built on 2017-12-20T07:31:42.273Z.
+ * SongCheat Viewer 1.0.0 built on 2017-12-20T07:39:49.680Z.
   * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>
  *
  * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer
@@ -969,7 +969,7 @@ class VexTab$1 {
 
       // get lyrics word groups
       let lyricsGroups = [];
-      for (let group of unit.groups) lyricsGroups.push({ offset: group.offset, text: group.text + (DEBUG$1 > 1 ? '/' + group.duration : '') });
+      for (let group of unit.groups) lyricsGroups.push({ offset: group.offset, text: group.text + (DEBUG$1 ? '/' + group.duration : '') });
 
       // get rhythm wise chord changes (same as ascii lyrics)
       let offset = 0;
@@ -977,7 +977,7 @@ class VexTab$1 {
       for (let phrase of unit.part.phrases) {
         for (let bar of phrase.bars) {
           for (let chordChange of bar.chordChanges['rhythm']) {
-            chordGroups.push({ offset: offset, text: chordChange.chord.name + (DEBUG$1 > 1 ? '/' + chordChange.duration : '') });
+            chordGroups.push({ offset: offset, text: chordChange.chord.name + (DEBUG$1 ? '/' + chordChange.duration : '') });
             offset += chordChange.duration;
           }
         }
