@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>SongCheat VexTab Test</title>
+  <meta charset="UTF-8">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+  <script src="libs/vextab-div.js"></script>
+  <style src="libs/vextab.css"></style>
+
+  <script src="dist/songcheat-viewer.umd.js" nomodule defer></script>
+  <script src="dist/songcheat-viewer.esm.js" type="module"></script>
+
+</head>
+
+<body style="display: none">
+
+  <div id="right" style="float: right; overflow: auto; max-width: 50%;">
+    <h4>Score</h4>
+    <div>
+      <select name="mode">
+				<option value="rt">Rhythm notation and tablature</option>
+				<option value="r">Rhythm notation only</option>
+				<option value="t">Tablature only</option>
+				<option value="ts">Tablature only, with stems</option>
+			</select> <select name="barsPerLine">
+				<option value="1">One bar per line</option>
+				<option value="2">2 bars per line</option>
+				<option value="3">3 bars per line</option>
+				<option value="4">4 bars per line</option>
+				<option value="5">5 bars per line</option>
+				<option value="6">6 bars per line</option>
+				<option value="7">7 bars per line</option>
+				<option value="8">8 bars per line</option>
+				<option value="9">9 bars per line</option>
+				<option value="10">10 bars per line</option>
+			</select> <select name="lyricsMode">
+				<option value="s">Show lyrics</option>
+				<option value="h">Hide lyrics</option>
+			</select> <select name="showUnit">
+				<option value="*">(show whole song)</option>
+			</select>
+    </div>
+    <canvas id="score"> </canvas>
+  </div>
+
+  <div id='left' style="float: left; max-width: 25%; padding: 1px 10px; overflow: auto;">
+    <h1></h1>
+    <h2></h2>
+    <h3 class="tempo"></h3>
+    <h3 class="capo"></h3>
+    <h3 class="tuning"></h3>
+
+    <p style="width: 500px; font-size: 1em; font-style: italic; white-space: pre-wrap"></p>
+
+    <h4>Chords used in this song</h4>
+    <div id="chords"></div>
+
+    <h4 style="margin-bottom: 0">Rhythms used in this song</h4>
+    <div id="rhythms"></div>
+
+    <h4>Available samples</h4>
+    <div id="links"></div>
+
+  </div>
+
+  <div id="middle" style="padding: 1px 10px; overflow: auto; font-family: ' Lucida Console ', Monaco, monospace; font-size: .80em; vertical-align: top">
+
+    <div style="float: left; overflow: auto; max-width: 75%">
+      <h4>Parts</h4>
+      <select name="partdisplay">
+				<option value="compact">Compact</option>
+				<option value="full">Respect chord durations</option>
+			</select> <select name="splitParts">
+				<!-- option value="0">One line</option -->
+				<option value="1">One bar per line</option>
+				<option value="2">2 bars per line</option>
+				<option value="3">3 bars per line</option>
+				<option value="4">4 bars per line</option>
+				<option value="5">5 bars per line</option>
+				<option value="6">6 bars per line</option>
+				<option value="7">7 bars per line</option>
+				<option value="8">8 bars per line</option>
+				<option value="9">9 bars per line</option>
+				<option value="10">10 bars per line</option>
+			</select>
+      <div id="parts" style="white-space: pre;"></div>
+    </div>
+
+    <div style="float: right; margin: 0px 4% 0px 1%; overflow: auto; max-width: 20%">
+      <h4>Structure</h4>
+      <div id="structure" style="white-space: pre;"></div>
+    </div>
+
+    <div style="clear: both; padding-top: 10px; overflow: auto">
+      <h4>Lyrics w/ chord changes</h4>
+      <select name="maxsp">
+				<option value="1">Compact</option>
+				<option value="0">Respect chord durations</option>
+				<option value="10">Intermediary</option>
+			</select> <select name="splitUnits">
+				<option value="0">Split as entered</option>
+				<option value="1">One bar per line</option>
+				<option value="2">2 bars per line</option>
+				<option value="3">3 bars per line</option>
+				<option value="4">4 bars per line</option>
+				<option value="5">5 bars per line</option>
+				<option value="6">6 bars per line</option>
+				<option value="7">7 bars per line</option>
+				<option value="8">8 bars per line</option>
+				<option value="9">9 bars per line</option>
+				<option value="10">10 bars per line</option>
+			</select>
+      <div id="lyrics" style="white-space: pre;"></div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

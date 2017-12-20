@@ -1,0 +1,40 @@
+{
+  "name": "songcheat-viewer",
+  "version": "1.0.0",
+  "description": "Little (jQuery) app for viewing and playing the sample songcheats as well as editing lyrics.",
+  "main": "dist/songcheat-viewer.umd.js",
+  "module": "dist/songcheat-viewer.emd.js",
+  "scripts": {
+    "clean": "rm -f dist/*.js*",
+    "lint": "standard --fix src/*js test/*.js *.js",
+    "build": "npm run clean && npm run lint && rollup -c",
+    "dev": "npm run build && rollup -cw",
+    "uglify.umd": "node_modules/uglify-es/bin/uglifyjs dist/songcheat-viewer.umd.js --compress --mangle --source-map \"content='dist/songcheat-viewer.umd.js.map'\" -o dist/songcheat-viewer.umd.min.js",
+    "uglify.esm": "node_modules/uglify-es/bin/uglifyjs dist/songcheat-viewer.esm.js --compress --mangle --source-map \"content='dist/songcheat-viewer.esm.js.map'\" -o dist/songcheat-viewer.esm.min.js",
+    "uglify": "npm run uglify.umd && npm run uglify.esm",
+    "release": "npm run clean && npm run lint && rollup -c && npm run uglify"
+  },
+  "keywords": [
+    "songcheat",
+    "music",
+    "song",
+    "scoresheet",
+    "notation",
+    "chords"
+  ],
+  "author": "Louis Antoine-Moussiaux",
+  "license": "ISC",
+  "dependencies": {
+    "songcheat-chordpix": "file:../songcheat-chordpix",
+    "songcheat-core": "file:../songcheat-core",
+    "songcheat-player": "file:../songcheat-player",
+    "songcheat-samples": "file:../songcheat-samples",
+    "songcheat-vextab": "file:../songcheat-vextab"
+  },
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-es": "^3.2.2"
+  }
+}
