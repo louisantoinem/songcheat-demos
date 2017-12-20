@@ -1,5 +1,5 @@
 /**
- * SongCheat Viewer 1.0.0 built on Wed Dec 20 2017 15:37:44 GMT+0100 (CET).
+ * SongCheat Viewer 1.0.0 built on Wed Dec 20 2017 18:46:31 GMT+0100 (CET).
   * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>
  *
  * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer
@@ -230,6 +230,7 @@ class Compiler_ {
   compile (songcheat) {
     // default values for optional properties
     songcheat.mode = songcheat.mode || 'rt';
+    songcheat.lyricsMode = songcheat.lyricsMode || 's';
     songcheat.barsPerLine = songcheat.barsPerLine || 4;
     songcheat.signature.key = songcheat.signature.key || 'C';
     songcheat.lyricsUnit = songcheat.lyricsUnit || songcheat.signature.time.beatDuration;
