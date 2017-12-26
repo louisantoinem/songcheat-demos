@@ -1,0 +1,236 @@
+{
+  "artist": "Alain Bashung",
+  "title": "Je t'ai manqué",
+  "year": 2008,
+  "difficulty": 3,
+  "video": "https://www.youtube.com/watch?v=90HUdz87td4",
+  "tutorial": "",
+  "comment": "Chanson assez facile:\n- une seule ryhtmique (en shuffle)\n- uniquement des accords ouverts.\n\nChanter en même temps demande tout de même un peu d'exercice.",
+  "tuning": "standard",
+  "capo": 5,
+  "signature": {
+    "key": "G",
+    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "tempo": 146,
+    "shuffle": ":8"
+  },
+  "chords": [
+    {
+      "id": 1,
+      "name": "Am",
+      "tablature": "x02210",
+      "fingering": "T02310/-",
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "name": "E",
+      "tablature": "022100",
+      "fingering": "023100/-",
+      "comment": ""
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "tablature": "x32010",
+      "fingering": "T32010/-",
+      "comment": ""
+    },
+    {
+      "id": 4,
+      "name": "G",
+      "tablature": "320003",
+      "fingering": "210003/-",
+      "comment": "G with 3 fingers."
+    },
+    {
+      "id": 5,
+      "name": "Asus4",
+      "tablature": "x02230",
+      "fingering": "T02340/-",
+      "comment": "Same as Am but adding finger 4 on fret 3 of B string."
+    },
+    {
+      "id": 6,
+      "name": "Cadd9",
+      "tablature": "x3203x",
+      "fingering": "T32040/-",
+      "comment": "Same as C but adding finger 4 on fret 3 of B string."
+    }
+  ],
+  "rhythms": [
+    {"id": 1, "name": "R1", "score": ":8 ()d ()u ()d ()u T() ()u ()d ()u"},
+    {"id": 2, "name": "R2", "score": ":h ()dd :h (#)"}
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "name": "Chorus",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [2]},
+            {"rhythm": 1, "chords": [2]},
+            {"rhythm": 1, "chords": [3, 3, 3, 3, 3, 4]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
+            {"rhythm": 1, "chords": [3]},
+            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Verse",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [3]},
+            {"rhythm": 1, "chords": [4]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
+            {"rhythm": 1, "chords": [3]},
+            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bridge",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [4]},
+            {"rhythm": 1, "chords": [4]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [4]},
+            {"rhythm": 1, "chords": [4]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [4]},
+            {"rhythm": 1, "chords": [4]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [4]},
+            {"rhythm": 1, "chords": [4]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
+            {"rhythm": 1, "chords": [3]},
+            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Outro",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1]},
+            {"rhythm": 1, "chords": [2]},
+            {"rhythm": 1, "chords": [2]},
+            {"rhythm": 1, "chords": [3, 3, 3, 3, 3, 4]}
+          ]
+        },
+        {"bars": [{"rhythm": 2, "chords": [1]}]}
+      ]
+    }
+  ],
+  "lyricsUnit": ":h",
+  "structure": [
+    {
+      "id": 1,
+      "part": 1,
+      "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
+    },
+    {
+      "id": 2,
+      "part": 2,
+      "lyrics": ":Tous nos échanges|coulaient de|source:\nTous nos mé-|langes:cotés|en bourse."
+    },
+    {
+      "id": 3,
+      "part": 2,
+      "lyrics": ":Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
+    },
+    {
+      "id": 4,
+      "part": 1,
+      "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
+    },
+    {
+      "id": 5,
+      "part": 2,
+      "lyrics": " :Tout est extrême|limites et cônes|glacés.:\nTout est idem|les vitrines:les|pôles opposés."
+    },
+    {
+      "id": 6,
+      "part": 2,
+      "lyrics": " :Dans les étoiles|ou sous la|douche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
+    },
+    {
+      "id": 7,
+      "part": 1,
+      "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
+    },
+    {
+      "id": 8,
+      "part": 3,
+      "lyrics": "|\nEt si l’on disait le|contraire|\nOu si l’on ne|disait rien|\nSi l’on construisait|les phrases à l’envers|\nOu si l’on|soulevait demain|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|disait plus rien ?"
+    },
+    {
+      "id": 9,
+      "part": 1,
+      "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
+    },
+    {
+      "id": 10,
+      "part": 2,
+      "lyrics": " :Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
+    },
+    {
+      "id": 11,
+      "part": 3,
+      "lyrics": "|\nSi l’on suivait|les voies ferroviaires|\nQui aurait le|pied marin ?|\nSi l’on sifflait|les fonds de théière|\nOu si l’on ne|sifflait plus !|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|se disait plus rien ?"
+    },
+    {
+      "id": 12,
+      "part": 4,
+      "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
+    }
+  ],
+  "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Alain Bashung\"\nTITLE \"Je t'ai manqué\"\nYEAR 2008\nDIFFICULTY 3\nVIDEO \"https://www.youtube.com/watch?v=90HUdz87td4\"\nTUTORIAL \"\"\nCOMMENT \"Chanson assez facile:\n- une seule ryhtmique (en shuffle)\n- uniquement des accords ouverts.\n\nChanter en même temps demande tout de même un peu d'exercice.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 5\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY G\nTIME 4/4 4 :q\nTEMPO 146\nSHUFFLE \":8\"\n\n##########\n# CHORDS #\n##########\n\nCHORD Am    x02210 T02310/-\nCHORD E\t    022100 023100/-\nCHORD C\t    x32010 T32010/-\nCHORD G\t    320003 210003/- \"G with 3 fingers.\"\nCHORD Asus4\tx02230 T02340/- \"Same as Am but adding finger 4 on fret 3 of B string.\"\nCHORD Cadd9\tx3203x T32040/- \"Same as C but adding finger 4 on fret 3 of B string.\"\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8 ()d ()u ()d ()u T() ()u ()d ()u\"\nRHYTHM R2\t\":h ()dd :h (#)\"\n\n#########\n# PARTS #\n#########\n\nBLOCK TAIL [R1*Am] [R1*Asus4:::::Am] [R1*C] [R1*Cadd9:::::C]\n\nPART \"Chorus\"   [R1*Am] [R1*E] % [R1*C:::::G] || TAIL\nPART \"Verse\"    [R1*Am] % [R1*C] [R1*G] || TAIL\nPART \"Bridge\"   [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || TAIL\nPART \"Outro\"    [R1*Am] [R1*E] % [R1*C:::::G] || [R2*Am]\n\n#############\n# STRUCTURE #\n#############\n\nLYRICS_UNIT \":h\"\n\nSTRUCTURE\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Verse\" \":Tous nos échanges|coulaient de|source:\nTous nos mé-|langes:cotés|en bourse.\"\n\n\"Verse\" \":Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:\"\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Verse\" \" :Tout est extrême|limites et cônes|glacés.:\nTout est idem|les vitrines:les|pôles opposés.\"\n\n\"Verse\" \" :Dans les étoiles|ou sous la|douche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:\"\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Bridge\" \"|\nEt si l’on disait le|contraire|\nOu si l’on ne|disait rien|\nSi l’on construisait|les phrases à l’envers|\nOu si l’on|soulevait demain|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|disait plus rien ?\"\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Verse\" \" :Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:\"\n\n\"Bridge\" \"|\nSi l’on suivait|les voies ferroviaires|\nQui aurait le|pied marin ?|\nSi l’on sifflait|les fonds de théière|\nOu si l’on ne|sifflait plus !|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|se disait plus rien ?\"\n\n\"Outro\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n"
+}

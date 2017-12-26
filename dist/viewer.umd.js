@@ -1,5 +1,5 @@
 /**
- * SongCheat Viewer 1.0.0 built on Tue Dec 26 2017 02:52:22 GMT+0100 (CET).
+ * SongCheat Viewer 1.0.0 built on Tue Dec 26 2017 23:23:33 GMT+0100 (CET).
   * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>
  *
  * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer
@@ -13,8 +13,8 @@
 
 class Utils {
   /**
-  * Array helper functions
-  */
+   * Array helper functions
+   */
 
   static arraysEqual (a, b) {
     if (a === b) return true
@@ -27,8 +27,8 @@ class Utils {
   }
 
   /**
-  * String helper functions
-  */
+   * String helper functions
+   */
 
   static title (str) {
     return '\n' + this.spaces(str.length + 8, '*') + '\n*** ' + str + ' ***\n' + this.spaces(str.length + 8, '*') + '\n'
@@ -47,6 +47,25 @@ class Utils {
     if (isNaN(length) || !isFinite(length) || length < 0) throw new Error('Length must a positive finite number')
     var s = '';
     for (var i = 0; i < length; i++) s += char || ' ';
+    return s
+  }
+
+  static replaceComposedChars (s) {
+    // fix composed UTF8 characters (not handled correctly by ACE when typing a newline after one of those)
+    // http://php.net/manual/fr/regexp.reference.unicode.php
+    // http://www.fileformat.info/info/unicode/category/Mn/list.htm
+
+    s = s.replace(/a\u0300/g, 'à');
+    s = s.replace(/e\u0300/g, 'è');
+    s = s.replace(/e\u0301/g, 'é');
+    s = s.replace(/e\u0302/g, 'ê');
+    s = s.replace(/i\u0302/g, 'î');
+    s = s.replace(/o\u0302/g, 'ô');
+    s = s.replace(/u\u0302/g, 'û');
+    s = s.replace(/a\u0302/g, 'â');
+    s = s.replace(/o\u0303/g, 'õ');
+    s = s.replace(/a\u0303/g, 'ã');
+
     return s
   }
 
@@ -2607,50 +2626,65 @@ var samples = [
     "lyricsUnit": ":h",
     "structure": [
       {
+        "id": 1,
         "part": 1,
         "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
       },
       {
+        "id": 2,
         "part": 2,
         "lyrics": ":Tous nos échanges|coulaient de|source:\nTous nos mé-|langes:cotés|en bourse."
       },
       {
+        "id": 3,
         "part": 2,
         "lyrics": ":Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
       },
       {
+        "id": 4,
         "part": 1,
         "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
       },
       {
+        "id": 5,
         "part": 2,
         "lyrics": " :Tout est extrême|limites et cônes|glacés.:\nTout est idem|les vitrines:les|pôles opposés."
       },
       {
+        "id": 6,
         "part": 2,
         "lyrics": " :Dans les étoiles|ou sous la|douche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
       },
       {
+        "id": 7,
         "part": 1,
         "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
       },
       {
+        "id": 8,
         "part": 3,
         "lyrics": "|\nEt si l’on disait le|contraire|\nOu si l’on ne|disait rien|\nSi l’on construisait|les phrases à l’envers|\nOu si l’on|soulevait demain|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|disait plus rien ?"
       },
       {
+        "id": 9,
         "part": 1,
         "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
       },
       {
+        "id": 10,
         "part": 2,
         "lyrics": " :Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
       },
       {
+        "id": 11,
         "part": 3,
         "lyrics": "|\nSi l’on suivait|les voies ferroviaires|\nQui aurait le|pied marin ?|\nSi l’on sifflait|les fonds de théière|\nOu si l’on ne|sifflait plus !|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|se disait plus rien ?"
       },
-      {"part": 4, "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"}
+      {
+        "id": 12,
+        "part": 4,
+        "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
+      }
     ],
     "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Alain Bashung\"\nTITLE \"Je t'ai manqué\"\nYEAR 2008\nDIFFICULTY 3\nVIDEO \"https://www.youtube.com/watch?v=90HUdz87td4\"\nTUTORIAL \"\"\nCOMMENT \"Chanson assez facile:\n- une seule ryhtmique (en shuffle)\n- uniquement des accords ouverts.\n\nChanter en même temps demande tout de même un peu d'exercice.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 5\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY G\nTIME 4/4 4 :q\nTEMPO 146\nSHUFFLE \":8\"\n\n##########\n# CHORDS #\n##########\n\nCHORD Am    x02210 T02310/-\nCHORD E\t    022100 023100/-\nCHORD C\t    x32010 T32010/-\nCHORD G\t    320003 210003/- \"G with 3 fingers.\"\nCHORD Asus4\tx02230 T02340/- \"Same as Am but adding finger 4 on fret 3 of B string.\"\nCHORD Cadd9\tx3203x T32040/- \"Same as C but adding finger 4 on fret 3 of B string.\"\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8 ()d ()u ()d ()u T() ()u ()d ()u\"\nRHYTHM R2\t\":h ()dd :h (#)\"\n\n#########\n# PARTS #\n#########\n\nBLOCK TAIL [R1*Am] [R1*Asus4:::::Am] [R1*C] [R1*Cadd9:::::C]\n\nPART \"Chorus\"   [R1*Am] [R1*E] % [R1*C:::::G] || TAIL\nPART \"Verse\"    [R1*Am] % [R1*C] [R1*G] || TAIL\nPART \"Bridge\"   [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || TAIL\nPART \"Outro\"    [R1*Am] [R1*E] % [R1*C:::::G] || [R2*Am]\n\n#############\n# STRUCTURE #\n#############\n\nLYRICS_UNIT \":h\"\n\nSTRUCTURE\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Verse\" \":Tous nos échanges|coulaient de|source:\nTous nos mé-|langes:cotés|en bourse.\"\n\n\"Verse\" \":Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:\"\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Verse\" \" :Tout est extrême|limites et cônes|glacés.:\nTout est idem|les vitrines:les|pôles opposés.\"\n\n\"Verse\" \" :Dans les étoiles|ou sous la|douche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:\"\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Bridge\" \"|\nEt si l’on disait le|contraire|\nOu si l’on ne|disait rien|\nSi l’on construisait|les phrases à l’envers|\nOu si l’on|soulevait demain|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|disait plus rien ?\"\n\n\"Chorus\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n\n\"Verse\" \" :Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:\"\n\n\"Bridge\" \"|\nSi l’on suivait|les voies ferroviaires|\nQui aurait le|pied marin ?|\nSi l’on sifflait|les fonds de théière|\nOu si l’on ne|sifflait plus !|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|se disait plus rien ?\"\n\n\"Outro\" \"|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?\"\n"
   },
@@ -2770,52 +2804,64 @@ var samples = [
     ],
     "lyricsUnit": ":8",
     "structure": [
-      {"part": 1, "lyrics": ""},
+      {"id": 1, "part": 1, "lyrics": ""},
       {
+        "id": 2,
         "part": 2,
         "lyrics": ":T'es pas né dans la|rue:t'es pas né dans le rui-|sseau:\nT'es pas un enfant per-|du:pas un enfant de|salaud:\nVu qu't'es né qu'dans ma|tête:et qu'tu vis dans ma|peau:\nJ'ai construit ta pla-|nète:au fond de mon cer-|veau__|"
       },
       {
+        "id": 3,
         "part": 3,
         "lyrics": ":Pierrot::mon|gosse:\nmon frangin mon po-|teau:\nmon copain tu m'tiens|chaud:\n|:::Pier-|rot___"
       },
       {
+        "id": 4,
         "part": 2,
         "lyrics": ":Depuis le temps que j'te|rêve:depuis le temps que j't'in-|vente:\nDe pas te voir j'en|crève:mais j'te sens dans mon|ventre:\nLe jour où tu t'ra-|mènes:j'arrête de boire pro-|mis:\nAu moins toute une se-|maine:ce sera dur mais tant|pis__"
       },
       {
+        "id": 5,
         "part": 3,
         "lyrics": ":Pierrot::mon|gosse:\nmon frangin mon po-|teau:\nmon copain tu m'tiens|chaud:\n|:::Pier-|rot___"
       },
       {
+        "id": 6,
         "part": 2,
         "lyrics": ":Qu'tu sois fils de prin-|cesse:ou que tu sois fils de|rien:\nTu s'ras fils de ten-|dresse:tu seras pas or-|phelin:\nJe connais pas ta|mère:mais je la cherche en|vain:\nJe connais qu'la mi-|sère d'être tout seul sur le|ch'min"
       },
       {
+        "id": 7,
         "part": 3,
         "lyrics": ":Pierrot::mon|gosse:\nmon frangin mon po-|teau:\nmon copain tu m'tiens|chaud:\n|:::Pier-|rot___"
       },
       {
+        "id": 8,
         "part": 2,
         "lyrics": ":Dans un coin de ma|tête:y a déjà ton trou-|sseau:\nUn jean une moby-|lette:une paire de san-|tiago:\nT'iras pas à l'é-|cole: j't'apprendrai des gros|mots:\nOn jouera au foot-|ball:on ira au bis-|trot_"
       },
       {
+        "id": 9,
         "part": 3,
         "lyrics": ":Pierrot::mon|gosse:\nmon frangin mon po-|teau:\nmon copain tu m'tiens|chaud:\n|:::Pier-|rot___"
       },
       {
+        "id": 10,
         "part": 2,
         "lyrics": ":Tu te laveras pas les|pognes avant d'venir à|table:\nEt tu me traiteras d'i-|vrogne:quand je piquerai ton|cartable:\nJe t'apprendrai des chan-|sons:tu les trouveras dé-|biles:\nT'auras peut-être bien rai-|son mais je serai vexé quand|mê_me"
       },
       {
+        "id": 11,
         "part": 3,
         "lyrics": ":Pierrot::mon|gosse:\nmon frangin mon po-|teau:\nmon copain tu m'tiens|chaud:\n|:::Pier-|rot___"
       },
       {
+        "id": 12,
         "part": 2,
         "lyrics": ":Allez viens mon Pier-|rot:tu seras le chef de ma|bande:\nJe te refilerai mon cou|teau:je t'apprendrai la|truande:\nAllez viens mon co-|pain:je t'ai trouvé une ma-|man:\nTous les trois ça sera|bien:allez viens je t'at-|tends_"
       },
       {
+        "id": 13,
         "part": 3,
         "lyrics": ":Pierrot::mon|gosse:\nmon frangin mon po-|teau:\nmon copain tu m'tiens|chaud:\n|:::Pier-|rot___"
       }
@@ -2929,6 +2975,7 @@ var samples = [
     "lyricsUnit": ":8",
     "structure": [
       {
+        "id": 1,
         "part": 1,
         "lyrics": "brown:h:|\n:q:and:the:sky:q:is|gray:|\n:qd:I've:been__:q:for:a|walk:|\n:qd:on a:win-:q:ter:'s|day:|\n:qd:I'd:be:q:safe:and|warm:|\n:qd:if:I:q:was:in|L.A|\n:qd:Ca-:li-:q:for-:nia|drea-:q:ming|\n:qd:on:such:q:a win-:ter's|day|"
       }
@@ -3081,33 +3128,40 @@ var samples = [
       }
     ],
     "structure": [
-      {"part": 1, "lyrics": ""},
+      {"id": 1, "part": 1, "lyrics": ""},
       {
+        "id": 2,
         "part": 2,
         "lyrics": ":Bel-:inda:was|mine:h:\nTill:the|time:h:that I:found|her|\n:h:Hol-:ding|Jim|:And:Lo-:ving|Him"
       },
       {
+        "id": 3,
         "part": 2,
         "lyrics": ":Then Sue came a-|long:h:\nLoved:me|strong:h:that's:what I|thought|\n:h:Me and|Sue|:But:that:died|too"
       },
       {
+        "id": 4,
         "part": 3,
         "lyrics": "|:Don't know that I|will but un-|til I can|find me|\n:A girl who’ll|stay and won't|play games be-|hind me|\nI'll be what I|am|\n:A solitary|man|\n:Solitary|man "
       },
       {
+        "id": 5,
         "part": 2,
         "lyrics": ":I've had it to|here:h:\nBeing|where:h:love's a|small:word|\n:A:part:time|thing|:h:a pa-:per|ring"
       },
       {
+        "id": 6,
         "part": 2,
         "lyrics": ":I know it's been |done:h:\nHaving|one girl:h:who|loves me|\n:h:Right or|wrong|:h:weak or|strong"
       },
       {
+        "id": 7,
         "part": 3,
         "lyrics": "|:Don't know that I|will but un-|til I can|find me|\n:The girl who’ll|stay and won't|play games be-|hind me|\nI'll be what I|am|\n:A solitary|man|\n:Solitary|man "
       },
-      {"part": 4, "lyrics": "||||\n||||"},
+      {"id": 8, "part": 4, "lyrics": "||||\n||||"},
       {
+        "id": 9,
         "part": 3,
         "lyrics": "|:Don't know that I|will but un-|til I can|find me|\n:The girl who’ll|stay and won't|play games be-|hind me|\nI'll be what I|am|\n:A solitary|man|\n:Solitary|man "
       }
@@ -3357,24 +3411,29 @@ var samples = [
       }
     ],
     "structure": [
-      {"part": 1, "lyrics": ""},
+      {"id": 1, "part": 1, "lyrics": ""},
       {
+        "id": 2,
         "part": 2,
         "lyrics": "La marée je l'ai dans le cœur|\nQui me remonte comme un signe|\nJe meurs de ma petite sœur|\nDe mon enfant et de mon cygne|\nUn bateau ça dépend comment|\nOn l'arrime au port de justesse|\nIl pleure de mon firmament|\nDes années-lumière et j'en laisse|\nJe suis le fantôme Jersey|\nCelui qui vient les soirs de frime|\nTe lancer la brume en baisers|\nEt te ramasser dans ses rimes|\nComme le trémail de juillet|\nOù luisait le loup solitaire|\nCelui que je voyais briller |\n||\nAux doigts du sable de la te-|-rre|"
       },
       {
+        "id": 3,
         "part": 2,
         "lyrics": "Rappelle-toi ce chien de mer|\nQue nous libérions sur parole|\nEt qui gueule dans le désert|\nDes goémons de nécropole|\nJe suis sûr que la vie est là|\nAvec ses poumons de flanelle|\nQuand il pleure de ces temps-là|\nLe froid tout gris qui nous appelle|\nJe me souviens des soirs là-bas|\nEt des sprints gagnés sur l'écume|\nCette bave des chevaux ras|\nAu ras des rocs qui se consument|\nô l'ange des plaisirs perdus|\nô rumeurs d'une autre habitude|\nMes désirs dès lors ne sont plus|\n||\nQu'un chagrin de ma solitu-|-de|"
       },
       {
+        "id": 4,
         "part": 2,
         "lyrics": "Et le diable des soirs conquis|\nAvec ses pâleurs de rescousse|\nEt le squale des paradis|\nDans le milieu mouillé de mousse|\nReviens fille verte des fjords|\nReviens violon des violonades|\nDans le port fanfarent les cors|\nPour le retour des camarades|\nô parfum rare des salants|\nDans le poivre feu des gerçures|\nQuand j'allais géométrisant|\nMon âme au creux de ta blessure|\nDans le désordre de ton cul|\nPoissé dans les draps d'aube fine|\nJe voyais un vitrail de plus|\n||\nEt toi fille verte mon|spleen|"
       },
       {
+        "id": 5,
         "part": 2,
         "lyrics": "Les coquillages figurants|\nSous les sunlights cassés liquides|\nJouent de la castagnette tant|\nQu'on dirait l'Espagne livide|\nDieu des granits ayez pitié|\nDe leur vocation de parure|\nQuand le couteau vient s'immiscer|\nDans leur castagnette figure|\nEt je voyais ce qu'on pressent|\nQuand on pressent l'entrevoyure|\nEntre les persiennes du sang|\nEt que les globules figurent|\nUne mathématique bleue|\nDans cette mer jamais étale|\nD'où nous remonte peu à peu|\n||\nCette mémoire des ét-|-oiles|"
       },
       {
+        "id": 6,
         "part": 2,
         "lyrics": "Cette rumeur qui vient de là|\nSous l'arc copain où je m'aveugle|\nCes mains qui me font du flafla|\nCes mains ruminantes qui meuglent|\nCette rumeur me suit longtemps|\nComme un mendiant sous l'anathème|\nComme l'ombre qui perd son temps|\nà dessiner mon théorème|\nEt sur mon maquillage roux|\nS'en vient battre comme une porte|\nCette rumeur qui va debout|\nDans la rue aux musiques mortes|\nC'est fini la mer c'est fini|\nSur la plage le sable bêle|\nComme des moutons d'infini|\n||\nQuand la mer bergère m'ap-|pelle|"
       }
@@ -3641,13 +3700,13 @@ var samples = [
       }
     ],
     "structure": [
-      {"part": 1, "lyrics": ""},
-      {"part": 2, "lyrics": ""},
-      {"part": 3, "lyrics": ""},
-      {"part": 4, "lyrics": ""},
-      {"part": 3, "lyrics": ""},
-      {"part": 5, "lyrics": ""},
-      {"part": 6, "lyrics": ""}
+      {"id": 1, "part": 1, "lyrics": ""},
+      {"id": 2, "part": 2, "lyrics": ""},
+      {"id": 3, "part": 3, "lyrics": ""},
+      {"id": 4, "part": 4, "lyrics": ""},
+      {"id": 5, "part": 3, "lyrics": ""},
+      {"id": 6, "part": 5, "lyrics": ""},
+      {"id": 7, "part": 6, "lyrics": ""}
     ],
     "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Alain Bashung\"\nTITLE \"La nuit je mens\"\nYEAR 1998\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"Deux ryhtmiques principales.\nPlus une variante de chaque ryhtmique pour commencer une partie.\nPlus une ryhtmique pour terminer une partie.\nTrois accords barrés.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 0\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 80\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD G     320003 210003/- \"G à 3 doigts\"\nCHORD Em    022000 023000/-\nCHORD Bm    x24432 013421/2 \"Forme de Am barré en 2\"\nCHORD Bsus2 x24422 013411/2 \"Bm sans le majeur\"\nCHORD Asus2\tx02200 001200/- \"Am sans l'index\"\nCHORD Asus4\tx02230 001240/- \"Am avec petit doigt en case 3 de corde B\"\nCHORD G/F#\t2x0003 100003/- \"Etouffer corde A avec l'index qui frette la corde E\"\nCHORD A     x0222x 001230/- \"A avec corde e étoufée (pas hyper important)\"\nCHORD F#m   244222 134111/2 \"Forme de Em barré en 2\"\nCHORD G'    355433 134211/3 \"Forme de E barré en 3\"\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8()d:16()d()u :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u\"\nRHYTHM R2\t\":8()d:16()d()u :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u\"\nRHYTHM R3\t\":8()d:16()d()u :16()d()u:8()d :8()d:16()d()u :16()d()u:8()d\"\nRHYTHM R1B\t\":q()d> :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u\"\nRHYTHM R2B\t\":q()d> :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u\"\n\n#########\n# PARTS #\n#########\n\nBLOCK Bm*\t[R2*Bm:::::Bsus2::Bm]\nBLOCK A1\t[R1*G::::::Em] Bm* [R1*G::::::Asus2] Bm* [R2*Asus2] [R2*Asus4::::::Asus2] [R2*G] %\nBLOCK A2\t[R2*Asus2] % [R2*G] Bm* [R2*Asus2] [R2*Em] [R3*Em::::::Asus2]\nBLOCK B1\t[R2B*Bm] [R2*G'] [R2*Bm] [R1*G:::::::::G/F#] [R2*Em] [R2*Asus2] [R2*Em] %\nBLOCK B2\t[R3*G::::::Em] Bm*\nBLOCK B3\tBm* [R2*G] Bm* [R2*G] [R2*Em] [R2*A] [R2*Em] %\nBLOCK B4\t[R2*Asus2] Bm*\nBLOCK C1\t[R1*G::::::Em] Bm* [R1*G::::::Em] Bm* [R2*A] % [R2*F#m] Bm* [R2*A] Bm* [R2*Em] [R1*G:::::::::G/F#] [R2*A] [R2*Em]\n\nPART \"Intro\" \t\t[R1*G] [R2*G]\nPART \"Verse A\"\t\tA1 || A2\nPART \"Chorus B\"\t\tB1 B2\nPART \"Verse C\"\t\tC1\nPART \"Verse A'\"\t\tA1\nPART \"Chorus B'\"\tB1 || B3 || B1 B4\n\n#############\n# STRUCTURE #\n#############\n\nSTRUCTURE\n\"Intro\" \"\"\n\"Verse A\" \"\"\n\"Chorus B\" \"\"\n\"Verse C\" \"\"\n\"Chorus B\" \"\"\n\"Verse A'\" \"\"\n\"Chorus B'\" \"\"\n"
   },
@@ -3772,16 +3831,16 @@ var samples = [
       }
     ],
     "structure": [
-      {"part": 1, "lyrics": ""},
-      {"part": 2, "lyrics": ""},
-      {"part": 3, "lyrics": ""},
-      {"part": 1, "lyrics": ""},
-      {"part": 2, "lyrics": ""},
-      {"part": 3, "lyrics": ""},
-      {"part": 4, "lyrics": ""},
-      {"part": 2, "lyrics": ""},
-      {"part": 3, "lyrics": ""},
-      {"part": 5, "lyrics": ""}
+      {"id": 1, "part": 1, "lyrics": ""},
+      {"id": 2, "part": 2, "lyrics": ""},
+      {"id": 3, "part": 3, "lyrics": ""},
+      {"id": 4, "part": 1, "lyrics": ""},
+      {"id": 5, "part": 2, "lyrics": ""},
+      {"id": 6, "part": 3, "lyrics": ""},
+      {"id": 7, "part": 4, "lyrics": ""},
+      {"id": 8, "part": 2, "lyrics": ""},
+      {"id": 9, "part": 3, "lyrics": ""},
+      {"id": 10, "part": 5, "lyrics": ""}
     ],
     "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Bob Marley\"\nTITLE \"Who The Cap Fit\"\nYEAR 1900\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 0\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 85\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD G   320033 210034/-\nCHORD Am\tx02210 T02310/-\nCHORD C\t  x32010 T32010/-\nCHORD D\t  xx0232 T00132/-\nCHORD Em\t022000 023000/-\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8 (#) ()u (#) ()u (#) ()u (#) ()u\"\n\n#########\n# PARTS #\n#########\n\nBLOCK A [R1*G]  [R1*Am]\nBLOCK B [R1*C]  [R1*D]\nBLOCK C [R1*Em] [R1*Am]\n\nPART \"Verse A\"  A || A\nPART \"Verse B\"  B || B || B || B\nPART \"Chorus\"   C || C || C || C\nPART \"Interlude\"  A || A\nPART \"Outro\"   C || C\n\n#############\n# STRUCTURE #\n#############\n\nSTRUCTURE\n\n\"Verse A\" \"\"\n\"Verse B\" \"\"\n\"Chorus\" \"\"\n\n\"Verse A\" \"\"\n\"Verse B\" \"\"\n\"Chorus\" \"\"\n\n\"Interlude\" \"\"\n\"Verse B\" \"\"\n\"Chorus\" \"\"\n\"Outro\" \"\"\n"
   }
@@ -3909,12 +3968,12 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   // shuffle 8th image
   if (songcheat.signature.shuffle === ':8') {
-    $('#left h3:first').append($('<img>').css({ 'padding-left': '50px', 'width': '100px', 'display': 'inline', 'vertical-align': 'bottom' }).attr('src', 'img/shuffle_8th.svg'));
+    $('#left h3:first').append($('<img>').css({ 'padding-left': '50px', 'width': '100px', 'display': 'inline', 'vertical-align': 'bottom' }).attr('src', '../img/shuffle_8th.svg'));
   }
 
   // chord diagrams
   for (let chord of songcheat.chords) {
-    var url = DEBUG ? 'img/missing_diagram.png' : ChordPix.url(chord, chordWidth);
+    var url = DEBUG ? '../img/missing_diagram.png' : ChordPix.url(chord, chordWidth);
     let $cDiv = $('<div>').css({ 'display': 'inline-block', 'vertical-align': 'top' });
     $divChords.append($cDiv);
     $cDiv.append($('<img>').attr('src', url).attr('title', chord.comment).css({ 'display': 'block' /* removes whitespace below image */, 'width': chordWidth + 'px' }));
@@ -4134,4 +4193,4 @@ songcheat(sc, $('#score'), $('#chords'), $('#parts'), $('#structure'), $('#lyric
 $('body').show();
 
 })));
-//# sourceMappingURL=songcheat-viewer.umd.js.map
+//# sourceMappingURL=viewer.umd.js.map

@@ -11,25 +11,86 @@ var BANNER = '/**\n' +
   ' * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer\n' +
   ' */\n'
 
-export default [
+export default [{
+  input: 'src/viewer.js',
+  sourcemap: true,
+  banner: BANNER,
+  output: [{
+    file: 'dist/viewer.esm.js',
+    format: 'es'
+  },
   {
-    input: 'index.js',
-    sourcemap: true,
-    banner: BANNER,
-    output: [{
-      file: 'dist/songcheat-viewer.esm.js',
-      format: 'es'
-    },
-    {
-      file: 'dist/songcheat-viewer.umd.js',
-      format: 'umd'
-    }
-    ],
-    name: 'songcheatVexTab',
-    plugins: [
-      resolve({}),
-      commonjs({}),
-      json({})
-    ]
+    file: 'dist/viewer.umd.js',
+    format: 'umd'
   }
-]
+  ],
+  name: 'songcheatVexTab',
+  plugins: [
+    resolve({}),
+    commonjs({}),
+    json({})
+  ]
+},
+{
+  input: 'src/vextab.js',
+  sourcemap: true,
+  banner: BANNER,
+  output: [{
+    file: 'dist/vextab.esm.js',
+    format: 'es'
+  },
+  {
+    file: 'dist/vextab.umd.js',
+    format: 'umd'
+  }
+  ],
+  external: ['jQuery'],
+  globals: { 'jQuery': '$' },
+  plugins: [
+    resolve({}),
+    commonjs({}),
+    json({})
+  ]
+},
+{
+  input: 'src/chords.js',
+  sourcemap: true,
+  banner: BANNER,
+  output: [{
+    file: 'dist/chords.esm.js',
+    format: 'es'
+  },
+  {
+    file: 'dist/chords.umd.js',
+    format: 'umd'
+  }
+  ],
+  external: ['jQuery'],
+  globals: { 'jQuery': '$' },
+  plugins: [
+    resolve({}),
+    commonjs({}),
+    json({})
+  ]
+},
+{
+  input: 'src/player.js',
+  sourcemap: true,
+  banner: BANNER,
+  output: [{
+    file: 'dist/player.esm.js',
+    format: 'es'
+  },
+  {
+    file: 'dist/player.umd.js',
+    format: 'umd'
+  }
+  ],
+  external: ['jQuery'],
+  globals: { 'jQuery': '$' },
+  plugins: [
+    resolve({}),
+    commonjs({}),
+    json({})
+  ]
+}]

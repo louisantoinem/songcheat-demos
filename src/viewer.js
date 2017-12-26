@@ -1,6 +1,6 @@
 import { Utils, Compiler, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
-import { PlayerUI } from './src/player_ui.js'
-import samples from 'songcheat-samples'
+import { PlayerUI } from './player_ui'
+import samples from '../dist/samples.json'
 
 // create audio context
 let audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext)()
@@ -124,12 +124,12 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   // shuffle 8th image
   if (songcheat.signature.shuffle === ':8') {
-    $('#left h3:first').append($('<img>').css({ 'padding-left': '50px', 'width': '100px', 'display': 'inline', 'vertical-align': 'bottom' }).attr('src', 'img/shuffle_8th.svg'))
+    $('#left h3:first').append($('<img>').css({ 'padding-left': '50px', 'width': '100px', 'display': 'inline', 'vertical-align': 'bottom' }).attr('src', '../img/shuffle_8th.svg'))
   }
 
   // chord diagrams
   for (let chord of songcheat.chords) {
-    var url = DEBUG ? 'img/missing_diagram.png' : ChordPix.url(chord, chordWidth)
+    var url = DEBUG ? '../img/missing_diagram.png' : ChordPix.url(chord, chordWidth)
     let $cDiv = $('<div>').css({ 'display': 'inline-block', 'vertical-align': 'top' })
     $divChords.append($cDiv)
     $cDiv.append($('<img>').attr('src', url).attr('title', chord.comment).css({ 'display': 'block' /* removes whitespace below image */, 'width': chordWidth + 'px' }))

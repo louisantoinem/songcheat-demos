@@ -1,0 +1,116 @@
+{
+  "artist": "Bob Marley",
+  "title": "Who The Cap Fit",
+  "year": 1900,
+  "difficulty": 3,
+  "video": "",
+  "tutorial": "",
+  "comment": "",
+  "tuning": "standard",
+  "capo": 0,
+  "signature": {
+    "key": "C",
+    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "tempo": 85,
+    "shuffle": ""
+  },
+  "chords": [
+    {
+      "id": 1,
+      "name": "G",
+      "tablature": "320033",
+      "fingering": "210034/-",
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "name": "Am",
+      "tablature": "x02210",
+      "fingering": "T02310/-",
+      "comment": ""
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "tablature": "x32010",
+      "fingering": "T32010/-",
+      "comment": ""
+    },
+    {
+      "id": 4,
+      "name": "D",
+      "tablature": "xx0232",
+      "fingering": "T00132/-",
+      "comment": ""
+    },
+    {
+      "id": 5,
+      "name": "Em",
+      "tablature": "022000",
+      "fingering": "023000/-",
+      "comment": ""
+    }
+  ],
+  "rhythms": [
+    {"id": 1, "name": "R1", "score": ":8 (#) ()u (#) ()u (#) ()u (#) ()u"}
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "name": "Verse A",
+      "phrases": [
+        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]},
+        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Verse B",
+      "phrases": [
+        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]},
+        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]},
+        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]},
+        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Chorus",
+      "phrases": [
+        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
+        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
+        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
+        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Interlude",
+      "phrases": [
+        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]},
+        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Outro",
+      "phrases": [
+        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
+        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]}
+      ]
+    }
+  ],
+  "structure": [
+    {"id": 1, "part": 1, "lyrics": ""},
+    {"id": 2, "part": 2, "lyrics": ""},
+    {"id": 3, "part": 3, "lyrics": ""},
+    {"id": 4, "part": 1, "lyrics": ""},
+    {"id": 5, "part": 2, "lyrics": ""},
+    {"id": 6, "part": 3, "lyrics": ""},
+    {"id": 7, "part": 4, "lyrics": ""},
+    {"id": 8, "part": 2, "lyrics": ""},
+    {"id": 9, "part": 3, "lyrics": ""},
+    {"id": 10, "part": 5, "lyrics": ""}
+  ],
+  "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Bob Marley\"\nTITLE \"Who The Cap Fit\"\nYEAR 1900\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 0\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 85\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD G   320033 210034/-\nCHORD Am\tx02210 T02310/-\nCHORD C\t  x32010 T32010/-\nCHORD D\t  xx0232 T00132/-\nCHORD Em\t022000 023000/-\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8 (#) ()u (#) ()u (#) ()u (#) ()u\"\n\n#########\n# PARTS #\n#########\n\nBLOCK A [R1*G]  [R1*Am]\nBLOCK B [R1*C]  [R1*D]\nBLOCK C [R1*Em] [R1*Am]\n\nPART \"Verse A\"  A || A\nPART \"Verse B\"  B || B || B || B\nPART \"Chorus\"   C || C || C || C\nPART \"Interlude\"  A || A\nPART \"Outro\"   C || C\n\n#############\n# STRUCTURE #\n#############\n\nSTRUCTURE\n\n\"Verse A\" \"\"\n\"Verse B\" \"\"\n\"Chorus\" \"\"\n\n\"Verse A\" \"\"\n\"Verse B\" \"\"\n\"Chorus\" \"\"\n\n\"Interlude\" \"\"\n\"Verse B\" \"\"\n\"Chorus\" \"\"\n\"Outro\" \"\"\n"
+}

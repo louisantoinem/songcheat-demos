@@ -1,0 +1,654 @@
+
+**********************************
+*** Split as entered / Compact ***
+**********************************
+
+
+[Intro]
+
+C01 |C01 |
+....|....|
+
+[Verse 1]
+
+C01                          |
+La marée je l'ai dans le cœur|
+C02                          |
+Qui me remonte comme un signe|
+C03                       |
+Je meurs de ma petite sœur|
+C04                          |
+De mon enfant et de mon cygne|
+C05                        |
+Un bateau ça dépend comment|
+C06                            |
+On l'arrime au port de justesse|
+C07                       |
+Il pleure de mon firmament|
+C08                              |
+Des années-lumière et j'en laisse|
+C09                      |
+Je suis le fantôme Jersey|
+C10                               |
+Celui qui vient les soirs de frime|
+C11                          |
+Te lancer la brume en baisers|
+C12                          |
+Et te ramasser dans ses rimes|
+C13                        |
+Comme le trémail de juillet|
+C14                         |
+Où luisait le loup solitaire|
+C15                         |
+Celui que je voyais briller |
+C16 |C17 |
+....|....|
+C18            C18b    C18c  |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+Aux doigts du sable de la te-|-rre..........|............................|
+
+[Verse 2]
+
+C01                         |
+Rappelle-toi ce chien de mer|
+C02                          |
+Que nous libérions sur parole|
+C03                         |
+Et qui gueule dans le désert|
+C04                     |
+Des goémons de nécropole|
+C05                          |
+Je suis sûr que la vie est là|
+C06                         |
+Avec ses poumons de flanelle|
+C07                            |
+Quand il pleure de ces temps-là|
+C08                                |
+Le froid tout gris qui nous appelle|
+C09                            |
+Je me souviens des soirs là-bas|
+C10                              |
+Et des sprints gagnés sur l'écume|
+C11                       |
+Cette bave des chevaux ras|
+C12                             |
+Au ras des rocs qui se consument|
+C13                         |
+ô l'ange des plaisirs perdus|
+C14                           |
+ô rumeurs d'une autre habitude|
+C15                             |
+Mes désirs dès lors ne sont plus|
+C16 |C17 |
+....|....|
+C18           C18b   C18c  |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+Qu'un chagrin de ma solitu-|-de...........|............................|
+
+[Verse 3]
+
+C01                           |
+Et le diable des soirs conquis|
+C02                          |
+Avec ses pâleurs de rescousse|
+C03                     |
+Et le squale des paradis|
+C04                             |
+Dans le milieu mouillé de mousse|
+C05                           |
+Reviens fille verte des fjords|
+C06                          |
+Reviens violon des violonades|
+C07                            |
+Dans le port fanfarent les cors|
+C08                         |
+Pour le retour des camarades|
+C09                      |
+ô parfum rare des salants|
+C10                            |
+Dans le poivre feu des gerçures|
+C11                        |
+Quand j'allais géométrisant|
+C12                            |
+Mon âme au creux de ta blessure|
+C13                        |
+Dans le désordre de ton cul|
+C14                              |
+Poissé dans les draps d'aube fine|
+C15                         |
+Je voyais un vitrail de plus|
+C16 |C17 |
+....|....|
+C18         C18b C18c |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+Et toi fille verte mon|spleen........|............................|
+
+[Verse 4]
+
+C01                      |
+Les coquillages figurants|
+C02                               |
+Sous les sunlights cassés liquides|
+C03                          |
+Jouent de la castagnette tant|
+C04                          |
+Qu'on dirait l'Espagne livide|
+C05                        |
+Dieu des granits ayez pitié|
+C06                       |
+De leur vocation de parure|
+C07                              |
+Quand le couteau vient s'immiscer|
+C08                         |
+Dans leur castagnette figure|
+C09                           |
+Et je voyais ce qu'on pressent|
+C10                            |
+Quand on pressent l'entrevoyure|
+C11                         |
+Entre les persiennes du sang|
+C12                         |
+Et que les globules figurent|
+C13                   |
+Une mathématique bleue|
+C14                        |
+Dans cette mer jamais étale|
+C15                        |
+D'où nous remonte peu à peu|
+C16 |C17 |
+....|....|
+C18        C18b C18c |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+Cette mémoire des ét-|-oiles........|............................|
+
+[Verse 5]
+
+C01                         |
+Cette rumeur qui vient de là|
+C02                              |
+Sous l'arc copain où je m'aveugle|
+C03                            |
+Ces mains qui me font du flafla|
+C04                              |
+Ces mains ruminantes qui meuglent|
+C05                           |
+Cette rumeur me suit longtemps|
+C06                              |
+Comme un mendiant sous l'anathème|
+C07                             |
+Comme l'ombre qui perd son temps|
+C08                    |
+à dessiner mon théorème|
+C09                       |
+Et sur mon maquillage roux|
+C10                              |
+S'en vient battre comme une porte|
+C11                       |
+Cette rumeur qui va debout|
+C12                            |
+Dans la rue aux musiques mortes|
+C13                         |
+C'est fini la mer c'est fini|
+C14                       |
+Sur la plage le sable bêle|
+C15                       |
+Comme des moutons d'infini|
+C16 |C17 |
+....|....|
+C18           C18b   C18c |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+Quand la mer bergère m'ap-|pelle.........|............................|
+
+
+********************************************
+*** Split as entered / Respect durations ***
+********************************************
+
+
+[Intro]
+
+C01                |C01                |
+...................|...................|
+
+[Verse 1]
+
+C01                               |
+La marée je l'ai dans le cœur.....|
+C02                               |
+Qui me remonte comme un signe.....|
+C03                               |
+Je meurs de ma petite sœur........|
+C04                               |
+De mon enfant et de mon cygne.....|
+C05                               |
+Un bateau ça dépend comment.......|
+C06                               |
+On l'arrime au port de justesse...|
+C07                               |
+Il pleure de mon firmament........|
+C08                               |
+Des années-lumière et j'en laisse.|
+C09                               |
+Je suis le fantôme Jersey.........|
+C10                               |
+Celui qui vient les soirs de frime|
+C11                               |
+Te lancer la brume en baisers.....|
+C12                               |
+Et te ramasser dans ses rimes.....|
+C13                               |
+Comme le trémail de juillet.......|
+C14                               |
+Où luisait le loup solitaire......|
+C15                               |
+Celui que je voyais briller ......|
+C16                               |C17                               |
+..................................|..................................|
+C18               C18b     C18c   |0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+Aux doigts du sable de la te-.....|-rre..............................|..................................|
+
+[Verse 2]
+
+C01                                |
+Rappelle-toi ce chien de mer.......|
+C02                                |
+Que nous libérions sur parole......|
+C03                                |
+Et qui gueule dans le désert.......|
+C04                                |
+Des goémons de nécropole...........|
+C05                                |
+Je suis sûr que la vie est là......|
+C06                                |
+Avec ses poumons de flanelle.......|
+C07                                |
+Quand il pleure de ces temps-là....|
+C08                                |
+Le froid tout gris qui nous appelle|
+C09                                |
+Je me souviens des soirs là-bas....|
+C10                                |
+Et des sprints gagnés sur l'écume..|
+C11                                |
+Cette bave des chevaux ras.........|
+C12                                |
+Au ras des rocs qui se consument...|
+C13                                |
+ô l'ange des plaisirs perdus.......|
+C14                                |
+ô rumeurs d'une autre habitude.....|
+C15                                |
+Mes désirs dès lors ne sont plus...|
+C16                                |C17                                |
+...................................|...................................|
+C18               C18b     C18c    |0xx002                     xxx003  |0xx002   xxx000   xxx003   xxx007  |
+Qu'un chagrin de ma solitu-........|-de................................|...................................|
+
+[Verse 3]
+
+C01                              |
+Et le diable des soirs conquis...|
+C02                              |
+Avec ses pâleurs de rescousse....|
+C03                              |
+Et le squale des paradis.........|
+C04                              |
+Dans le milieu mouillé de mousse.|
+C05                              |
+Reviens fille verte des fjords...|
+C06                              |
+Reviens violon des violonades....|
+C07                              |
+Dans le port fanfarent les cors..|
+C08                              |
+Pour le retour des camarades.....|
+C09                              |
+ô parfum rare des salants........|
+C10                              |
+Dans le poivre feu des gerçures..|
+C11                              |
+Quand j'allais géométrisant......|
+C12                              |
+Mon âme au creux de ta blessure..|
+C13                              |
+Dans le désordre de ton cul......|
+C14                              |
+Poissé dans les draps d'aube fine|
+C15                              |
+Je voyais un vitrail de plus.....|
+C16                              |C17                              |
+.................................|.................................|
+C18              C18b     C18c   |0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+Et toi fille verte mon...........|spleen...........................|.................................|
+
+[Verse 4]
+
+C01                               |
+Les coquillages figurants.........|
+C02                               |
+Sous les sunlights cassés liquides|
+C03                               |
+Jouent de la castagnette tant.....|
+C04                               |
+Qu'on dirait l'Espagne livide.....|
+C05                               |
+Dieu des granits ayez pitié.......|
+C06                               |
+De leur vocation de parure........|
+C07                               |
+Quand le couteau vient s'immiscer.|
+C08                               |
+Dans leur castagnette figure......|
+C09                               |
+Et je voyais ce qu'on pressent....|
+C10                               |
+Quand on pressent l'entrevoyure...|
+C11                               |
+Entre les persiennes du sang......|
+C12                               |
+Et que les globules figurent......|
+C13                               |
+Une mathématique bleue............|
+C14                               |
+Dans cette mer jamais étale.......|
+C15                               |
+D'où nous remonte peu à peu.......|
+C16                               |C17                               |
+..................................|..................................|
+C18               C18b     C18c   |0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+Cette mémoire des ét-.............|-oiles............................|..................................|
+
+[Verse 5]
+
+C01                              |
+Cette rumeur qui vient de là.....|
+C02                              |
+Sous l'arc copain où je m'aveugle|
+C03                              |
+Ces mains qui me font du flafla..|
+C04                              |
+Ces mains ruminantes qui meuglent|
+C05                              |
+Cette rumeur me suit longtemps...|
+C06                              |
+Comme un mendiant sous l'anathème|
+C07                              |
+Comme l'ombre qui perd son temps.|
+C08                              |
+à dessiner mon théorème..........|
+C09                              |
+Et sur mon maquillage roux.......|
+C10                              |
+S'en vient battre comme une porte|
+C11                              |
+Cette rumeur qui va debout.......|
+C12                              |
+Dans la rue aux musiques mortes..|
+C13                              |
+C'est fini la mer c'est fini.....|
+C14                              |
+Sur la plage le sable bêle.......|
+C15                              |
+Comme des moutons d'infini.......|
+C16                              |C17                              |
+.................................|.................................|
+C18              C18b     C18c   |0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+Quand la mer bergère m'ap-.......|pelle............................|.................................|
+
+
+*********************************
+*** Split by 2 bars / Compact ***
+*********************************
+
+
+[Intro]
+
+C01 |C01 |
+....|....|
+
+
+[Verse 1]
+
+C01                          |C02                          |
+La marée je l'ai dans le cœur|Qui me remonte comme un signe|
+C03                       |C04                          |
+Je meurs de ma petite sœur|De mon enfant et de mon cygne|
+C05                        |C06                            |
+Un bateau ça dépend comment|On l'arrime au port de justesse|
+C07                       |C08                              |
+Il pleure de mon firmament|Des années-lumière et j'en laisse|
+C09                      |C10                               |
+Je suis le fantôme Jersey|Celui qui vient les soirs de frime|
+C11                          |C12                          |
+Te lancer la brume en baisers|Et te ramasser dans ses rimes|
+C13                        |C14                         |
+Comme le trémail de juillet|Où luisait le loup solitaire|
+C15                         |C16 |
+Celui que je voyais briller |....|
+C17 |C18            C18b    C18c  |
+....|Aux doigts du sable de la te-|
+0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+-rre..........|............................|
+
+
+[Verse 2]
+
+C01                         |C02                          |
+Rappelle-toi ce chien de mer|Que nous libérions sur parole|
+C03                         |C04                     |
+Et qui gueule dans le désert|Des goémons de nécropole|
+C05                          |C06                         |
+Je suis sûr que la vie est là|Avec ses poumons de flanelle|
+C07                            |C08                                |
+Quand il pleure de ces temps-là|Le froid tout gris qui nous appelle|
+C09                            |C10                              |
+Je me souviens des soirs là-bas|Et des sprints gagnés sur l'écume|
+C11                       |C12                             |
+Cette bave des chevaux ras|Au ras des rocs qui se consument|
+C13                         |C14                           |
+ô l'ange des plaisirs perdus|ô rumeurs d'une autre habitude|
+C15                             |C16 |
+Mes désirs dès lors ne sont plus|....|
+C17 |C18           C18b   C18c  |
+....|Qu'un chagrin de ma solitu-|
+0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+-de...........|............................|
+
+
+[Verse 3]
+
+C01                           |C02                          |
+Et le diable des soirs conquis|Avec ses pâleurs de rescousse|
+C03                     |C04                             |
+Et le squale des paradis|Dans le milieu mouillé de mousse|
+C05                           |C06                          |
+Reviens fille verte des fjords|Reviens violon des violonades|
+C07                            |C08                         |
+Dans le port fanfarent les cors|Pour le retour des camarades|
+C09                      |C10                            |
+ô parfum rare des salants|Dans le poivre feu des gerçures|
+C11                        |C12                            |
+Quand j'allais géométrisant|Mon âme au creux de ta blessure|
+C13                        |C14                              |
+Dans le désordre de ton cul|Poissé dans les draps d'aube fine|
+C15                         |C16 |
+Je voyais un vitrail de plus|....|
+C17 |C18         C18b C18c |
+....|Et toi fille verte mon|
+0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+spleen........|............................|
+
+
+[Verse 4]
+
+C01                      |C02                               |
+Les coquillages figurants|Sous les sunlights cassés liquides|
+C03                          |C04                          |
+Jouent de la castagnette tant|Qu'on dirait l'Espagne livide|
+C05                        |C06                       |
+Dieu des granits ayez pitié|De leur vocation de parure|
+C07                              |C08                         |
+Quand le couteau vient s'immiscer|Dans leur castagnette figure|
+C09                           |C10                            |
+Et je voyais ce qu'on pressent|Quand on pressent l'entrevoyure|
+C11                         |C12                         |
+Entre les persiennes du sang|Et que les globules figurent|
+C13                   |C14                        |
+Une mathématique bleue|Dans cette mer jamais étale|
+C15                        |C16 |
+D'où nous remonte peu à peu|....|
+C17 |C18        C18b C18c |
+....|Cette mémoire des ét-|
+0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+-oiles........|............................|
+
+
+[Verse 5]
+
+C01                         |C02                              |
+Cette rumeur qui vient de là|Sous l'arc copain où je m'aveugle|
+C03                            |C04                              |
+Ces mains qui me font du flafla|Ces mains ruminantes qui meuglent|
+C05                           |C06                              |
+Cette rumeur me suit longtemps|Comme un mendiant sous l'anathème|
+C07                             |C08                    |
+Comme l'ombre qui perd son temps|à dessiner mon théorème|
+C09                       |C10                              |
+Et sur mon maquillage roux|S'en vient battre comme une porte|
+C11                       |C12                            |
+Cette rumeur qui va debout|Dans la rue aux musiques mortes|
+C13                         |C14                       |
+C'est fini la mer c'est fini|Sur la plage le sable bêle|
+C15                       |C16 |
+Comme des moutons d'infini|....|
+C17 |C18           C18b   C18c |
+....|Quand la mer bergère m'ap-|
+0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
+pelle.........|............................|
+
+
+
+*******************************************
+*** Split by 2 bars / Respect durations ***
+*******************************************
+
+
+[Intro]
+
+C01                |C01                |
+...................|...................|
+
+
+[Verse 1]
+
+C01                               |C02                               |
+La marée je l'ai dans le cœur.....|Qui me remonte comme un signe.....|
+C03                               |C04                               |
+Je meurs de ma petite sœur........|De mon enfant et de mon cygne.....|
+C05                               |C06                               |
+Un bateau ça dépend comment.......|On l'arrime au port de justesse...|
+C07                               |C08                               |
+Il pleure de mon firmament........|Des années-lumière et j'en laisse.|
+C09                               |C10                               |
+Je suis le fantôme Jersey.........|Celui qui vient les soirs de frime|
+C11                               |C12                               |
+Te lancer la brume en baisers.....|Et te ramasser dans ses rimes.....|
+C13                               |C14                               |
+Comme le trémail de juillet.......|Où luisait le loup solitaire......|
+C15                               |C16                               |
+Celui que je voyais briller ......|..................................|
+C17                               |C18               C18b     C18c   |
+..................................|Aux doigts du sable de la te-.....|
+0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+-rre..............................|..................................|
+
+
+[Verse 2]
+
+C01                                |C02                                |
+Rappelle-toi ce chien de mer.......|Que nous libérions sur parole......|
+C03                                |C04                                |
+Et qui gueule dans le désert.......|Des goémons de nécropole...........|
+C05                                |C06                                |
+Je suis sûr que la vie est là......|Avec ses poumons de flanelle.......|
+C07                                |C08                                |
+Quand il pleure de ces temps-là....|Le froid tout gris qui nous appelle|
+C09                                |C10                                |
+Je me souviens des soirs là-bas....|Et des sprints gagnés sur l'écume..|
+C11                                |C12                                |
+Cette bave des chevaux ras.........|Au ras des rocs qui se consument...|
+C13                                |C14                                |
+ô l'ange des plaisirs perdus.......|ô rumeurs d'une autre habitude.....|
+C15                                |C16                                |
+Mes désirs dès lors ne sont plus...|...................................|
+C17                                |C18               C18b     C18c    |
+...................................|Qu'un chagrin de ma solitu-........|
+0xx002                     xxx003  |0xx002   xxx000   xxx003   xxx007  |
+-de................................|...................................|
+
+
+[Verse 3]
+
+C01                              |C02                              |
+Et le diable des soirs conquis...|Avec ses pâleurs de rescousse....|
+C03                              |C04                              |
+Et le squale des paradis.........|Dans le milieu mouillé de mousse.|
+C05                              |C06                              |
+Reviens fille verte des fjords...|Reviens violon des violonades....|
+C07                              |C08                              |
+Dans le port fanfarent les cors..|Pour le retour des camarades.....|
+C09                              |C10                              |
+ô parfum rare des salants........|Dans le poivre feu des gerçures..|
+C11                              |C12                              |
+Quand j'allais géométrisant......|Mon âme au creux de ta blessure..|
+C13                              |C14                              |
+Dans le désordre de ton cul......|Poissé dans les draps d'aube fine|
+C15                              |C16                              |
+Je voyais un vitrail de plus.....|.................................|
+C17                              |C18              C18b     C18c   |
+.................................|Et toi fille verte mon...........|
+0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+spleen...........................|.................................|
+
+
+[Verse 4]
+
+C01                               |C02                               |
+Les coquillages figurants.........|Sous les sunlights cassés liquides|
+C03                               |C04                               |
+Jouent de la castagnette tant.....|Qu'on dirait l'Espagne livide.....|
+C05                               |C06                               |
+Dieu des granits ayez pitié.......|De leur vocation de parure........|
+C07                               |C08                               |
+Quand le couteau vient s'immiscer.|Dans leur castagnette figure......|
+C09                               |C10                               |
+Et je voyais ce qu'on pressent....|Quand on pressent l'entrevoyure...|
+C11                               |C12                               |
+Entre les persiennes du sang......|Et que les globules figurent......|
+C13                               |C14                               |
+Une mathématique bleue............|Dans cette mer jamais étale.......|
+C15                               |C16                               |
+D'où nous remonte peu à peu.......|..................................|
+C17                               |C18               C18b     C18c   |
+..................................|Cette mémoire des ét-.............|
+0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+-oiles............................|..................................|
+
+
+[Verse 5]
+
+C01                              |C02                              |
+Cette rumeur qui vient de là.....|Sous l'arc copain où je m'aveugle|
+C03                              |C04                              |
+Ces mains qui me font du flafla..|Ces mains ruminantes qui meuglent|
+C05                              |C06                              |
+Cette rumeur me suit longtemps...|Comme un mendiant sous l'anathème|
+C07                              |C08                              |
+Comme l'ombre qui perd son temps.|à dessiner mon théorème..........|
+C09                              |C10                              |
+Et sur mon maquillage roux.......|S'en vient battre comme une porte|
+C11                              |C12                              |
+Cette rumeur qui va debout.......|Dans la rue aux musiques mortes..|
+C13                              |C14                              |
+C'est fini la mer c'est fini.....|Sur la plage le sable bêle.......|
+C15                              |C16                              |
+Comme des moutons d'infini.......|.................................|
+C17                              |C18              C18b     C18c   |
+.................................|Quand la mer bergère m'ap-.......|
+0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+pelle............................|.................................|
