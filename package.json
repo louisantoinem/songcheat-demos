@@ -8,7 +8,7 @@
     "clean": "rm -f dist/*.js*",
     "lint": "standard --fix src/*js test/*.js *.js",
     "build": "npm run clean && npm run lint && rollup -c",
-    "dev": "npm run build && rollup -cw",
+    "dev": "npm run lint && rollup -cw",
     "uglify.umd": "node_modules/uglify-es/bin/uglifyjs dist/songcheat-viewer.umd.js --compress --mangle --source-map \"content='dist/songcheat-viewer.umd.js.map'\" -o dist/songcheat-viewer.umd.min.js",
     "uglify.esm": "node_modules/uglify-es/bin/uglifyjs dist/songcheat-viewer.esm.js --compress --mangle --source-map \"content='dist/songcheat-viewer.esm.js.map'\" -o dist/songcheat-viewer.esm.min.js",
     "uglify": "npm run uglify.umd && npm run uglify.esm",
