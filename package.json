@@ -25,11 +25,8 @@
   "author": "Louis Antoine-Moussiaux",
   "license": "ISC",
   "dependencies": {
-    "songcheat-chordpix": "file:../songcheat-chordpix",
     "songcheat-core": "file:../songcheat-core",
-    "songcheat-player": "file:../songcheat-player",
-    "songcheat-samples": "file:../songcheat-samples",
-    "songcheat-vextab": "file:../songcheat-vextab"
+    "songcheat-samples": "file:../songcheat-samples"
   },
   "devDependencies": {
     "rollup-plugin-commonjs": "^8.2.6",
