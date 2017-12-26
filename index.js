@@ -1,6 +1,4 @@
-import { Utils, Compiler } from 'songcheat-core'
-import { ChordPix } from 'songcheat-chordpix'
-import { VexTab as SongcheatVexTab } from 'songcheat-vextab'
+import { Utils, Compiler, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
 import { PlayerUI } from './src/player_ui.js'
 import samples from 'songcheat-samples'
 

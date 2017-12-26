@@ -1,5 +1,4 @@
-import { Utils } from 'songcheat-core'
-import { Player, waveTables } from 'songcheat-player'
+import { Utils, Player, waveTables } from 'songcheat-core'
 
 // https://github.com/rollup/rollup/issues/1803/
 // import $ from 'jQuery'
