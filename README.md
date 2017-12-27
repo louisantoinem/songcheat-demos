@@ -5,7 +5,7 @@ Node CLI utilities using songcheat-core:
 * cli/cc.js: SongCheat parser and compiler, run it for description and usage
 * cli/cp.js: interactively paste ChordPix image urls and get the CHORDS instructions to put in your SongCheat
 
-Some sample songcheats.
+Sample songcheats that are parsed and compiled using cli/cc.js.
 
 Demo jQuery apps using songcheat-core:
 * src/chords.html: displays all chord diagram of a random sample songcheat

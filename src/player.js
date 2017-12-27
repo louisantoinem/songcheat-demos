@@ -10,8 +10,8 @@ let audioCtx = new (window.AudioContext || window.webkitAudioContext || window.a
 
 // get a random sample songcheat and compile it
 let sample = samples[Math.floor(Math.random() * samples.length)]
-let compiler = new Compiler(sample, 0)
-let songcheat = compiler.scc
+let compiler = new Compiler(0)
+let songcheat = compiler.compile(sample)
 $('body>h1').html(`${songcheat.title} (${songcheat.artist}, ${songcheat.year})`)
 
 // get notes for whole song

@@ -1,5 +1,5 @@
 /**
- * SongCheat Viewer 1.0.0 built on Tue Dec 26 2017 23:23:33 GMT+0100 (CET).
+ * SongCheat Viewer 1.0.0 built on Wed Dec 27 2017 00:57:16 GMT+0100 (CET).
   * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>
  *
  * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer
@@ -236,10 +236,6 @@ class Utils {
  * Public API
  */
 
-let MIN_LYRICS_BARLEN = 20; // minimum length of a bar lyrics (before reducing) - not really needed but produces a clearer view when maxConsecutiveSpaces set to 0 (and thus when displaying parts with partdisplay=full) since bars with no or little text will have the same length (unless there are really many chord changes...)
-let LYRICS_SUM_DURATIONS = false; // if true "::" is equivalent to ":h:" (assuming lyrics unit is :q)
-let KEEP_EMPTY_LINES = false;
-
 class CompilerException {
   constructor (message) {
     this.message = message;
@@ -252,7 +248,6 @@ class CompilerException {
 
 class Compiler_ {
   constructor (DEBUG) {
-    // DEBUG 1 forces showing . * | characters in unit text (even if showDots is passed false) as well as _ for groups that were automatically created when crossing a bar
     this.DEBUG = DEBUG;
   }
 
@@ -345,7 +340,7 @@ class Compiler_ {
       for (let unit of songcheat.structure) {
         if (!unit.part) throw new CompilerException('Part not defined for unit ' + (unitIndex + 1))
 
-      // resolve part id
+        // resolve part id
         let part = this.resolveId(songcheat.parts, unit.part);
         if (!part) throw new CompilerException('Part ' + unit.part + ' not found')
         unit.part = part;
@@ -367,15 +362,15 @@ class Compiler_ {
             if (!bar.chords) throw new CompilerException('Chords not defined for bar ' + (barIndex + 1) + ' of phrase ' + (phraseIndex + 1) + ' of ' + part.name)
             if (!(bar.chords instanceof Array)) throw new CompilerException('Chords defined for bar ' + (barIndex + 1) + ' of phrase ' + (phraseIndex + 1) + ' must be an Array, found: ' + (typeof bar.chords))
 
-          // resolve rhythm id
+            // resolve rhythm id
             let rhythm = this.resolveId(songcheat.rhythms, bar.rhythm);
             if (!rhythm) throw new CompilerException('Rhythm ' + bar.rhythm + ' not found for bar ' + (barIndex + 1) + ' of phrase ' + (phraseIndex + 1))
             bar.rhythm = rhythm;
 
-          // resolved array of chord ids
+            // resolved array of chord ids
             let chords = [];
             for (let chordId of bar.chords) {
-            // resolve chord id
+              // resolve chord id
               let chord = this.resolveId(songcheat.chords, chordId);
               if (!chord) throw new CompilerException('Chord ' + chordId + ' not found for bar ' + (barIndex + 1) + ' of phrase ' + (phraseIndex + 1))
               chords.push(chord);
@@ -499,6 +494,38 @@ class Compiler_ {
     }
 
     return lastChord
+  }
+}
+
+/**
+ * Public API
+ */
+
+class Compiler {
+  constructor (DEBUG) {
+    this.compiler_ = new Compiler_(DEBUG);
+  }
+
+  compile (songcheat) {
+    console.log(Utils.title('COMPILE SONGCHEAT'));
+    return this.compiler_.compile(JSON.parse(JSON.stringify(songcheat)))
+  }
+}
+
+let MIN_LYRICS_BARLEN = 20; // minimum length of a bar lyrics (before reducing) - not really needed but produces a clearer view when maxConsecutiveSpaces set to 0 (and thus when displaying parts with partdisplay=full) since bars with no or little text will have the same length (unless there are really many chord changes...)
+let LYRICS_SUM_DURATIONS = false; // if true "::" is equivalent to ":h:" (assuming lyrics unit is :q)
+let KEEP_EMPTY_LINES = false;
+
+
+
+class Lyrics_ {
+  constructor (DEBUG) {
+    // DEBUG 1 forces showing . * | characters in unit text (even if showDots is passed false) as well as _ for groups that were automatically created when crossing a bar
+    this.DEBUG = DEBUG;
+  }
+
+  log () {
+    if (this.DEBUG > 0) console.log.apply(console, arguments);
   }
 
   parseLyrics (unit, defaultCursorStep, barDuration) {
@@ -763,36 +790,31 @@ class Compiler_ {
  * Public API
  */
 
-class Compiler {
+class Lyrics {
   constructor (songcheat, DEBUG) {
-    this.compiler_ = new Compiler_(DEBUG);
-    if (songcheat) this.set(songcheat);
-  }
-
-  set (songcheat) {
-    this.compiler_.log(Utils.title('COMPILE SONGCHEAT'));
-    this.scc = this.compiler_.compile(JSON.parse(JSON.stringify(songcheat)));
+    this.lyrics_ = new Lyrics_(DEBUG);
+    this.songcheat = songcheat;
   }
 
   parseLyrics (unit) {
-    this.compiler_.log(Utils.title('PARSE LYRICS ' + unit.name));
-    return this.compiler_.parseLyrics(unit, Utils.duration(this.scc.lyricsUnit), this.scc.barDuration)
+    console.log(Utils.title('PARSE LYRICS ' + unit.name));
+    return this.lyrics_.parseLyrics(unit, Utils.duration(this.songcheat.lyricsUnit), this.songcheat.barDuration)
   }
 
   getUnitText (unit, maxConsecutiveSpaces, split, chordChangesMode, showDots) {
-    this.compiler_.log(Utils.title(`GET LYRICS TEXT ${unit.name} (maxConsecutiveSpaces = ${maxConsecutiveSpaces}, split = ${split}, chordChangesMode = ${chordChangesMode}, showDots = ${showDots})`));
-    return this.compiler_.getUnitText(unit, maxConsecutiveSpaces, split, chordChangesMode, showDots)
+    console.log(Utils.title(`GET LYRICS TEXT ${unit.name} (maxConsecutiveSpaces = ${maxConsecutiveSpaces}, split = ${split}, chordChangesMode = ${chordChangesMode}, showDots = ${showDots})`));
+    return this.lyrics_.getUnitText(unit, maxConsecutiveSpaces, split, chordChangesMode, showDots)
   }
 
   getPartText (part, maxConsecutiveSpaces, split, chordChangesMode, showDots) {
     // dummy unit with no lyrics
     let unit = { name: part.name, part: part };
 
-    this.compiler_.log(Utils.title('PARSE PART LYRICS ' + unit.name));
-    this.compiler_.parseLyrics(unit, Utils.duration(this.scc.lyricsUnit), this.scc.barDuration);
+    console.log(Utils.title('PARSE PART LYRICS ' + unit.name));
+    this.lyrics_.parseLyrics(unit, Utils.duration(this.songcheat.lyricsUnit), this.songcheat.barDuration);
 
-    this.compiler_.log(Utils.title(`GET PART LYRICS TEXT ${unit.name} (maxConsecutiveSpaces = ${maxConsecutiveSpaces}, split = ${split}, chordChangesMode = ${chordChangesMode}, showDots = ${showDots})`));
-    return this.compiler_.getUnitText(unit, maxConsecutiveSpaces, split, chordChangesMode, showDots)
+    console.log(Utils.title(`GET PART LYRICS TEXT ${unit.name} (maxConsecutiveSpaces = ${maxConsecutiveSpaces}, split = ${split}, chordChangesMode = ${chordChangesMode}, showDots = ${showDots})`));
+    return this.lyrics_.getUnitText(unit, maxConsecutiveSpaces, split, chordChangesMode, showDots)
   }
 }
 
@@ -3855,7 +3877,7 @@ let Vex = window.Vex;
 
 let DEBUG = 0;
 let localStorage = window.localStorage;
-let compiler = null;
+let compiler = new Compiler(DEBUG);
 
 Artist.NOLOGO = true;
 
@@ -3885,7 +3907,7 @@ function onChange (elem, fn, data) {
 function go (song, songcheat) {
   let data = { 'song': song, 'debug': DEBUG };
   for (let p of ['mode', 'lyricsMode', 'showUnit', 'maxsp', 'barsPerLine', 'splitUnits', 'splitParts', 'partdisplay']) data[p] = songcheat[p];
-  window.location.href = 'index.html?' + Utils.encodeQueryData(data);
+  window.location.href = 'viewer.html?' + Utils.encodeQueryData(data);
 }
 
 function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, $divLyrics, $divRhythms, scoreWidth, chordWidth, rhythmsWidth) {
@@ -3926,8 +3948,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   // compile
   try {
-    compiler = new Compiler(songcheat, DEBUG);
-    songcheat = compiler.scc;
+    songcheat = compiler.compile(songcheat);
   } catch (e) {
     $divScore.parent().append($('<p>').html(e.message).css('color', 'red'));
     console.error(e);
@@ -4118,7 +4139,8 @@ function displayParts (songcheat, part, $partsZone) {
     // if full part display enabled, force maxsp = 0: we want the exact position of chords
     // always split by N bars (no lyrics so split as entered makes no sense, splitParts is never 0)
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    $partsZone.append(compiler.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, 'rhythm', false));
+    let lyrics = new Lyrics(songcheat, DEBUG);
+    $partsZone.append(lyrics.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, 'rhythm', false));
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $partsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message));
@@ -4133,7 +4155,8 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
 
   try {
     // parse lyrics
-    let warnings = compiler.parseLyrics(unit);
+    let lyrics = new Lyrics(songcheat, DEBUG);
+    let warnings = lyrics.parseLyrics(unit);
 
     // display parser warnings
     for (let warning of warnings) {
@@ -4143,7 +4166,7 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
 
     // build and display lyrics
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    $lyricsZone.append(compiler.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, 'rhythm', songcheat.maxsp !== 1));
+    $lyricsZone.append(lyrics.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, 'rhythm', songcheat.maxsp !== 1));
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $lyricsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message));

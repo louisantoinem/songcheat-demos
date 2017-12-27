@@ -1,4 +1,4 @@
-import { Compiler, VexTab as SongcheatVexTab } from 'songcheat-core'
+import { Compiler, Lyrics, VexTab as SongcheatVexTab } from 'songcheat-core'
 import samples from '../dist/samples.json'
 
 // https://github.com/rollup/rollup/issues/1803/
@@ -15,13 +15,14 @@ Artist.NOLOGO = true
 
 // get a random sample songcheat and compile it
 let sample = samples[Math.floor(Math.random() * samples.length)]
-let compiler = new Compiler(sample, 0)
-let songcheat = compiler.scc
+let compiler = new Compiler(0)
+let songcheat = compiler.compile(sample)
+let lyrics = new Lyrics(songcheat, 0)
 $('body>h1').html(`${songcheat.title} (${songcheat.artist}, ${songcheat.year})`)
 
 // parse lyrics and show warnings if any
 for (let unit of songcheat.structure) {
-  let warnings = compiler.parseLyrics(unit)
+  let warnings = lyrics.parseLyrics(unit)
   if (warnings.length > 0) $('body').append($('<p>').html('Parse warnings for unit ' + unit.name + ':\n - ' + warnings.join('\n- ')).css('color', 'red'))
 }
 

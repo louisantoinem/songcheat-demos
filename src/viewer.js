@@ -1,4 +1,4 @@
-import { Utils, Compiler, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
+import { Utils, Compiler, Lyrics, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
 import { PlayerUI } from './player_ui'
 import samples from '../dist/samples.json'
 
@@ -17,7 +17,7 @@ let Vex = window.Vex
 
 let DEBUG = 0
 let localStorage = window.localStorage
-let compiler = null
+let compiler = new Compiler(DEBUG)
 
 Artist.NOLOGO = true
 
@@ -47,7 +47,7 @@ function onChange (elem, fn, data) {
 function go (song, songcheat) {
   let data = { 'song': song, 'debug': DEBUG }
   for (let p of ['mode', 'lyricsMode', 'showUnit', 'maxsp', 'barsPerLine', 'splitUnits', 'splitParts', 'partdisplay']) data[p] = songcheat[p]
-  window.location.href = 'index.html?' + Utils.encodeQueryData(data)
+  window.location.href = 'viewer.html?' + Utils.encodeQueryData(data)
 }
 
 function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, $divLyrics, $divRhythms, scoreWidth, chordWidth, rhythmsWidth) {
@@ -88,8 +88,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   // compile
   try {
-    compiler = new Compiler(songcheat, DEBUG)
-    songcheat = compiler.scc
+    songcheat = compiler.compile(songcheat)
   } catch (e) {
     $divScore.parent().append($('<p>').html(e.message).css('color', 'red'))
     console.error(e)
@@ -280,7 +279,8 @@ function displayParts (songcheat, part, $partsZone) {
     // if full part display enabled, force maxsp = 0: we want the exact position of chords
     // always split by N bars (no lyrics so split as entered makes no sense, splitParts is never 0)
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    $partsZone.append(compiler.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, 'rhythm', false))
+    let lyrics = new Lyrics(songcheat, DEBUG)
+    $partsZone.append(lyrics.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, 'rhythm', false))
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $partsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message))
@@ -295,7 +295,8 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
 
   try {
     // parse lyrics
-    let warnings = compiler.parseLyrics(unit)
+    let lyrics = new Lyrics(songcheat, DEBUG)
+    let warnings = lyrics.parseLyrics(unit)
 
     // display parser warnings
     for (let warning of warnings) {
@@ -305,7 +306,7 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
 
     // build and display lyrics
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    $lyricsZone.append(compiler.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, 'rhythm', songcheat.maxsp !== 1))
+    $lyricsZone.append(lyrics.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, 'rhythm', songcheat.maxsp !== 1))
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $lyricsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message))
