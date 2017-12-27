@@ -16,11 +16,11 @@ export default [{
   sourcemap: true,
   banner: BANNER,
   output: [{
-    file: 'dist/viewer.esm.js',
+    file: 'build/viewer.esm.js',
     format: 'es'
   },
   {
-    file: 'dist/viewer.umd.js',
+    file: 'build/viewer.umd.js',
     format: 'umd'
   }
   ],
@@ -36,11 +36,11 @@ export default [{
   sourcemap: true,
   banner: BANNER,
   output: [{
-    file: 'dist/vextab.esm.js',
+    file: 'build/vextab.esm.js',
     format: 'es'
   },
   {
-    file: 'dist/vextab.umd.js',
+    file: 'build/vextab.umd.js',
     format: 'umd'
   }
   ],
@@ -57,11 +57,11 @@ export default [{
   sourcemap: true,
   banner: BANNER,
   output: [{
-    file: 'dist/chords.esm.js',
+    file: 'build/chords.esm.js',
     format: 'es'
   },
   {
-    file: 'dist/chords.umd.js',
+    file: 'build/chords.umd.js',
     format: 'umd'
   }
   ],
@@ -78,11 +78,11 @@ export default [{
   sourcemap: true,
   banner: BANNER,
   output: [{
-    file: 'dist/player.esm.js',
+    file: 'build/player.esm.js',
     format: 'es'
   },
   {
-    file: 'dist/player.umd.js',
+    file: 'build/player.umd.js',
     format: 'umd'
   }
   ],
