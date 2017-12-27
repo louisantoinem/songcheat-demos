@@ -116,13 +116,137 @@
   "parts": [
     {
       "id": 1,
+      "name": "Bm*",
+      "phrases": [{"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}]}]
+    },
+    {
+      "id": 2,
+      "name": "A1",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 5]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [5]},
+            {"rhythm": 2, "chords": [6, 6, 6, 6, 6, 6, 5]},
+            {"rhythm": 2, "chords": [1]},
+            {"rhythm": 2, "chords": [1]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "A2",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [5]},
+            {"rhythm": 2, "chords": [5]},
+            {"rhythm": 2, "chords": [1]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [5]},
+            {"rhythm": 2, "chords": [2]},
+            {"rhythm": 3, "chords": [2, 2, 2, 2, 2, 2, 5]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "B1",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 5, "chords": [3]},
+            {"rhythm": 2, "chords": [10]},
+            {"rhythm": 2, "chords": [3]},
+            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
+            {"rhythm": 2, "chords": [2]},
+            {"rhythm": 2, "chords": [5]},
+            {"rhythm": 2, "chords": [2]},
+            {"rhythm": 2, "chords": [2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "B2",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 3, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "B3",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [1]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [1]},
+            {"rhythm": 2, "chords": [2]},
+            {"rhythm": 2, "chords": [8]},
+            {"rhythm": 2, "chords": [2]},
+            {"rhythm": 2, "chords": [2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "B4",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [5]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "C1",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [8]},
+            {"rhythm": 2, "chords": [8]},
+            {"rhythm": 2, "chords": [9]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [8]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
+            {"rhythm": 2, "chords": [2]},
+            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
+            {"rhythm": 2, "chords": [8]},
+            {"rhythm": 2, "chords": [2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
       "name": "Intro",
       "phrases": [
         {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 2, "chords": [1]}]}
       ]
     },
     {
-      "id": 2,
+      "id": 10,
       "name": "Verse A",
       "phrases": [
         {
@@ -151,7 +275,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 11,
       "name": "Chorus B",
       "phrases": [
         {
@@ -171,7 +295,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 12,
       "name": "Verse C",
       "phrases": [
         {
@@ -195,7 +319,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 13,
       "name": "Verse A'",
       "phrases": [
         {
@@ -213,7 +337,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 14,
       "name": "Chorus B'",
       "phrases": [
         {
@@ -258,13 +382,13 @@
     }
   ],
   "structure": [
-    {"id": 1, "part": 1, "lyrics": ""},
-    {"id": 2, "part": 2, "lyrics": ""},
-    {"id": 3, "part": 3, "lyrics": ""},
-    {"id": 4, "part": 4, "lyrics": ""},
-    {"id": 5, "part": 3, "lyrics": ""},
-    {"id": 6, "part": 5, "lyrics": ""},
-    {"id": 7, "part": 6, "lyrics": ""}
+    {"id": 1, "part": 9, "lyrics": ""},
+    {"id": 2, "part": 10, "lyrics": ""},
+    {"id": 3, "part": 11, "lyrics": ""},
+    {"id": 4, "part": 12, "lyrics": ""},
+    {"id": 5, "part": 11, "lyrics": ""},
+    {"id": 6, "part": 13, "lyrics": ""},
+    {"id": 7, "part": 14, "lyrics": ""}
   ],
-  "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Alain Bashung\"\nTITLE \"La nuit je mens\"\nYEAR 1998\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"Deux ryhtmiques principales.\nPlus une variante de chaque ryhtmique pour commencer une partie.\nPlus une ryhtmique pour terminer une partie.\nTrois accords barrés.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 0\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 80\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD G     320003 210003/- \"G à 3 doigts\"\nCHORD Em    022000 023000/-\nCHORD Bm    x24432 013421/2 \"Forme de Am barré en 2\"\nCHORD Bsus2 x24422 013411/2 \"Bm sans le majeur\"\nCHORD Asus2\tx02200 001200/- \"Am sans l'index\"\nCHORD Asus4\tx02230 001240/- \"Am avec petit doigt en case 3 de corde B\"\nCHORD G/F#\t2x0003 100003/- \"Etouffer corde A avec l'index qui frette la corde E\"\nCHORD A     x0222x 001230/- \"A avec corde e étoufée (pas hyper important)\"\nCHORD F#m   244222 134111/2 \"Forme de Em barré en 2\"\nCHORD G'    355433 134211/3 \"Forme de E barré en 3\"\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8()d:16()d()u :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u\"\nRHYTHM R2\t\":8()d:16()d()u :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u\"\nRHYTHM R3\t\":8()d:16()d()u :16()d()u:8()d :8()d:16()d()u :16()d()u:8()d\"\nRHYTHM R1B\t\":q()d> :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u\"\nRHYTHM R2B\t\":q()d> :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u\"\n\n#########\n# PARTS #\n#########\n\nBLOCK Bm*\t[R2*Bm:::::Bsus2::Bm]\nBLOCK A1\t[R1*G::::::Em] Bm* [R1*G::::::Asus2] Bm* [R2*Asus2] [R2*Asus4::::::Asus2] [R2*G] %\nBLOCK A2\t[R2*Asus2] % [R2*G] Bm* [R2*Asus2] [R2*Em] [R3*Em::::::Asus2]\nBLOCK B1\t[R2B*Bm] [R2*G'] [R2*Bm] [R1*G:::::::::G/F#] [R2*Em] [R2*Asus2] [R2*Em] %\nBLOCK B2\t[R3*G::::::Em] Bm*\nBLOCK B3\tBm* [R2*G] Bm* [R2*G] [R2*Em] [R2*A] [R2*Em] %\nBLOCK B4\t[R2*Asus2] Bm*\nBLOCK C1\t[R1*G::::::Em] Bm* [R1*G::::::Em] Bm* [R2*A] % [R2*F#m] Bm* [R2*A] Bm* [R2*Em] [R1*G:::::::::G/F#] [R2*A] [R2*Em]\n\nPART \"Intro\" \t\t[R1*G] [R2*G]\nPART \"Verse A\"\t\tA1 || A2\nPART \"Chorus B\"\t\tB1 B2\nPART \"Verse C\"\t\tC1\nPART \"Verse A'\"\t\tA1\nPART \"Chorus B'\"\tB1 || B3 || B1 B4\n\n#############\n# STRUCTURE #\n#############\n\nSTRUCTURE\n\"Intro\" \"\"\n\"Verse A\" \"\"\n\"Chorus B\" \"\"\n\"Verse C\" \"\"\n\"Chorus B\" \"\"\n\"Verse A'\" \"\"\n\"Chorus B'\" \"\"\n"
+  "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"Alain Bashung\"\nTITLE \"La nuit je mens\"\nYEAR 1998\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"Deux ryhtmiques principales.\nPlus une variante de chaque ryhtmique pour commencer une partie.\nPlus une ryhtmique pour terminer une partie.\nTrois accords barrés.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 0\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 80\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD G     320003 210003/- \"G à 3 doigts\"\nCHORD Em    022000 023000/-\nCHORD Bm    x24432 013421/2 \"Forme de Am barré en 2\"\nCHORD Bsus2 x24422 013411/2 \"Bm sans le majeur\"\nCHORD Asus2\tx02200 001200/- \"Am sans l'index\"\nCHORD Asus4\tx02230 001240/- \"Am avec petit doigt en case 3 de corde B\"\nCHORD G/F#\t2x0003 100003/- \"Etouffer corde A avec l'index qui frette la corde E\"\nCHORD A     x0222x 001230/- \"A avec corde e étoufée (pas hyper important)\"\nCHORD F#m   244222 134111/2 \"Forme de Em barré en 2\"\nCHORD G'    355433 134211/3 \"Forme de E barré en 3\"\n\n###########\n# RHYTHMS #\n###########\n\nRHYTHM R1\t\":8()d:16()d()u :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u\"\nRHYTHM R2\t\":8()d:16()d()u :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u\"\nRHYTHM R3\t\":8()d:16()d()u :16()d()u:8()d :8()d:16()d()u :16()d()u:8()d\"\nRHYTHM R1B\t\":q()d> :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u\"\nRHYTHM R2B\t\":q()d> :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u\"\n\n#########\n# PARTS #\n#########\n\nPART Bm*\t[R2*Bm:::::Bsus2::Bm]\nPART A1\t[R1*G::::::Em] Bm* [R1*G::::::Asus2] Bm* [R2*Asus2] [R2*Asus4::::::Asus2] [R2*G] %\nPART A2\t[R2*Asus2] % [R2*G] Bm* [R2*Asus2] [R2*Em] [R3*Em::::::Asus2]\nPART B1\t[R2B*Bm] [R2*G'] [R2*Bm] [R1*G:::::::::G/F#] [R2*Em] [R2*Asus2] [R2*Em] %\nPART B2\t[R3*G::::::Em] Bm*\nPART B3\tBm* [R2*G] Bm* [R2*G] [R2*Em] [R2*A] [R2*Em] %\nPART B4\t[R2*Asus2] Bm*\nPART C1\t[R1*G::::::Em] Bm* [R1*G::::::Em] Bm* [R2*A] % [R2*F#m] Bm* [R2*A] Bm* [R2*Em] [R1*G:::::::::G/F#] [R2*A] [R2*Em]\n\nPART \"Intro\" \t\t[R1*G] [R2*G]\nPART \"Verse A\"\t\tA1 || A2\nPART \"Chorus B\"\t\tB1 B2\nPART \"Verse C\"\t\tC1\nPART \"Verse A'\"\t\tA1\nPART \"Chorus B'\"\tB1 || B3 || B1 B4\n\n#############\n# STRUCTURE #\n#############\n\nSTRUCTURE\n\"Intro\" \"\"\n\"Verse A\" \"\"\n\"Chorus B\" \"\"\n\"Verse C\" \"\"\n\"Chorus B\" \"\"\n\"Verse A'\" \"\"\n\"Chorus B'\" \"\"\n"
 }

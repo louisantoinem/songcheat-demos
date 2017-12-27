@@ -73,6 +73,42 @@
   "parts": [
     {
       "id": 1,
+      "name": "A",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
+            {"rhythm": 1, "chords": [4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 3]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 1, "chords": [6, 6, 6, 5, 5, 5, 1, 1, 1, 1, 1, 3]},
+            {"rhythm": 1, "chords": [4, 4, 4, 4, 4, 4, 5]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
+            {"rhythm": 2, "chords": [4, 4, 4, 4, 4, 4, 5]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Verse",
       "phrases": [
         {
@@ -106,9 +142,9 @@
   "structure": [
     {
       "id": 1,
-      "part": 1,
+      "part": 4,
       "lyrics": "brown:h:|\n:q:and:the:sky:q:is|gray:|\n:qd:I've:been__:q:for:a|walk:|\n:qd:on a:win-:q:ter:'s|day:|\n:qd:I'd:be:q:safe:and|warm:|\n:qd:if:I:q:was:in|L.A|\n:qd:Ca-:li-:q:for-:nia|drea-:q:ming|\n:qd:on:such:q:a win-:ter's|day|"
     }
   ],
-  "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"The Mamas and The Papas\"\nTITLE \"California Dreamin'\"\nYEAR 1966\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"Morceau composé de 3 phrases de 4 mesures qui tournent en boucle.\n\nCes 3 phrases ont la même rythmique basée sur une rythmique « Ballade » (1 noire 2 croches 1 noire 2 croches) avec changement d'accord sur le 1er et le 3ème temps.\n\nOn « avance d'un 1⁄2 temps » le début de la mesure suivante. La rythmique finale s'étend donc sur 2 mesures avec un changement d'accord avancé sur la dernière croche de la 1ère mesure. Cette rythmique à 2 mesures se répète 2 fois dans chaque phrase.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 4\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 110\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD Am\t\t  x02210 T02310/-\nCHORD G       320003 320004/- \"G with 3 fingers. Finger 1 not used (kept for coming F).\"\nCHORD F\t\t\t  133211 134211/1\nCHORD E7sus4\t020200 020300/- \"Same as E but with finger 3 down one string.\"\nCHORD E7\t\t  020100 020100/- \"Same as E but without finger 3.\"\nCHORD C\t\t\t  x32010 T32010/-\n\n###########\n# RHYTHMS #\n###########\n\n# 2 bars always together, accents on beats 1 and 3 (>, after d or u if any)\nRHYTHM R1\t\":q ()d> :8 ()d()u()d>()uT()()u :8 T()()u()d()u :q ()d :8 ()d()u\"\n\n# testing rests (#) instead of tied notes\nRHYTHM R2\t\":q ()d> :8 ()d()u()d>()u(#)()u :8 (#)()u()d()u :q ()d :8 ()d()u\"\n\n#########\n# PARTS #\n#########\n\nBLOCK A\t[R1*Am:::G:::F:::::G]  [R1*E7sus4::::::E7:::::F]\nBLOCK B\t[R1*C:::E7:::Am:::::F] [R1*E7sus4::::::E7]\nBLOCK C\t[R2*Am:::G:::F:::::G]  [R2*E7sus4::::::E7]\n\nPART \"Verse\"\tA || B || C || C\n\n#############\n# STRUCTURE #\n#############\n\nLYRICS_UNIT\t\":8\"\n\nSTRUCTURE\n\"Verse\" \"brown:h:|\n:q:and:the:sky:q:is|gray:|\n:qd:I've:been__:q:for:a|walk:|\n:qd:on a:win-:q:ter:'s|day:|\n:qd:I'd:be:q:safe:and|warm:|\n:qd:if:I:q:was:in|L.A|\n:qd:Ca-:li-:q:for-:nia|drea-:q:ming|\n:qd:on:such:q:a win-:ter's|day|\"\n"
+  "source": "#################\n# SONG METADATA #\n#################\n\nARTIST \"The Mamas and The Papas\"\nTITLE \"California Dreamin'\"\nYEAR 1966\nDIFFICULTY 3\nVIDEO \"\"\nTUTORIAL \"\"\nCOMMENT \"Morceau composé de 3 phrases de 4 mesures qui tournent en boucle.\n\nCes 3 phrases ont la même rythmique basée sur une rythmique « Ballade » (1 noire 2 croches 1 noire 2 croches) avec changement d'accord sur le 1er et le 3ème temps.\n\nOn « avance d'un 1⁄2 temps » le début de la mesure suivante. La rythmique finale s'étend donc sur 2 mesures avec un changement d'accord avancé sur la dernière croche de la 1ère mesure. Cette rythmique à 2 mesures se répète 2 fois dans chaque phrase.\"\n\n################\n# GUITAR SETUP #\n################\n\nTUNING standard\nCAPO 4\n\n##########################\n# KEY AND TIME SIGNATURE #\n##########################\n\nKEY C\nTIME 4/4 4 :q\nTEMPO 110\nSHUFFLE \"\"\n\n##########\n# CHORDS #\n##########\n\nCHORD Am\t\t  x02210 T02310/-\nCHORD G       320003 320004/- \"G with 3 fingers. Finger 1 not used (kept for coming F).\"\nCHORD F\t\t\t  133211 134211/1\nCHORD E7sus4\t020200 020300/- \"Same as E but with finger 3 down one string.\"\nCHORD E7\t\t  020100 020100/- \"Same as E but without finger 3.\"\nCHORD C\t\t\t  x32010 T32010/-\n\n###########\n# RHYTHMS #\n###########\n\n# 2 bars always together, accents on beats 1 and 3 (>, after d or u if any)\nRHYTHM R1\t\":q ()d> :8 ()d()u()d>()uT()()u :8 T()()u()d()u :q ()d :8 ()d()u\"\n\n# testing rests (#) instead of tied notes\nRHYTHM R2\t\":q ()d> :8 ()d()u()d>()u(#)()u :8 (#)()u()d()u :q ()d :8 ()d()u\"\n\n#########\n# PARTS #\n#########\n\nPART A\t[R1*Am:::G:::F:::::G]  [R1*E7sus4::::::E7:::::F]\nPART B\t[R1*C:::E7:::Am:::::F] [R1*E7sus4::::::E7]\nPART C\t[R2*Am:::G:::F:::::G]  [R2*E7sus4::::::E7]\n\nPART \"Verse\"\tA || B || C || C\n\n#############\n# STRUCTURE #\n#############\n\nLYRICS_UNIT\t\":8\"\n\nSTRUCTURE\n\"Verse\" \"brown:h:|\n:q:and:the:sky:q:is|gray:|\n:qd:I've:been__:q:for:a|walk:|\n:qd:on a:win-:q:ter:'s|day:|\n:qd:I'd:be:q:safe:and|warm:|\n:qd:if:I:q:was:in|L.A|\n:qd:Ca-:li-:q:for-:nia|drea-:q:ming|\n:qd:on:such:q:a win-:ter's|day|\"\n"
 }

@@ -94,7 +94,7 @@ let compiler = new Compiler(1);
       console.info('[' + file + '] LOG file written successfully')
     } catch (e) {
       console.error('[' + file + '] ' + e.toString())
-      if (!(e instanceof ParserException) && !(e instanceof CompilerException) && !(e instanceof LyricsException)) console.log(e)
+      if (!(e instanceof ParserException) && !(e instanceof CompilerException) && !(e instanceof LyricsException)) console.error(e)
     }
   }
 

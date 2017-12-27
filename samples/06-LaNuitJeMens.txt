@@ -58,14 +58,14 @@ RHYTHM R2B	":q()d> :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u"
 # PARTS #
 #########
 
-BLOCK Bm*	[R2*Bm:::::Bsus2::Bm]
-BLOCK A1	[R1*G::::::Em] Bm* [R1*G::::::Asus2] Bm* [R2*Asus2] [R2*Asus4::::::Asus2] [R2*G] %
-BLOCK A2	[R2*Asus2] % [R2*G] Bm* [R2*Asus2] [R2*Em] [R3*Em::::::Asus2]
-BLOCK B1	[R2B*Bm] [R2*G'] [R2*Bm] [R1*G:::::::::G/F#] [R2*Em] [R2*Asus2] [R2*Em] %
-BLOCK B2	[R3*G::::::Em] Bm*
-BLOCK B3	Bm* [R2*G] Bm* [R2*G] [R2*Em] [R2*A] [R2*Em] %
-BLOCK B4	[R2*Asus2] Bm*
-BLOCK C1	[R1*G::::::Em] Bm* [R1*G::::::Em] Bm* [R2*A] % [R2*F#m] Bm* [R2*A] Bm* [R2*Em] [R1*G:::::::::G/F#] [R2*A] [R2*Em]
+PART Bm*	[R2*Bm:::::Bsus2::Bm]
+PART A1	[R1*G::::::Em] Bm* [R1*G::::::Asus2] Bm* [R2*Asus2] [R2*Asus4::::::Asus2] [R2*G] %
+PART A2	[R2*Asus2] % [R2*G] Bm* [R2*Asus2] [R2*Em] [R3*Em::::::Asus2]
+PART B1	[R2B*Bm] [R2*G'] [R2*Bm] [R1*G:::::::::G/F#] [R2*Em] [R2*Asus2] [R2*Em] %
+PART B2	[R3*G::::::Em] Bm*
+PART B3	Bm* [R2*G] Bm* [R2*G] [R2*Em] [R2*A] [R2*Em] %
+PART B4	[R2*Asus2] Bm*
+PART C1	[R1*G::::::Em] Bm* [R1*G::::::Em] Bm* [R2*A] % [R2*F#m] Bm* [R2*A] Bm* [R2*Em] [R1*G:::::::::G/F#] [R2*A] [R2*Em]
 
 PART "Intro" 		[R1*G] [R2*G]
 PART "Verse A"		A1 || A2

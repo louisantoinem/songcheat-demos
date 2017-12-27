@@ -46,9 +46,9 @@ RHYTHM R1	":8 (#) ()u (#) ()u (#) ()u (#) ()u"
 # PARTS #
 #########
 
-BLOCK A [R1*G]  [R1*Am]
-BLOCK B [R1*C]  [R1*D]
-BLOCK C [R1*Em] [R1*Am]
+PART A [R1*G]  [R1*Am]
+PART B [R1*C]  [R1*D]
+PART C [R1*Em] [R1*Am]
 
 PART "Verse A"  A || A
 PART "Verse B"  B || B || B || B

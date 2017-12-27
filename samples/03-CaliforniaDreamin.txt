@@ -55,9 +55,9 @@ RHYTHM R2	":q ()d> :8 ()d()u()d>()u(#)()u :8 (#)()u()d()u :q ()d :8 ()d()u"
 # PARTS #
 #########
 
-BLOCK A	[R1*Am:::G:::F:::::G]  [R1*E7sus4::::::E7:::::F]
-BLOCK B	[R1*C:::E7:::Am:::::F] [R1*E7sus4::::::E7]
-BLOCK C	[R2*Am:::G:::F:::::G]  [R2*E7sus4::::::E7]
+PART A	[R1*Am:::G:::F:::::G]  [R1*E7sus4::::::E7:::::F]
+PART B	[R1*C:::E7:::Am:::::F] [R1*E7sus4::::::E7]
+PART C	[R2*Am:::G:::F:::::G]  [R2*E7sus4::::::E7]
 
 PART "Verse"	A || B || C || C
 
