@@ -235,8 +235,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
     try {
       console.info('Converting rhythm to vextab score...')
-      let score = 'options tempo=' + songcheat.signature.tempo + ' player=false tab-stems=false tab-stem-direction=up\n'
-      score += SongcheatVexTab.Notes2Stave(songcheat, 0, rhythm.compiledScore, true, 'top', rhythm.inline ? '' : 'Rhythm ' + rhythm.name, 1, true, false) + ' options space=20'
+      let score = SongcheatVexTab.Rhythm2VexTab(songcheat, rhythm)
       console.info('Parsing score...')
       let artist = new Artist(10, 10, rhythmsWidth, { scale: 1.0 })
       let vextab = new VexTab(artist)
