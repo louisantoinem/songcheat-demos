@@ -4,38 +4,45 @@ import { Utils, Player, waveTables } from 'songcheat-core'
 // import $ from 'jQuery'
 let $ = window.jQuery
 
-export function PlayerUI (audioCtx, songcheat, notes, loop) {
+export function PlayerUI (audioCtx, songcheat, units, isRhythm) {
   var self = this
 
-  if (!notes) {
-    // whole song (or selected unit)
-    notes = []
+  // if no unit given, use all units in song (or currently selected unit if any)
+  if (!units) {
+    units = []
     let unitIndex = 0
     for (let unit of songcheat.structure) {
-      if (songcheat.showUnitIndex !== null && songcheat.showUnitIndex !== unitIndex) { unitIndex++; continue }
-      for (let phrase of unit.part.phrases) {
-        for (let bar of phrase.bars) {
-          for (let note of bar.rhythm.compiledScore) {
-            let chordedNote = JSON.parse(JSON.stringify(note))
-            chordedNote.chord = note.chord || bar.chords[note.placeholderIndex]
-            if (!chordedNote.chord) throw new Error('No chord found for placeholder ' + (note.placeholderIndex + 1))
-            notes.push(chordedNote)
-          }
+      if (songcheat.showUnitIndex === null || songcheat.showUnitIndex === unitIndex) units.push(unit)
+      unitIndex++
+    }
+  }
+
+  // get notes for given units
+  let notes = []
+  for (let unit of units) {
+    for (let phrase of unit.part.phrases) {
+      for (let bar of phrase.bars) {
+        for (let note of bar.rhythm.compiledScore) {
+          let chordedNote = JSON.parse(JSON.stringify(note))
+          chordedNote.chord = note.chord || bar.chords[note.placeholderIndex]
+          if (!chordedNote.chord) throw new Error('No chord found for placeholder ' + (note.placeholderIndex + 1))
+          notes.push(chordedNote)
         }
       }
-      unitIndex++
     }
   }
 
   // create player
   let player = new Player(audioCtx, notes, {
-    loop: loop,
+    loop: isRhythm,
     capo: parseInt(songcheat.capo, 10),
     signature: songcheat.signature,
     type: songcheat.wave,
     onDone: function () { $stopLink.trigger('click') },
     onCountdown: function (c) { $countdownZone.html(c || '') }
   })
+
+  if (isRhythm) player.setMode(player.MODE_RHYTHM)
 
   // controls
   this.$div = $('<div>').css({ 'margin-top': '10px', 'position': 'relative' })
@@ -53,7 +60,7 @@ export function PlayerUI (audioCtx, songcheat, notes, loop) {
   })
 
   let $playLink = $('<a>').html('&#9658;').on('click', function () {
-    player.play(player.paused || loop ? 0 : 3)
+    player.play(player.paused || isRhythm ? 0 : 3)
     self.$div.find('.autohide').show()
     $speedMention.show()
     $playLink.hide()
@@ -97,9 +104,9 @@ export function PlayerUI (audioCtx, songcheat, notes, loop) {
 
     // mode switch
     $divMusicalSwitches.append($('<div class="autohide">').css({ 'margin-top': '10px', 'display': 'block' })
-      .append($('<input type="radio" name="modeswitch' + unique + '" value="' + player.MODE_CHORDS + '" checked>')).append(' Chords ')
+      .append($('<input type="radio" name="modeswitch' + unique + '" value="' + player.MODE_CHORDS + '" ' + (isRhythm ? '' : 'checked') + '>')).append(' Chords ')
       .append($('<input type="radio" name="modeswitch' + unique + '" value="' + player.MODE_BASS + '">')).append(' Bass only ')
-      .append($('<input type="radio" name="modeswitch' + unique + '" value="' + player.MODE_RHYTHM + '">')).append(' Rhythm '))
+      .append($('<input type="radio" name="modeswitch' + unique + '" value="' + player.MODE_RHYTHM + '" ' + (isRhythm ? 'checked' : '') + '>')).append(' Rhythm '))
     this.$div.find('input[name=modeswitch' + unique + ']').change(function () { player.setMode($(this).val()) })
 
     // type switch

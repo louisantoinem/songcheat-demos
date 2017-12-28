@@ -14,7 +14,7 @@ let compiler = new Compiler(0)
 let songcheat = compiler.compile(sample)
 $('body>h1').html(`${songcheat.title} (${songcheat.artist}, ${songcheat.year})`)
 
-// get notes for whole song
+// get notes for all units in song
 let notes = []
 for (let unit of songcheat.structure) {
   for (let phrase of unit.part.phrases) {

@@ -225,7 +225,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
     $divRhythms.append($divRhythm)
 
     // player controls
-    $divRhythm.before(new PlayerUI(audioCtx, songcheat, rhythm.compiledScore, true).div())
+    $divRhythm.before(new PlayerUI(audioCtx, songcheat, [compiler.getRhythmUnit(songcheat, rhythm)], true).div())
 
     // warning if not a whole number of bars
     if (rhythm.duration % songcheat.barDuration) {
