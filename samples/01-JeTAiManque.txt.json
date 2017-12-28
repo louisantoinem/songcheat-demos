@@ -60,7 +60,12 @@
   ],
   "rhythms": [
     {"id": 1, "name": "R1", "score": ":8 ()d ()u ()d ()u T() ()u ()d ()u"},
-    {"id": 2, "name": "R2", "score": ":h ()dd :h (#)"}
+    {
+      "id": 2,
+      "name": ":h ()dd :h (#)",
+      "score": ":h ()dd :h (#)",
+      "inline": true
+    }
   ],
   "parts": [
     {

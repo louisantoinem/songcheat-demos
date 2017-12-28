@@ -229,14 +229,14 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
     // warning if not a whole number of bars
     if (rhythm.duration % songcheat.barDuration) {
-      let warning = 'Rhythm ' + rhythm.id + ' is currently equivalent to ' + Math.floor(rhythm.duration / songcheat.barDuration) + ' bar(s) and ' + Utils.durationcodes(rhythm.duration % songcheat.barDuration) + '. A rhythm unit should be equivalent to a whole number of bars.'
+      let warning = 'Rhythm ' + rhythm.name + ' is currently equivalent to ' + Math.floor(rhythm.duration / songcheat.barDuration) + ' bar(s) and ' + Utils.durationcodes(rhythm.duration % songcheat.barDuration) + '. A rhythm unit should be equivalent to a whole number of bars.'
       $divRhythm.before($('<p>').addClass('warning').css('color', 'orange').html('Warning: ' + warning))
     }
 
     try {
       console.info('Converting rhythm to vextab score...')
       let score = 'options tempo=' + songcheat.signature.tempo + ' player=false tab-stems=false tab-stem-direction=up\n'
-      score += SongcheatVexTab.Notes2Stave(songcheat, 0, rhythm.compiledScore, true, 'top', 'Rhythm ' + (rhythm.name || rhythm.id), 1, true, false) + ' options space=20'
+      score += SongcheatVexTab.Notes2Stave(songcheat, 0, rhythm.compiledScore, true, 'top', rhythm.inline ? '' : 'Rhythm ' + rhythm.name, 1, true, false) + ' options space=20'
       console.info('Parsing score...')
       let artist = new Artist(10, 10, rhythmsWidth, { scale: 1.0 })
       let vextab = new VexTab(artist)
