@@ -4,19 +4,19 @@
   "description": "Demo CLI utilities and jQuery apps using songcheat-core",
   "watch": {
     "samples": {
-      "patterns": ["samples"],
-      "extensions": "txt",
+      "patterns": ["samples", "cli", "node_modules/songcheat-core/dist"],
+      "extensions": "txt,js",
       "quiet": true
     }
   },
   "scripts": {
     "clean": "rm -f dist/* && rm -f build/* && rm -f samples/*.json && rm -f samples/*.lyrics && rm -f samples/*.log",
     "lint": "standard --fix src/*js",
-    "start": "npm run cc && npm run lint && rollup -cw",
+    "start": "npm run samples && npm run lint && rollup -cw",
     "uglify.umd": "node_modules/uglify-es/bin/uglifyjs build/viewer.umd.js --compress --mangle --source-map \"content='build/viewer.umd.js.map'\" -o build/viewer.umd.min.js",
     "uglify.esm": "node_modules/uglify-es/bin/uglifyjs build/viewer.esm.js --compress --mangle --source-map \"content='build/viewer.esm.js.map'\" -o build/viewer.esm.min.js",
     "uglify": "npm run uglify.umd && npm run uglify.esm",
-    "build": "npm run clean && npm run cc && npm run lint && rollup -c && npm run uglify",
+    "build": "npm run clean && npm run samples && npm run lint && rollup -c && npm run uglify",
     "samples": "node cli/cc --output dist/samples.json samples/*.txt",
     "watch": "npm-watch"
   },
