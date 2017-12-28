@@ -1,0 +1,335 @@
+{
+  "artist": "John Lennon",
+  "title": "Imagine",
+  "year": 1971,
+  "difficulty": 3,
+  "video": "",
+  "tutorial": "https://www.youtube.com/watch?v=AST3RA-x9oA",
+  "comment": "Lennon composed 'Imagine' one morning in early 1971, on a Steinway piano, in a bedroom at his Tittenhurst Park estate in Ascot, Berkshire, England. Ono watched as he composed the melody, chord structure and almost all the lyrics, nearly completing the song in one brief writing session.\n\nDescribed as a piano ballad performed in the soft rock genre, the song is in the key of C major. Its 4-bar piano introduction begins with a C chord then moves to Cmaj7 before changing to F; the 12-bar verses also follow this chord progression, with their last 4 bars moving from Am/E to Dm and Dm/C, finishing with G, G11 then G7, before resolving back to C. The 8-bar choruses progress from F to G to C, then Cmaj7 and E before ending on E7, a C chord substituted for E7 in the final bar. The 4-bar outro begins with F, then G, before resolving on C.\n\nWith a duration of 3 minutes and 3 seconds and a time signature of 4/4, the song's tempo falls around 75 beats per minute.",
+  "tuning": "standard",
+  "capo": 0,
+  "signature": {
+    "key": "C",
+    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "tempo": 76,
+    "shuffle": ""
+  },
+  "chords": [
+    {
+      "id": 1,
+      "name": "C",
+      "tablature": "x32010",
+      "fingering": "T32010",
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "name": "CMaj7",
+      "tablature": "x32000",
+      "fingering": "T32000",
+      "comment": "C without finger 1"
+    },
+    {
+      "id": 3,
+      "name": "F",
+      "tablature": "xx3211",
+      "fingering": "T33211",
+      "comment": "F without E and A strings"
+    },
+    {
+      "id": 4,
+      "name": "F/E",
+      "tablature": "0x3211",
+      "fingering": "033211/1",
+      "comment": "F with open E string"
+    },
+    {
+      "id": 5,
+      "name": "Dm",
+      "tablature": "xx0231",
+      "fingering": "T00241",
+      "comment": "Finger 4 instead of 3"
+    },
+    {
+      "id": 6,
+      "name": "Dm/C",
+      "tablature": "x30231",
+      "fingering": "T30241",
+      "comment": "Dm adding finger 3 on A string"
+    },
+    {
+      "id": 7,
+      "name": "G",
+      "tablature": "320003",
+      "fingering": "320004",
+      "comment": "G with 3 fingers"
+    },
+    {
+      "id": 8,
+      "name": "G7",
+      "tablature": "320001",
+      "fingering": "320001",
+      "comment": "G with finger 1 on e string"
+    },
+    {
+      "id": 9,
+      "name": "E",
+      "tablature": "022100",
+      "fingering": "023100",
+      "comment": ""
+    },
+    {
+      "id": 10,
+      "name": "F'",
+      "tablature": "113211",
+      "fingering": "113211/1",
+      "comment": "Classical F Barré"
+    },
+    {
+      "id": 11,
+      "name": "xxx2xx",
+      "tablature": "xxx2xx",
+      "fingering": "000000/-",
+      "comment": "",
+      "inline": true
+    },
+    {
+      "id": 12,
+      "name": "xxx3xx",
+      "tablature": "xxx3xx",
+      "fingering": "000000/-",
+      "comment": "",
+      "inline": true
+    },
+    {
+      "id": 13,
+      "name": "xxxx0x",
+      "tablature": "xxxx0x",
+      "fingering": "000000/-",
+      "comment": "",
+      "inline": true
+    },
+    {
+      "id": 14,
+      "name": "3xxxxx",
+      "tablature": "3xxxxx",
+      "fingering": "000000/-",
+      "comment": "",
+      "inline": true
+    },
+    {
+      "id": 15,
+      "name": "x0xxxx",
+      "tablature": "x0xxxx",
+      "fingering": "000000/-",
+      "comment": "",
+      "inline": true
+    },
+    {
+      "id": 16,
+      "name": "x2xxxx",
+      "tablature": "x2xxxx",
+      "fingering": "000000/-",
+      "comment": "",
+      "inline": true
+    }
+  ],
+  "rhythms": [
+    {"id": 1, "name": "RC", "score": ":q ()d ()d ()d ()d"},
+    {"id": 2, "name": "R1", "score": ":8 ()d (B)d ()d (B)d ()d (B)d ()d (B)d"},
+    {
+      "id": 3,
+      "name": "R2",
+      "score": ":8 ()d (B)d ()d (B)d ()d (B)d :16 ()dT()u :8 ()d"
+    },
+    {
+      "id": 4,
+      "name": "R3",
+      "score": ":8 ()d ()d ()d :16 ()d ()u :16 ()d ()u :8 ()d ()d :16 ()d ()u"
+    },
+    {"id": 5, "name": "R4", "score": ":w ()d"},
+    {"id": 6, "name": "R5", "score": ":h ()dd (#)"}
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "name": "A",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]}
+          ]
+        }
+      ],
+      "sub": true
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 4]},
+            {"rhythm": 2, "chords": [5, 5, 5, 5, 6]},
+            {"rhythm": 2, "chords": [7]},
+            {"rhythm": 5, "chords": [8]}
+          ]
+        }
+      ],
+      "sub": true
+    },
+    {
+      "id": 3,
+      "name": "B",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 4, "chords": [3, 3, 3, 3, 4]},
+            {"rhythm": 4, "chords": [5, 5, 5, 5, 6]},
+            {"rhythm": 4, "chords": [7]},
+            {"rhythm": 5, "chords": [8]}
+          ]
+        }
+      ],
+      "sub": true
+    },
+    {
+      "id": 4,
+      "name": "C1",
+      "phrases": [{"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 7]}]}],
+      "sub": true
+    },
+    {
+      "id": 5,
+      "name": "C2",
+      "phrases": [{"bars": [{"rhythm": 2, "chords": [1, 1, 1, 1, 9]}]}],
+      "sub": true
+    },
+    {
+      "id": 6,
+      "name": "C",
+      "phrases": [
+        {"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 7]}]},
+        {"bars": [{"rhythm": 2, "chords": [1, 1, 1, 1, 9]}]}
+      ],
+      "sub": true
+    },
+    {
+      "id": 7,
+      "name": "Intro",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]},
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Verse",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]},
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]},
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 1, 1, 2]},
+            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 11, 12, 13]}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": 4, "chords": [3, 3, 3, 3, 4]},
+            {"rhythm": 4, "chords": [5, 5, 5, 5, 6]},
+            {"rhythm": 4, "chords": [7]},
+            {"rhythm": 5, "chords": [8]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Chorus",
+      "phrases": [
+        {"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 7]}]},
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 9]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 7]}
+          ]
+        },
+        {"bars": [{"rhythm": 2, "chords": [1, 1, 1, 1, 9]}]},
+        {"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 7]}]},
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 9]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 7]},
+            {"rhythm": 1, "chords": [1, 14, 15, 16]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "ChorusEnd",
+      "phrases": [
+        {"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 7]}]},
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 9]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 7]}
+          ]
+        },
+        {"bars": [{"rhythm": 2, "chords": [1, 1, 1, 1, 9]}]},
+        {"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 7]}]},
+        {
+          "bars": [
+            {"rhythm": 2, "chords": [1, 1, 1, 1, 9]},
+            {"rhythm": 2, "chords": [3, 3, 3, 3, 7]},
+            {"rhythm": 6, "chords": [1]}
+          ]
+        }
+      ]
+    }
+  ],
+  "structure": [
+    {"id": 1, "part": 7, "lyrics": "||\n"},
+    {
+      "id": 2,
+      "part": 8,
+      "lyrics": ":Imagine:there's:no hea-|ven|\n:It's:easy:if you|try|\n:No:hell:below|us|\n:Above:us:only|sky|\n:Imagine:all:the|people|\nLi:ving:for:to-|day:ah:ah:ahaha"
+    },
+    {
+      "id": 3,
+      "part": 8,
+      "lyrics": ":Imagine:there's:no coun-|tries|\n:It isn't:hard:to|do|\n:Nothing:to kill:or die|for|\n:And no:reli-:gion|too|\n:Imagine:all:the|peo-:ple:|\nLi:ving:life:in|peace:youh:ouh:ouhouhou"
+    },
+    {
+      "id": 4,
+      "part": 9,
+      "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|be as one"
+    },
+    {
+      "id": 5,
+      "part": 8,
+      "lyrics": ":Imagine:no:posse-|ssions|\n:I won-:der if:you|can|\n:No:need for:greed or|hunger|\n:A bro-:ther:hood of|man|\n:Imagine:all:the|peo-:ple:|\nSha-:ring:all:the|world:youh:ouh:ouhouhou"
+    },
+    {
+      "id": 6,
+      "part": 10,
+      "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|live as one"
+    }
+  ]
+}

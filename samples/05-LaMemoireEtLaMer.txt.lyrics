@@ -43,8 +43,8 @@ C15                         |
 Celui que je voyais briller |
 C16 |C17 |
 ....|....|
-C18            C18b    C18c  |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-Aux doigts du sable de la te-|-rre..........|............................|
+C18            C18b    C18c  |    |    |
+Aux doigts du sable de la te-|-rre|....|
 
 [Verse 2]
 
@@ -80,8 +80,8 @@ C15                             |
 Mes désirs dès lors ne sont plus|
 C16 |C17 |
 ....|....|
-C18           C18b   C18c  |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-Qu'un chagrin de ma solitu-|-de...........|............................|
+C18           C18b   C18c  |   |    |
+Qu'un chagrin de ma solitu-|-de|....|
 
 [Verse 3]
 
@@ -117,8 +117,8 @@ C15                         |
 Je voyais un vitrail de plus|
 C16 |C17 |
 ....|....|
-C18         C18b C18c |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-Et toi fille verte mon|spleen........|............................|
+C18         C18b C18c |      |    |
+Et toi fille verte mon|spleen|....|
 
 [Verse 4]
 
@@ -154,8 +154,8 @@ C15                        |
 D'où nous remonte peu à peu|
 C16 |C17 |
 ....|....|
-C18        C18b C18c |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-Cette mémoire des ét-|-oiles........|............................|
+C18        C18b C18c |      |    |
+Cette mémoire des ét-|-oiles|....|
 
 [Verse 5]
 
@@ -191,8 +191,8 @@ C15                       |
 Comme des moutons d'infini|
 C16 |C17 |
 ....|....|
-C18           C18b   C18c |0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-Quand la mer bergère m'ap-|pelle.........|............................|
+C18           C18b   C18c |     |    |
+Quand la mer bergère m'ap-|pelle|....|
 
 
 ********************************************
@@ -239,7 +239,7 @@ C15                               |
 Celui que je voyais briller ......|
 C16                               |C17                               |
 ..................................|..................................|
-C18               C18b     C18c   |0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+C18               C18b     C18c   |                                  |                                  |
 Aux doigts du sable de la te-.....|-rre..............................|..................................|
 
 [Verse 2]
@@ -276,7 +276,7 @@ C15                                |
 Mes désirs dès lors ne sont plus...|
 C16                                |C17                                |
 ...................................|...................................|
-C18               C18b     C18c    |0xx002                     xxx003  |0xx002   xxx000   xxx003   xxx007  |
+C18               C18b     C18c    |                                   |                                   |
 Qu'un chagrin de ma solitu-........|-de................................|...................................|
 
 [Verse 3]
@@ -313,7 +313,7 @@ C15                              |
 Je voyais un vitrail de plus.....|
 C16                              |C17                              |
 .................................|.................................|
-C18              C18b     C18c   |0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+C18              C18b     C18c   |                                 |                                 |
 Et toi fille verte mon...........|spleen...........................|.................................|
 
 [Verse 4]
@@ -350,7 +350,7 @@ C15                               |
 D'où nous remonte peu à peu.......|
 C16                               |C17                               |
 ..................................|..................................|
-C18               C18b     C18c   |0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+C18               C18b     C18c   |                                  |                                  |
 Cette mémoire des ét-.............|-oiles............................|..................................|
 
 [Verse 5]
@@ -387,7 +387,7 @@ C15                              |
 Comme des moutons d'infini.......|
 C16                              |C17                              |
 .................................|.................................|
-C18              C18b     C18c   |0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+C18              C18b     C18c   |                                 |                                 |
 Quand la mer bergère m'ap-.......|pelle............................|.................................|
 
 
@@ -422,8 +422,8 @@ C15                         |C16 |
 Celui que je voyais briller |....|
 C17 |C18            C18b    C18c  |
 ....|Aux doigts du sable de la te-|
-0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
--rre..........|............................|
+    |    |
+-rre|....|
 
 
 [Verse 2]
@@ -446,8 +446,8 @@ C15                             |C16 |
 Mes désirs dès lors ne sont plus|....|
 C17 |C18           C18b   C18c  |
 ....|Qu'un chagrin de ma solitu-|
-0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
--de...........|............................|
+   |    |
+-de|....|
 
 
 [Verse 3]
@@ -470,8 +470,8 @@ C15                         |C16 |
 Je voyais un vitrail de plus|....|
 C17 |C18         C18b C18c |
 ....|Et toi fille verte mon|
-0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-spleen........|............................|
+      |    |
+spleen|....|
 
 
 [Verse 4]
@@ -494,8 +494,8 @@ C15                        |C16 |
 D'où nous remonte peu à peu|....|
 C17 |C18        C18b C18c |
 ....|Cette mémoire des ét-|
-0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
--oiles........|............................|
+      |    |
+-oiles|....|
 
 
 [Verse 5]
@@ -518,8 +518,8 @@ C15                       |C16 |
 Comme des moutons d'infini|....|
 C17 |C18           C18b   C18c |
 ....|Quand la mer bergère m'ap-|
-0xx002 xxx003 |0xx002 xxx000 xxx003 xxx007 |
-pelle.........|............................|
+     |    |
+pelle|....|
 
 
 
@@ -554,7 +554,7 @@ C15                               |C16                               |
 Celui que je voyais briller ......|..................................|
 C17                               |C18               C18b     C18c   |
 ..................................|Aux doigts du sable de la te-.....|
-0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+                                  |                                  |
 -rre..............................|..................................|
 
 
@@ -578,7 +578,7 @@ C15                                |C16                                |
 Mes désirs dès lors ne sont plus...|...................................|
 C17                                |C18               C18b     C18c    |
 ...................................|Qu'un chagrin de ma solitu-........|
-0xx002                     xxx003  |0xx002   xxx000   xxx003   xxx007  |
+                                   |                                   |
 -de................................|...................................|
 
 
@@ -602,7 +602,7 @@ C15                              |C16                              |
 Je voyais un vitrail de plus.....|.................................|
 C17                              |C18              C18b     C18c   |
 .................................|Et toi fille verte mon...........|
-0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+                                 |                                 |
 spleen...........................|.................................|
 
 
@@ -626,7 +626,7 @@ C15                               |C16                               |
 D'où nous remonte peu à peu.......|..................................|
 C17                               |C18               C18b     C18c   |
 ..................................|Cette mémoire des ét-.............|
-0xx002                     xxx003 |0xx002   xxx000   xxx003   xxx007 |
+                                  |                                  |
 -oiles............................|..................................|
 
 
@@ -650,5 +650,5 @@ C15                              |C16                              |
 Comme des moutons d'infini.......|.................................|
 C17                              |C18              C18b     C18c   |
 .................................|Quand la mer bergère m'ap-.......|
-0xx002                    xxx003 |0xx002   xxx000  xxx003   xxx007 |
+                                 |                                 |
 pelle............................|.................................|

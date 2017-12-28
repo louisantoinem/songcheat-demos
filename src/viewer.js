@@ -137,6 +137,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   //  ascii parts
   for (let part of songcheat.parts) {
+    if (part.sub) continue
     let $divPart = $('<div>').css({ 'color': part.color })
     let $partsZone = $('<p>')
     $divPart.append($('<p>').css({ 'font-weight': 'bold', 'text-decoration': 'normal', 'margin-bottom': '0px' }).html(part.name))

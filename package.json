@@ -4,7 +4,7 @@
   "description": "Demo CLI utilities and jQuery apps using songcheat-core",
   "scripts": {
     "clean": "rm -f dist/* && rm -f build/* && rm -f samples/*.json && rm -f samples/*.lyrics && rm -f samples/*.log",
-    "cc": "node cli/cc --output dist/samples.json samples/*.txt",
+    "cc": "cp -f node_modules/songcheat-core/template/template.txt \"samples/00-Template.txt\" && node cli/cc --output dist/samples.json samples/*.txt",
     "lint": "standard --fix src/*js",
     "start": "npm run cc && npm run lint && rollup -cw",
     "uglify.umd": "node_modules/uglify-es/bin/uglifyjs build/viewer.umd.js --compress --mangle --source-map \"content='build/viewer.umd.js.map'\" -o build/viewer.umd.min.js",
