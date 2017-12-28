@@ -21,7 +21,7 @@ for (let unit of songcheat.structure) {
     for (let bar of phrase.bars) {
       for (let note of bar.rhythm.compiledScore) {
         let chordedNote = JSON.parse(JSON.stringify(note))
-        chordedNote.chord = bar.chords[note.placeholderIndex % bar.chords.length]
+        chordedNote.chord = note.chord || bar.chords[note.placeholderIndex]
         if (!chordedNote.chord) throw new Error('No chord found for placeholder ' + (note.placeholderIndex + 1))
         notes.push(chordedNote)
       }

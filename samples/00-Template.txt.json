@@ -84,46 +84,6 @@
       "tablature": "133211",
       "fingering": "113211/1",
       "comment": "Classical F Barré"
-    },
-    {
-      "id": 11,
-      "name": "xxx3xx",
-      "tablature": "xxx3xx",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 12,
-      "name": "xxxx0x",
-      "tablature": "xxxx0x",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 13,
-      "name": "3xxxxx",
-      "tablature": "3xxxxx",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 14,
-      "name": "x0xxxx",
-      "tablature": "x0xxxx",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 15,
-      "name": "x2xxxx",
-      "tablature": "x2xxxx",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
     }
   ],
   "rhythms": [
@@ -135,8 +95,8 @@
     },
     {
       "id": 3,
-      "name": ":8 ()d (B)d ()d (B)d ()d (B)d :16 (3)dT()u :8 ()d",
-      "score": ":8 ()d (B)d ()d (B)d ()d (B)d :16 (3)dT()u :8 ()d",
+      "name": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+      "score": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
       "inline": true
     },
     {
@@ -147,8 +107,8 @@
     },
     {
       "id": 5,
-      "name": ":q ()d ()d ()d ()d",
-      "score": ":q ()d ()d ()d ()d",
+      "name": ":q ()d {3-----}d {-0----}d {-2----}d",
+      "score": ":q ()d {3-----}d {-0----}d {-2----}d",
       "inline": true
     },
     {"id": 6, "name": ":h ()dd (#)", "score": ":h ()dd (#)", "inline": true}
@@ -161,7 +121,7 @@
         {
           "bars": [
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]}
+            {"rhythm": 3, "chords": [3]}
           ]
         }
       ],
@@ -201,9 +161,9 @@
         {
           "bars": [
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]},
+            {"rhythm": 3, "chords": [3]},
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]}
+            {"rhythm": 3, "chords": [3]}
           ]
         }
       ]
@@ -215,17 +175,17 @@
         {
           "bars": [
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]},
+            {"rhythm": 3, "chords": [3]},
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]}
+            {"rhythm": 3, "chords": [3]}
           ]
         },
         {
           "bars": [
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]},
+            {"rhythm": 3, "chords": [3]},
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3, 3, 3, 3, 3, 3, 3, 11, 12]}
+            {"rhythm": 3, "chords": [3]}
           ]
         },
         {
@@ -255,7 +215,7 @@
             {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
             {"rhythm": 1, "chords": [1, 1, 1, 1, 9]},
             {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 5, "chords": [1, 13, 14, 15]}
+            {"rhythm": 5, "chords": [1]}
           ]
         }
       ]
