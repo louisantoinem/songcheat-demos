@@ -187,7 +187,13 @@
             {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
             {"rhythm": 3, "chords": [3]}
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "PreChorus",
+      "phrases": [
         {
           "bars": [
             {"rhythm": 2, "chords": [3, 3, 3, 3, 4]},
@@ -199,7 +205,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Chorus",
       "phrases": [
         {
@@ -221,7 +227,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Final Chorus",
       "phrases": [
         {
@@ -248,26 +254,41 @@
     {
       "id": 2,
       "part": 6,
-      "lyrics": ":Imagine:there's:no hea-|ven|\n:It's ea-:sy if:you|try|\n:No:hell:below|us|\n:Above:us:only|sky|\n:Imagine:all:the|people|\nLi:ving:for:to-|day:ah:ah:ahaha"
+      "lyrics": ":Imagine:there's:no hea-|ven|\n:It's ea-:sy if:you|try|\n:No:hell:below|us|\n:Above:us:only|sky"
     },
     {
       "id": 3,
-      "part": 6,
-      "lyrics": ":Imagine:there's:no coun-|tries|\n:It isn't:hard:to|do|\n:Nothing:to kill:or die|for|\n:And no:reli-:gion|too|\n:Imagine:all:the|peo-:ple:|\nLi:ving:life:in|peace:youh:ouh:ouhouhou"
+      "part": 7,
+      "lyrics": ":Imagine:all:the|people|\nLi:ving:for:to-|day:ah:ah:ahaha"
     },
     {
       "id": 4,
-      "part": 7,
-      "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|be as one"
+      "part": 6,
+      "lyrics": ":Imagine:there's:no coun-|tries|\n:It isn't:hard:to|do|\n:Nothing:to kill:or die|for|\n:And no:reli-:gion|too"
     },
     {
       "id": 5,
-      "part": 6,
-      "lyrics": ":Imagine:no:posse-|ssions|\n:I won-:der if:you|can|\n:No:need for:greed or|hunger|\n:A bro-:ther:hood of|man|\n:Imagine:all:the|peo-:ple:|\nSha-:ring:all:the|world:youh:ouh:ouhouhou"
+      "part": 7,
+      "lyrics": ":Imagine:all:the|peo-:ple:|\nLi:ving:life:in|peace:youh:ouh:ouhouhou"
     },
     {
       "id": 6,
       "part": 8,
+      "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|be as one"
+    },
+    {
+      "id": 7,
+      "part": 6,
+      "lyrics": ":Imagine:no:posse-|ssions|\n:I won-:der if:you|can|\n:No:need for:greed or|hunger|\n:A bro-:ther:hood of|man"
+    },
+    {
+      "id": 8,
+      "part": 7,
+      "lyrics": ":Imagine:all:the|peo-:ple:|\nSha-:ring:all:the|world:youh:ouh:ouhouhou"
+    },
+    {
+      "id": 9,
+      "part": 9,
       "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|live as one"
     }
   ]
