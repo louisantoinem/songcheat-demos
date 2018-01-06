@@ -4,7 +4,11 @@
   "description": "Demo CLI utilities and jQuery apps using songcheat-core",
   "watch": {
     "samples": {
-      "patterns": ["samples", "cli", "node_modules/songcheat-core/dist"],
+      "patterns": [
+        "samples",
+        "cli",
+        "node_modules/songcheat-core/dist"
+      ],
       "extensions": "txt,js",
       "quiet": true
     }
@@ -31,11 +35,11 @@
   "author": "Louis Antoine-Moussiaux",
   "license": "ISC",
   "dependencies": {
-    "songcheat-core": "file:../songcheat-core",
     "command-line-args": "^4.0.7",
     "command-line-usage": "^4.0.2",
     "json-stringify-pretty-compact": "^1.0.4",
-    "readline": "^1.3.0"
+    "readline": "^1.3.0",
+    "songcheat-core": "git+https://github.com/louisantoinem/songcheat-core.git"
   },
   "devDependencies": {
     "npm-watch": "^0.3.0",
