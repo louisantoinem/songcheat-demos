@@ -6,8 +6,11 @@ ARTIST "Serge Gainsbourg"
 TITLE "Comme un boomerang"
 YEAR 1975
 DIFFICULTY 2
-VIDEO ""
-TUTORIAL ""
+VIDEO "https://www.youtube.com/watch?v=rWWt9C0_rSo"
+SOURCE "https://tabs.ultimate-guitar.com/tab/serge_gainsbourg/comme_un_boomerang_chords_1959497"
+TUTORIAL "https://www.youtube.com/watch?v=IirMC_f56eE"
+#TUTORIAL "https://www.youtube.com/watch?v=g9kgevk8qt8"
+#TUTORIAL "https://www.youtube.com/watch?v=zAdcPsFxyXU"
 COMMENT ""
 
 ################
@@ -32,7 +35,7 @@ SHUFFLE ""
 
 CHORD Em  022000 023000/-
 CHORD A   x02220 T01230/-
-CHORD G   320033 210034/-
+CHORD G   320003 210003/-
 CHORD C	  x32010 T32010/-
 CHORD B7  x21202 T21304/-
 
@@ -40,29 +43,18 @@ CHORD B7  x21202 T21304/-
 # RHYTHMS #
 ###########
 
-# Arpeggiated
-RHYTHM R1	":8 (B1) (2) (3) (1) (2) :16 (3) (1) :8 T(1) (2)"
-RHYTHM R2	":8 (B1) (2) (3) (1) (2) (3) :q (B1)"
-RHYTHM R3	":8 (B1) (2) T(2) :16 (3) (1)u :8 (2) (3) (1) (2)"
-
-# Strummed
-RHYTHM R1	":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 T()d ()d"
-RHYTHM R2	":8 ()d ()d ()d ()d ()d ()d :q ()d"
-RHYTHM R3	":8 ()d ()d T()d :16 ()d ()u :8 ()d ()d ()d ()d"
-
-# Strummed with only 8th notes
-RHYTHM R1	":8 ()d ()u ()d ()u ()d ()u ()d ()u"
-RHYTHM R2	":8 ()d ()u ()d ()u ()d ()u :q ()d"
-RHYTHM R3	":8 ()d ()u T() ()u ()d ()u ()d ()u"
+RHYTHM R0	":q (B)d (4)d (3)d (2)u (4)d (3)d (2)d (1)u"
+RHYTHM R1	":8 (B1) (2) (3) (1) (2) (3) :q (1)"
+RHYTHM R2	":8 (2) (3) (4) (B) (4) (4) (4) (B) "
 
 #########
 # PARTS #
 #########
 
-PART Intro [R1*Em] % % %
+PART Intro [R0*Em] %
 
-PART Verse [R1*Em] [R2*G]  [R1*A]  [R2*C]
-           [R1*Em] [R3*B7] [R1*Em] [R2*Em]
+PART Verse [R1*Em] [R1*G] [R1*A] [R1*C] [R1*Em]
+           [R2*B7,,,,,,,Em] [R0*Em]
 
 PART Chorus Verse
 
@@ -79,60 +71,60 @@ Agiter mon cœur blessé|
 L'amour comme un boomerang|
 Me revient des jours passés|
 A pleurer les larmes dingues|
-D'un corps que je t'avais don-|né|"
+D'un corps que:h:je t'avais don-:qd:né|"
 
 Verse "J'ai sur le bout de la langue|
 Ton prénom presque effacé|
 Tordu comme un boomerang|
 Mon esprit l'a rejeté|
 De ma mémoire car la bringue|
-Et ton amour m'ont épui-|sé|"
+Et ton amour:h:m'ont épui-:qd:sé|"
 
 Chorus "Je sens des boums et des bangs|
 Agiter mon cœur blessé|
 L'amour comme un boomerang|
 Me revient des jours passés|
 A s'aimer comme des dingues|
-Comme deux fous à li-|er|"
+Comme deux fous:h:à li-:qd:er|"
 
 Verse "Sache que ce cœur exsangue|
 Pourrait un jour s'arrêter|
 Si comme un boomerang|
 Tu ne reviens pas me chercher|
 Peu à peu je me déglingue|
-Victime de ta cruau-|té|"
+Victime de ta:h:cruau-:qd:té|"
 
 Chorus "Je sens des boums et des bangs|
 Agiter mon cœur blessé|
 L'amour comme un boomerang|
 Me revient des jours passés|
 A t'aimer comme une dingue|
-Prête pour toi à me dam-|ner|"
+Prête pour toi:h:à me dam-:qd:ner|"
 
 Verse "Toi qui fait partie du gang|
 De mes séducteurs passés|
 Prends garde à ce boomerang|
 Il pourrait te faire payer|
 Toutes ces tortures de cinglés|
-Que tu m'as fait endu-|rer|"
+Que tu m'as fait:h:endu-:qd:rer|"
 
 Chorus "Je sens des boums et des bangs|
 Agiter mon cœur blessé|
 L'amour comme un boomerang|
 Me revient des jours passés|
 C'est une histoire de dingue|
-Une histoire bête à pleu-|rer|"
+Une histoire:h:bête à pleu-:qd:rer|"
 
 Verse "Ma raison vacille et tangue|
 Elle est prête à chavirer|
 Sous les coups de boomerangs|
 De flash-back enchaînés|
 Et si un jour je me flingue|
-C'est à toi que je le de-|vrais|"
+C'est à toi:h:que je le de-:qd:vrais|"
 
 Chorus "Je sens des boums et des bangs|
 Agiter mon cœur blessé|
 L'amour comme un boomerang|
 Me revient des jours passés|
 A pleurer les larmes dingues|
-D'un corps que je t'avais don-|né|"
+D'un corps que:h:je t'avais don-:qd:né|"

@@ -1909,8 +1909,9 @@
     "title": "Comme un boomerang",
     "year": 1975,
     "difficulty": 2,
-    "video": "",
-    "tutorial": "",
+    "video": "https://www.youtube.com/watch?v=rWWt9C0_rSo",
+    "source": "https://tabs.ultimate-guitar.com/tab/serge_gainsbourg/comme_un_boomerang_chords_1959497",
+    "tutorial": "https://www.youtube.com/watch?v=IirMC_f56eE",
     "comment": "",
     "tuning": "standard",
     "capo": 3,
@@ -1938,8 +1939,8 @@
       {
         "id": 3,
         "name": "G",
-        "tablature": "320033",
-        "fingering": "210034/-",
+        "tablature": "320003",
+        "fingering": "210003/-",
         "comment": ""
       },
       {
@@ -1960,43 +1961,18 @@
     "rhythms": [
       {
         "id": 1,
-        "name": "R1",
-        "score": ":8 (B1) (2) (3) (1) (2) :16 (3) (1) :8 T(1) (2)"
+        "name": "R0",
+        "score": ":q (B)d (4)d (3)d (2)u (4)d (3)d (2)d (1)u"
       },
-      {"id": 2, "name": "R2", "score": ":8 (B1) (2) (3) (1) (2) (3) :q (B1)"},
-      {
-        "id": 3,
-        "name": "R3",
-        "score": ":8 (B1) (2) T(2) :16 (3) (1)u :8 (2) (3) (1) (2)"
-      },
-      {
-        "id": 4,
-        "name": "R1",
-        "score": ":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 T()d ()d"
-      },
-      {"id": 5, "name": "R2", "score": ":8 ()d ()d ()d ()d ()d ()d :q ()d"},
-      {
-        "id": 6,
-        "name": "R3",
-        "score": ":8 ()d ()d T()d :16 ()d ()u :8 ()d ()d ()d ()d"
-      },
-      {"id": 7, "name": "R1", "score": ":8 ()d ()u ()d ()u ()d ()u ()d ()u"},
-      {"id": 8, "name": "R2", "score": ":8 ()d ()u ()d ()u ()d ()u :q ()d"},
-      {"id": 9, "name": "R3", "score": ":8 ()d ()u T() ()u ()d ()u ()d ()u"}
+      {"id": 2, "name": "R1", "score": ":8 (B1) (2) (3) (1) (2) (3) :q (1)"},
+      {"id": 3, "name": "R2", "score": ":8 (2) (3) (4) (B) (4) (4) (4) (B) "}
     ],
     "parts": [
       {
         "id": 1,
         "name": "Intro",
         "phrases": [
-          {
-            "bars": [
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 7, "chords": [1]}
-            ]
-          }
+          {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [1]}]}
         ]
       },
       {
@@ -2005,14 +1981,13 @@
         "phrases": [
           {
             "bars": [
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 8, "chords": [3]},
-              {"rhythm": 7, "chords": [2]},
-              {"rhythm": 8, "chords": [4]},
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 9, "chords": [5]},
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 8, "chords": [1]}
+              {"rhythm": 2, "chords": [1]},
+              {"rhythm": 2, "chords": [3]},
+              {"rhythm": 2, "chords": [2]},
+              {"rhythm": 2, "chords": [4]},
+              {"rhythm": 2, "chords": [1]},
+              {"rhythm": 3, "chords": [5, 5, 5, 5, 5, 5, 5, 1]},
+              {"rhythm": 1, "chords": [1]}
             ]
           }
         ]
@@ -2023,14 +1998,13 @@
         "phrases": [
           {
             "bars": [
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 8, "chords": [3]},
-              {"rhythm": 7, "chords": [2]},
-              {"rhythm": 8, "chords": [4]},
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 9, "chords": [5]},
-              {"rhythm": 7, "chords": [1]},
-              {"rhythm": 8, "chords": [1]}
+              {"rhythm": 2, "chords": [1]},
+              {"rhythm": 2, "chords": [3]},
+              {"rhythm": 2, "chords": [2]},
+              {"rhythm": 2, "chords": [4]},
+              {"rhythm": 2, "chords": [1]},
+              {"rhythm": 3, "chords": [5, 5, 5, 5, 5, 5, 5, 1]},
+              {"rhythm": 1, "chords": [1]}
             ]
           }
         ]
@@ -2041,47 +2015,47 @@
       {
         "id": 2,
         "part": 3,
-        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA pleurer les larmes dingues|\nD'un corps que je t'avais don-|né|"
+        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA pleurer les larmes dingues|\nD'un corps que:h:je t'avais don-:qd:né|"
       },
       {
         "id": 3,
         "part": 2,
-        "lyrics": "J'ai sur le bout de la langue|\nTon prénom presque effacé|\nTordu comme un boomerang|\nMon esprit l'a rejeté|\nDe ma mémoire car la bringue|\nEt ton amour m'ont épui-|sé|"
+        "lyrics": "J'ai sur le bout de la langue|\nTon prénom presque effacé|\nTordu comme un boomerang|\nMon esprit l'a rejeté|\nDe ma mémoire car la bringue|\nEt ton amour:h:m'ont épui-:qd:sé|"
       },
       {
         "id": 4,
         "part": 3,
-        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA s'aimer comme des dingues|\nComme deux fous à li-|er|"
+        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA s'aimer comme des dingues|\nComme deux fous:h:à li-:qd:er|"
       },
       {
         "id": 5,
         "part": 2,
-        "lyrics": "Sache que ce cœur exsangue|\nPourrait un jour s'arrêter|\nSi comme un boomerang|\nTu ne reviens pas me chercher|\nPeu à peu je me déglingue|\nVictime de ta cruau-|té|"
+        "lyrics": "Sache que ce cœur exsangue|\nPourrait un jour s'arrêter|\nSi comme un boomerang|\nTu ne reviens pas me chercher|\nPeu à peu je me déglingue|\nVictime de ta:h:cruau-:qd:té|"
       },
       {
         "id": 6,
         "part": 3,
-        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA t'aimer comme une dingue|\nPrête pour toi à me dam-|ner|"
+        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA t'aimer comme une dingue|\nPrête pour toi:h:à me dam-:qd:ner|"
       },
       {
         "id": 7,
         "part": 2,
-        "lyrics": "Toi qui fait partie du gang|\nDe mes séducteurs passés|\nPrends garde à ce boomerang|\nIl pourrait te faire payer|\nToutes ces tortures de cinglés|\nQue tu m'as fait endu-|rer|"
+        "lyrics": "Toi qui fait partie du gang|\nDe mes séducteurs passés|\nPrends garde à ce boomerang|\nIl pourrait te faire payer|\nToutes ces tortures de cinglés|\nQue tu m'as fait:h:endu-:qd:rer|"
       },
       {
         "id": 8,
         "part": 3,
-        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nC'est une histoire de dingue|\nUne histoire bête à pleu-|rer|"
+        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nC'est une histoire de dingue|\nUne histoire:h:bête à pleu-:qd:rer|"
       },
       {
         "id": 9,
         "part": 2,
-        "lyrics": "Ma raison vacille et tangue|\nElle est prête à chavirer|\nSous les coups de boomerangs|\nDe flash-back enchaînés|\nEt si un jour je me flingue|\nC'est à toi que je le de-|vrais|"
+        "lyrics": "Ma raison vacille et tangue|\nElle est prête à chavirer|\nSous les coups de boomerangs|\nDe flash-back enchaînés|\nEt si un jour je me flingue|\nC'est à toi:h:que je le de-:qd:vrais|"
       },
       {
         "id": 10,
         "part": 3,
-        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA pleurer les larmes dingues|\nD'un corps que je t'avais don-|né|"
+        "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA pleurer les larmes dingues|\nD'un corps que:h:je t'avais don-:qd:né|"
       }
     ]
   }
