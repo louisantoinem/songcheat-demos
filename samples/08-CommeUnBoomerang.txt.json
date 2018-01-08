@@ -55,14 +55,28 @@
     {
       "id": 1,
       "name": "R1",
-      "score": ":8 (B1) (2)  (3) (1) (2) :16 (3) (1) :8 T(1) (2)"
+      "score": ":8 (B1) (2) (3) (1) (2) :16 (3) (1) :8 T(1) (2)"
     },
-    {"id": 2, "name": "R2", "score": ":8 (B1) (2)  (3) (1) (2) (3) :q (B1)"},
+    {"id": 2, "name": "R2", "score": ":8 (B1) (2) (3) (1) (2) (3) :q (B1)"},
     {
       "id": 3,
       "name": "R3",
       "score": ":8 (B1) (2) T(2) :16 (3) (1)u :8 (2) (3) (1) (2)"
-    }
+    },
+    {
+      "id": 4,
+      "name": "R1",
+      "score": ":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 T()d ()d"
+    },
+    {"id": 5, "name": "R2", "score": ":8 ()d ()d ()d ()d ()d ()d :q ()d"},
+    {
+      "id": 6,
+      "name": "R3",
+      "score": ":8 ()d ()d T()d :16 ()d ()u :8 ()d ()d ()d ()d"
+    },
+    {"id": 7, "name": "R1", "score": ":8 ()d ()u ()d ()u ()d ()u ()d ()u"},
+    {"id": 8, "name": "R2", "score": ":8 ()d ()u ()d ()u ()d ()u :q ()d"},
+    {"id": 9, "name": "R3", "score": ":8 ()d ()u T() ()u ()d ()u ()d ()u"}
   ],
   "parts": [
     {
@@ -71,10 +85,10 @@
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]}
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 7, "chords": [1]}
           ]
         }
       ]
@@ -85,14 +99,14 @@
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 2, "chords": [3]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 2, "chords": [4]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 3, "chords": [5]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 2, "chords": [1]}
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 8, "chords": [3]},
+            {"rhythm": 7, "chords": [2]},
+            {"rhythm": 8, "chords": [4]},
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 9, "chords": [5]},
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 8, "chords": [1]}
           ]
         }
       ]
@@ -103,14 +117,14 @@
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 2, "chords": [3]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 2, "chords": [4]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 3, "chords": [5]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 2, "chords": [1]}
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 8, "chords": [3]},
+            {"rhythm": 7, "chords": [2]},
+            {"rhythm": 8, "chords": [4]},
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 9, "chords": [5]},
+            {"rhythm": 7, "chords": [1]},
+            {"rhythm": 8, "chords": [1]}
           ]
         }
       ]
