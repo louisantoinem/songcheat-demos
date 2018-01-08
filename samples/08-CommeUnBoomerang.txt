@@ -1,4 +1,4 @@
-﻿#################
+#################
 # SONG METADATA #
 #################
 
@@ -40,7 +40,17 @@ CHORD B7  x21202 T21304/-
 # RHYTHMS #
 ###########
 
-RHYTHM R1	":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 ()d ()d"
+#RHYTHM R1	":8 ()d ()u ()d ()u ()d ()u ()d ()u"
+#RHYTHM R2	":8 ()d ()u ()d ()u ()d ()u :q ()d"
+#RHYTHM R3	":8 ()d ()u T() ()u ()d ()u ()d ()u"
+
+#RHYTHM R1	":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 T()d ()d"
+#RHYTHM R2	":8 ()d ()d ()d ()d ()d ()d :q ()d"
+#RHYTHM R3	":8 ()d ()d T()d :16 ()d ()u :8 ()d ()d ()d ()d"
+
+RHYTHM R1	":8 (B1) (2)  (3) (1) (2) :16 (3) (1) :8 T(1) (2)"
+RHYTHM R2	":8 (B1) (2)  (3) (1) (2) (3) :q (B1)"
+RHYTHM R3	":8 (B1) (2) T(2) :16 (3) (1)u :8 (2) (3) (1) (2)"
 
 #########
 # PARTS #
@@ -48,8 +58,8 @@ RHYTHM R1	":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 ()d ()d"
 
 PART Intro [R1*Em] % % %
 
-PART Verse [R1*Em] [R1*G]  [R1*A]  [R1*C]
-           [R1*Em] [R1*B7] [R1*Em] [R1*Em]
+PART Verse [R1*Em] [R2*G]  [R1*A]  [R2*C]
+           [R1*Em] [R3*B7] [R1*Em] [R2*Em]
 
 PART Chorus Verse
 
@@ -72,7 +82,7 @@ Verse "J'ai sur le bout de la langue|
 Ton prénom presque effacé|
 Tordu comme un boomerang|
 Mon esprit l'a rejeté|
-De ma mémoire, car la bringue|
+De ma mémoire car la bringue|
 Et ton amour m'ont épui-|sé|"
 
 Chorus "Je sens des boums et des bangs|
@@ -84,7 +94,7 @@ Comme deux fous à li-|er|"
 
 Verse "Sache que ce cœur exsangue|
 Pourrait un jour s'arrêter|
-Si, comme un boomerang|
+Si comme un boomerang|
 Tu ne reviens pas me chercher|
 Peu à peu je me déglingue|
 Victime de ta cruau-|té|"

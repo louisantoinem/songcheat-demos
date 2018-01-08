@@ -55,7 +55,13 @@
     {
       "id": 1,
       "name": "R1",
-      "score": ":8 ()d ()d ()d ()d ()d :16 ()d ()u :8 ()d ()d"
+      "score": ":8 (B1) (2)  (3) (1) (2) :16 (3) (1) :8 T(1) (2)"
+    },
+    {"id": 2, "name": "R2", "score": ":8 (B1) (2)  (3) (1) (2) (3) :q (B1)"},
+    {
+      "id": 3,
+      "name": "R3",
+      "score": ":8 (B1) (2) T(2) :16 (3) (1)u :8 (2) (3) (1) (2)"
     }
   ],
   "parts": [
@@ -80,13 +86,13 @@
         {
           "bars": [
             {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [3]},
+            {"rhythm": 2, "chords": [3]},
             {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [4]},
+            {"rhythm": 2, "chords": [4]},
             {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [5]},
+            {"rhythm": 3, "chords": [5]},
             {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]}
+            {"rhythm": 2, "chords": [1]}
           ]
         }
       ]
@@ -98,13 +104,13 @@
         {
           "bars": [
             {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [3]},
+            {"rhythm": 2, "chords": [3]},
             {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [4]},
+            {"rhythm": 2, "chords": [4]},
             {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [5]},
+            {"rhythm": 3, "chords": [5]},
             {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]}
+            {"rhythm": 2, "chords": [1]}
           ]
         }
       ]
@@ -120,7 +126,7 @@
     {
       "id": 3,
       "part": 2,
-      "lyrics": "J'ai sur le bout de la langue|\nTon prénom presque effacé|\nTordu comme un boomerang|\nMon esprit l'a rejeté|\nDe ma mémoire, car la bringue|\nEt ton amour m'ont épui-|sé|"
+      "lyrics": "J'ai sur le bout de la langue|\nTon prénom presque effacé|\nTordu comme un boomerang|\nMon esprit l'a rejeté|\nDe ma mémoire car la bringue|\nEt ton amour m'ont épui-|sé|"
     },
     {
       "id": 4,
@@ -130,7 +136,7 @@
     {
       "id": 5,
       "part": 2,
-      "lyrics": "Sache que ce cœur exsangue|\nPourrait un jour s'arrêter|\nSi, comme un boomerang|\nTu ne reviens pas me chercher|\nPeu à peu je me déglingue|\nVictime de ta cruau-|té|"
+      "lyrics": "Sache que ce cœur exsangue|\nPourrait un jour s'arrêter|\nSi comme un boomerang|\nTu ne reviens pas me chercher|\nPeu à peu je me déglingue|\nVictime de ta cruau-|té|"
     },
     {
       "id": 6,
