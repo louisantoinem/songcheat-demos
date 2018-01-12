@@ -1,0 +1,50 @@
+﻿#################
+# SONG METADATA #
+#################
+
+ARTIST "Eric Clapton"
+TITLE "Tears In Heaven"
+YEAR 1900
+DIFFICULTY 4
+VIDEO ""
+SOURCE ""
+TUTORIAL "Galago"
+COMMENT ""
+
+################
+# GUITAR SETUP #
+################
+
+TUNING standard
+CAPO 0
+
+##########################
+# KEY AND TIME SIGNATURE #
+##########################
+
+KEY C
+TIME 4/4 4 :q
+TEMPO 80
+SHUFFLE ""
+
+##########
+# CHORDS #
+##########
+
+###########
+# RHYTHMS #
+###########
+
+#########
+# PARTS #
+#########
+
+PART Intro [:16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)*000220]
+
+#############
+# STRUCTURE #
+#############
+
+STRUCTURE
+
+Intro ""

@@ -2058,5 +2058,49 @@
         "lyrics": "Je sens des boums et des bangs|\nAgiter mon cœur blessé|\nL'amour comme un boomerang|\nMe revient des jours passés|\nA pleurer les larmes dingues|\nD'un corps que:h:je t'avais don-:qd:né|"
       }
     ]
+  },
+  {
+    "artist": "Eric Clapton",
+    "title": "Tears In Heaven",
+    "year": 1900,
+    "difficulty": 4,
+    "video": "",
+    "source": "",
+    "tutorial": "Galago",
+    "comment": "",
+    "tuning": "standard",
+    "capo": 0,
+    "signature": {
+      "key": "C",
+      "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+      "tempo": 80,
+      "shuffle": ""
+    },
+    "parts": [
+      {
+        "id": 1,
+        "name": "Intro",
+        "phrases": [{"bars": [{"rhythm": 1, "chords": [1]}]}]
+      }
+    ],
+    "rhythms": [
+      {
+        "id": 1,
+        "name": ":16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)",
+        "score": ":16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)",
+        "inline": true
+      }
+    ],
+    "chords": [
+      {
+        "id": 1,
+        "name": "000220",
+        "tablature": "000220",
+        "fingering": "000000/-",
+        "comment": "",
+        "inline": true
+      }
+    ],
+    "structure": [{"id": 1, "part": 1, "lyrics": ""}]
   }
 ]
