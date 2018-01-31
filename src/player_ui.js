@@ -1,4 +1,4 @@
-import { Utils, Player, waveTables } from 'songcheat-core'
+import { Duration, Player, Score, waveTables } from 'songcheat-core'
 
 // https://github.com/rollup/rollup/issues/1803/
 // import $ from 'jQuery'
@@ -17,23 +17,12 @@ export function PlayerUI (audioCtx, songcheat, units, isRhythm) {
     }
   }
 
-  // get notes for given units
-  let notes = []
-  for (let unit of units) {
-    for (let phrase of unit.part.phrases) {
-      for (let bar of phrase.bars) {
-        for (let note of bar.rhythm.compiledScore) {
-          let chordedNote = JSON.parse(JSON.stringify(note))
-          chordedNote.chord = note.chord || bar.chords[note.placeholderIndex]
-          if (!chordedNote.chord) throw new Error('No chord found for placeholder ' + (note.placeholderIndex + 1))
-          notes.push(chordedNote)
-        }
-      }
-    }
-  }
+  // concat score of units
+  let score = new Score(songcheat.signature.time)
+  for (let unit of units) score.append(unit.part.score)
 
   // create player
-  let player = new Player(audioCtx, notes, {
+  let player = new Player(audioCtx, score, {
     loop: isRhythm,
     capo: parseInt(songcheat.capo, 10),
     signature: songcheat.signature,
@@ -97,7 +86,7 @@ export function PlayerUI (audioCtx, songcheat, units, isRhythm) {
 
   // enable mode and type switch if at least one actual musical note found (with chords and strings to play)
   let musicalSwitches = false
-  for (let note of notes) { if (note.chord && note.strings) { musicalSwitches = true; break } }
+  for (let note of score.notes) { if (note.chord && note.strings) { musicalSwitches = true; break } }
   if (musicalSwitches) {
     let $divMusicalSwitches = $("<div style='float:right'>")
     this.$div.append($divMusicalSwitches)
@@ -147,7 +136,7 @@ export function PlayerUI (audioCtx, songcheat, units, isRhythm) {
       .append($('<input type="radio" name="shuffleswitch' + unique + '" value="on" checked>')).append(' Shuffle On ')
       .append($('<input type="radio" name="shuffleswitch' + unique + '" value="off">')).append(' Shuffle Off '))
     this.$div.find('input[name=shuffleswitch' + unique + ']').change(function () {
-      player.shuffle = $(this).val() === 'on' ? Utils.duration(songcheat.signature.shuffle) : null
+      player.shuffle = $(this).val() === 'on' ? new Duration(songcheat.signature.shuffle) : null
     })
   }
 

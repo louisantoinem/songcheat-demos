@@ -10,35 +10,66 @@
   "tuning": "standard",
   "capo": 0,
   "signature": {
-    "key": "C",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "key": "E",
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 80,
     "shuffle": ""
   },
-  "parts": [
-    {
-      "id": 1,
-      "name": "Intro",
-      "phrases": [{"bars": [{"rhythm": 1, "chords": [1]}]}]
-    }
-  ],
-  "rhythms": [
-    {
-      "id": 1,
-      "name": ":16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)",
-      "score": ":16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)",
-      "inline": true
-    }
-  ],
   "chords": [
     {
-      "id": 1,
-      "name": "000220",
-      "tablature": "000220",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
+      "name": "A/E",
+      "tablature": "00022x",
+      "fingering": "000111/2",
+      "comment": ""
+    },
+    {
+      "name": "E/G#",
+      "tablature": "400450",
+      "fingering": "T00130",
+      "comment": "Doigté à la Clapton"
+    },
+    {
+      "name": "F#m",
+      "tablature": "20022x",
+      "fingering": "T00111",
+      "comment": "Palm mute pour passer proprement de la fret 4 à la fret 2"
+    },
+    {
+      "name": "D/F#",
+      "tablature": "200230",
+      "fingering": "T00130",
+      "comment": ""
+    },
+    {"name": "E7", "tablature": "000230", "fingering": "000130", "comment": ""},
+    {"name": "A", "tablature": "x0022x", "fingering": "000111/2", "comment": ""}
+  ],
+  "parts": [
+    {
+      "name": "Intro",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": ":q(#)(#)(#):8(#) :16 {0-----}h{2-----}", "chords": " "},
+            {
+              "rhythm": ":8 (5) (3) :16 (2) h{----3-} p(2) ^3 :8 (3) (623) (6) (23) (623)",
+              "chords": " A/E::E/G#:qd:F#m"
+            },
+            {
+              "rhythm": ":8 T(623) (6) (23) (6) (23) (6) (23) (6)",
+              "chords": " F#m,,,,A/E"
+            },
+            {
+              "rhythm": ":8 (623) (6) (23) (6) :q (623) (623)",
+              "chords": " D/F#,,,,E7,000130"
+            },
+            {
+              "rhythm": ":8 (523) (5) (23) (5) (23) (5) (23) :16 {0-----}h{2-----}",
+              "chords": " A"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "structure": [{"id": 1, "part": 1, "lyrics": ""}]
+  "structure": [{"part": "Intro", "lyrics": ""}]
 }

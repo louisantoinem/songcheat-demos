@@ -1,4 +1,4 @@
-import { Compiler, Lyrics, VexTab as SongcheatVexTab } from 'songcheat-core'
+import { Compiler, VexTab as SongcheatVexTab } from 'songcheat-core'
 import samples from '../dist/samples.json'
 
 // https://github.com/rollup/rollup/issues/1803/
@@ -17,13 +17,11 @@ Artist.NOLOGO = true
 let sample = samples[Math.floor(Math.random() * samples.length)]
 let compiler = new Compiler(0)
 let songcheat = compiler.compile(sample)
-let lyrics = new Lyrics(songcheat, 0)
 $('body>h1').html(`${songcheat.title} (${songcheat.artist}, ${songcheat.year})`)
 
-// parse lyrics and show warnings if any
+// show lyrics warnings if any
 for (let unit of songcheat.structure) {
-  let warnings = lyrics.parseLyrics(unit)
-  if (warnings.length > 0) $('body').append($('<p>').html('Parse warnings for unit ' + unit.name + ':\n - ' + warnings.join('\n- ')).css('color', 'red'))
+  if (unit.lyricsWarnings.length > 0) $('body').append($('<p>').html('Parse warnings for unit ' + unit.name + ':\n - ' + unit.lyricsWarnings.join('\n- ')).css('color', 'red'))
 }
 
 // parse and render rhythms with vextab
@@ -33,8 +31,7 @@ for (let rhythm of songcheat.rhythms) {
 
   try {
     console.info('Converting rhythm to vextab score...')
-    let score = 'options tempo=' + songcheat.signature.tempo + ' player=false tab-stems=false tab-stem-direction=up\n'
-    score += SongcheatVexTab.Notes2Stave(songcheat, 0, rhythm.compiledScore, true, 'top', 'Rhythm ' + (rhythm.name || rhythm.id), 1, true, false) + ' options space=20'
+    let score = SongcheatVexTab.Rhythm2VexTab(songcheat, rhythm)
     console.info('Parsing score...')
     let artist = new Artist(10, 10, 600, { scale: 1.0 })
     let vextab = new VexTab(artist)

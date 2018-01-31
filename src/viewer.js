@@ -228,8 +228,8 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
     $divRhythm.before(new PlayerUI(audioCtx, songcheat, [compiler.getRhythmUnit(songcheat, rhythm)], true).div())
 
     // warning if not a whole number of bars
-    if (rhythm.duration % songcheat.barDuration) {
-      let warning = 'Rhythm ' + rhythm.name + ' is currently equivalent to ' + Math.floor(rhythm.duration / songcheat.barDuration) + ' bar(s) and ' + Utils.durationcodes(rhythm.duration % songcheat.barDuration) + '. A rhythm unit should be equivalent to a whole number of bars.'
+    if (!rhythm.score.length.bar()) {
+      let warning = 'Rhythm ' + rhythm.name + ' is currently equivalent to ' + rhythm.score.length + '. A rhythm unit should be equivalent to a whole number of bars (' + songcheat.bar + ').'
       $divRhythm.before($('<p>').addClass('warning').css('color', 'orange').html('Warning: ' + warning))
     }
 
@@ -280,7 +280,7 @@ function displayParts (songcheat, part, $partsZone) {
     // always split by N bars (no lyrics so split as entered makes no sense, splitParts is never 0)
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
     let lyrics = new Lyrics(songcheat, DEBUG)
-    $partsZone.append(lyrics.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, 'rhythm', false))
+    $partsZone.append(lyrics.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, false))
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $partsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message))
@@ -296,17 +296,16 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
   try {
     // parse lyrics
     let lyrics = new Lyrics(songcheat, DEBUG)
-    let warnings = lyrics.parseLyrics(unit)
 
-    // display parser warnings
-    for (let warning of warnings) {
+    // display lyrics warnings if any
+    for (let warning of unit.lyricsWarnings) {
       $lyricsZone.before($('<p>').addClass('warning').css('color', 'orange').html('Warning: ' + warning))
       console.warn('[' + unit.name + '] ' + warning)
     }
 
     // build and display lyrics
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    $lyricsZone.append(lyrics.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, 'rhythm', songcheat.maxsp !== 1))
+    $lyricsZone.append(lyrics.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, songcheat.maxsp !== 1))
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $lyricsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message))

@@ -10,76 +10,66 @@
   "capo": 0,
   "signature": {
     "key": "C",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 80,
     "shuffle": ""
   },
   "chords": [
     {
-      "id": 1,
       "name": "G",
       "tablature": "320003",
       "fingering": "210003/-",
       "comment": "G à 3 doigts"
     },
     {
-      "id": 2,
       "name": "Em",
       "tablature": "022000",
       "fingering": "023000/-",
       "comment": ""
     },
     {
-      "id": 3,
       "name": "Bm",
       "tablature": "x24432",
       "fingering": "013421/2",
       "comment": "Forme de Am barré en 2"
     },
     {
-      "id": 4,
       "name": "Bsus2",
       "tablature": "x24422",
       "fingering": "013411/2",
       "comment": "Bm sans le majeur"
     },
     {
-      "id": 5,
       "name": "Asus2",
       "tablature": "x02200",
       "fingering": "001200/-",
       "comment": "Am sans l'index"
     },
     {
-      "id": 6,
       "name": "Asus4",
       "tablature": "x02230",
       "fingering": "001240/-",
       "comment": "Am avec petit doigt en case 3 de corde B"
     },
     {
-      "id": 7,
       "name": "G/F#",
       "tablature": "2x0003",
       "fingering": "100003/-",
       "comment": "Etouffer corde A avec l'index qui frette la corde E"
     },
     {
-      "id": 8,
       "name": "A",
       "tablature": "x0222x",
       "fingering": "001230/-",
       "comment": "A avec corde e étoufée (pas hyper important)"
     },
     {
-      "id": 9,
       "name": "F#m",
       "tablature": "244222",
       "fingering": "134111/2",
       "comment": "Forme de Em barré en 2"
     },
     {
-      "id": 10,
       "name": "G'",
       "tablature": "355433",
       "fingering": "134211/3",
@@ -88,316 +78,176 @@
   ],
   "rhythms": [
     {
-      "id": 1,
       "name": "R1",
       "score": ":8()d:16()d()u :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u"
     },
     {
-      "id": 2,
       "name": "R2",
       "score": ":8()d:16()d()u :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u"
     },
     {
-      "id": 3,
       "name": "R3",
       "score": ":8()d:16()d()u :16()d()u:8()d :8()d:16()d()u :16()d()u:8()d"
     },
     {
-      "id": 4,
       "name": "R1B",
       "score": ":q()d> :8()d:16()d()u :8()d:16()d()u :16()d()u()d()u"
     },
     {
-      "id": 5,
       "name": "R2B",
       "score": ":q()d> :8()d:16()d()u :16T():8()u:16()u :16()d()u()d()u"
     }
   ],
   "parts": [
     {
-      "id": 1,
-      "name": "Bm*",
-      "phrases": [
-        {"bars": [{"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}]}
-      ],
-      "sub": true
-    },
-    {
-      "id": 2,
-      "name": "A1",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 5]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [6, 6, 6, 6, 6, 6, 5]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [1]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 3,
-      "name": "A2",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 3, "chords": [2, 2, 2, 2, 2, 2, 5]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 4,
-      "name": "B1",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 5, "chords": [3]},
-            {"rhythm": 2, "chords": [10]},
-            {"rhythm": 2, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [2]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 5,
-      "name": "B2",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 3, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 6,
-      "name": "B3",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [2]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 7,
-      "name": "B4",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 8,
-      "name": "C1",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [9]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [2]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 9,
       "name": "Intro",
       "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 2, "chords": [1]}]}
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R2", "chords": "G"}
+          ]
+        }
       ]
     },
     {
-      "id": 10,
       "name": "Verse A",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 5]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [6, 6, 6, 6, 6, 6, 5]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [1]}
+            {"rhythm": "R1", "chords": "G,,,,,,Em"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R1", "chords": "G,,,,,,Asus2"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Asus4,,,,,,Asus2"},
+            {"rhythm": "R2", "chords": "G"},
+            {"rhythm": "R2", "chords": "G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 3, "chords": [2, 2, 2, 2, 2, 2, 5]}
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "G"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R3", "chords": "Em,,,,,,Asus2"}
           ]
         }
       ]
     },
     {
-      "id": 11,
       "name": "Chorus B",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 5, "chords": [3]},
-            {"rhythm": 2, "chords": [10]},
-            {"rhythm": 2, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 3, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}
+            {"rhythm": "R2B", "chords": "Bm"},
+            {"rhythm": "R2", "chords": "G'"},
+            {"rhythm": "R2", "chords": "Bm"},
+            {"rhythm": "R1", "chords": "G,,,,,,,,,G/F#"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R3", "chords": "G,,,,,,Em"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"}
           ]
         }
       ]
     },
     {
-      "id": 12,
       "name": "Verse C",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [9]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [2]}
+            {"rhythm": "R1", "chords": "G,,,,,,Em"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R1", "chords": "G,,,,,,Em"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "A"},
+            {"rhythm": "R2", "chords": "A"},
+            {"rhythm": "R2", "chords": "F#m"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "A"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R1", "chords": "G,,,,,,,,,G/F#"},
+            {"rhythm": "R2", "chords": "A"},
+            {"rhythm": "R2", "chords": "Em"}
           ]
         }
       ]
     },
     {
-      "id": 13,
       "name": "Verse A'",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 5]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [6, 6, 6, 6, 6, 6, 5]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [1]}
+            {"rhythm": "R1", "chords": "G,,,,,,Em"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R1", "chords": "G,,,,,,Asus2"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Asus4,,,,,,Asus2"},
+            {"rhythm": "R2", "chords": "G"},
+            {"rhythm": "R2", "chords": "G"}
           ]
         }
       ]
     },
     {
-      "id": 14,
       "name": "Chorus B'",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 5, "chords": [3]},
-            {"rhythm": 2, "chords": [10]},
-            {"rhythm": 2, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [2]}
+            {"rhythm": "R2B", "chords": "Bm"},
+            {"rhythm": "R2", "chords": "G'"},
+            {"rhythm": "R2", "chords": "Bm"},
+            {"rhythm": "R1", "chords": "G,,,,,,,,,G/F#"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Em"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]},
-            {"rhythm": 2, "chords": [1]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [8]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [2]}
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "G"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"},
+            {"rhythm": "R2", "chords": "G"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "A"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Em"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 5, "chords": [3]},
-            {"rhythm": 2, "chords": [10]},
-            {"rhythm": 2, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 1, 1, 1, 7]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [2]},
-            {"rhythm": 2, "chords": [5]},
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 3, 4, 4, 3]}
+            {"rhythm": "R2B", "chords": "Bm"},
+            {"rhythm": "R2", "chords": "G'"},
+            {"rhythm": "R2", "chords": "Bm"},
+            {"rhythm": "R1", "chords": "G,,,,,,,,,G/F#"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Em"},
+            {"rhythm": "R2", "chords": "Asus2"},
+            {"rhythm": "R2", "chords": "Bm,,,,,Bsus2,,Bm"}
           ]
         }
       ]
     }
   ],
   "structure": [
-    {"id": 1, "part": 9, "lyrics": ""},
-    {"id": 2, "part": 10, "lyrics": ""},
-    {"id": 3, "part": 11, "lyrics": ""},
-    {"id": 4, "part": 12, "lyrics": ""},
-    {"id": 5, "part": 11, "lyrics": ""},
-    {"id": 6, "part": 13, "lyrics": ""},
-    {"id": 7, "part": 14, "lyrics": ""}
+    {"part": "Intro", "lyrics": ""},
+    {"part": "Verse A", "lyrics": ""},
+    {"part": "Chorus B", "lyrics": ""},
+    {"part": "Verse C", "lyrics": ""},
+    {"part": "Chorus B", "lyrics": ""},
+    {"part": "Verse A'", "lyrics": ""},
+    {"part": "Chorus B'", "lyrics": ""}
   ]
 }

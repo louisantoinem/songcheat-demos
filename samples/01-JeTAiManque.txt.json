@@ -10,245 +10,200 @@
   "capo": 5,
   "signature": {
     "key": "G",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 146,
     "shuffle": ":8"
   },
   "chords": [
     {
-      "id": 1,
       "name": "Am",
       "tablature": "x02210",
       "fingering": "T02310/-",
       "comment": ""
     },
     {
-      "id": 2,
       "name": "E",
       "tablature": "022100",
       "fingering": "023100/-",
       "comment": ""
     },
     {
-      "id": 3,
       "name": "C",
       "tablature": "x32010",
       "fingering": "T32010/-",
       "comment": ""
     },
     {
-      "id": 4,
       "name": "G",
       "tablature": "320003",
       "fingering": "210003/-",
       "comment": "G with 3 fingers."
     },
     {
-      "id": 5,
       "name": "Asus4",
       "tablature": "x02230",
       "fingering": "T02340/-",
       "comment": "Same as Am but adding finger 4 on fret 3 of B string."
     },
     {
-      "id": 6,
       "name": "Cadd9",
       "tablature": "x3203x",
       "fingering": "T32040/-",
       "comment": "Same as C but adding finger 4 on fret 3 of B string."
     }
   ],
-  "rhythms": [
-    {"id": 1, "name": "R1", "score": ":8 ()d ()u ()d ()u T() ()u ()d ()u"},
-    {
-      "id": 2,
-      "name": ":h ()dd :h (#)",
-      "score": ":h ()dd :h (#)",
-      "inline": true
-    }
-  ],
+  "rhythms": [{"name": "R1", "score": ":8 ()d ()u ()d ()u T() ()u ()d ()u"}],
   "parts": [
     {
-      "id": 1,
-      "name": "TAIL",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 2,
       "name": "Chorus",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [3, 3, 3, 3, 3, 4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "E"},
+            {"rhythm": "R1", "chords": "E"},
+            {"rhythm": "R1", "chords": "C,,,,,G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Asus4,,,,,Am"},
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "Cadd9,,,,,C"}
           ]
         }
       ]
     },
     {
-      "id": 3,
       "name": "Verse",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Asus4,,,,,Am"},
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "Cadd9,,,,,C"}
           ]
         }
       ]
     },
     {
-      "id": 4,
       "name": "Bridge",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "G"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [5, 5, 5, 5, 5, 1]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [6, 6, 6, 6, 6, 3]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Asus4,,,,,Am"},
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "Cadd9,,,,,C"}
           ]
         }
       ]
     },
     {
-      "id": 5,
       "name": "Outro",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [3, 3, 3, 3, 3, 4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "E"},
+            {"rhythm": "R1", "chords": "E"},
+            {"rhythm": "R1", "chords": "C,,,,,G"}
           ]
         },
-        {"bars": [{"rhythm": 2, "chords": [1]}]}
+        {"bars": [{"rhythm": ":h ()dd :h (#)", "chords": "Am"}]}
       ]
     }
   ],
   "lyricsUnit": ":h",
   "structure": [
     {
-      "id": 1,
-      "part": 2,
+      "part": "Chorus",
       "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
     },
     {
-      "id": 2,
-      "part": 3,
+      "part": "Verse",
       "lyrics": ":Tous nos échanges|coulaient de|source:\nTous nos mé-|langes:cotés|en bourse."
     },
     {
-      "id": 3,
-      "part": 3,
+      "part": "Verse",
       "lyrics": ":Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
     },
     {
-      "id": 4,
-      "part": 2,
+      "part": "Chorus",
       "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
     },
     {
-      "id": 5,
-      "part": 3,
+      "part": "Verse",
       "lyrics": " :Tout est extrême|limites et cônes|glacés.:\nTout est idem|les vitrines:les|pôles opposés."
     },
     {
-      "id": 6,
-      "part": 3,
+      "part": "Verse",
       "lyrics": " :Dans les étoiles|ou sous la|douche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
     },
     {
-      "id": 7,
-      "part": 2,
+      "part": "Chorus",
       "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
     },
     {
-      "id": 8,
-      "part": 4,
+      "part": "Bridge",
       "lyrics": "|\nEt si l’on disait le|contraire|\nOu si l’on ne|disait rien|\nSi l’on construisait|les phrases à l’envers|\nOu si l’on|soulevait demain|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|disait plus rien ?"
     },
     {
-      "id": 9,
-      "part": 2,
+      "part": "Chorus",
       "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
     },
     {
-      "id": 10,
-      "part": 3,
+      "part": "Verse",
       "lyrics": " :Tout est brutal|botté en|touche.:\nTout à|l'horizontal:nos envies nos|amours|nos héros:"
     },
     {
-      "id": 11,
-      "part": 4,
+      "part": "Bridge",
       "lyrics": "|\nSi l’on suivait|les voies ferroviaires|\nQui aurait le|pied marin ?|\nSi l’on sifflait|les fonds de théière|\nOu si l’on ne|sifflait plus !|\nQui serait|l’adversaire ?|\nEntre nous qui serait|le plus malin ?|\nEt si l’on disait|le contraire|\nOu si l’on ne|se disait plus rien ?"
     },
     {
-      "id": 12,
-      "part": 5,
+      "part": "Outro",
       "lyrics": "|Je t'ai manqué ?||\nPourquoi ?::8:Tu me|visais ?"
     }
   ]

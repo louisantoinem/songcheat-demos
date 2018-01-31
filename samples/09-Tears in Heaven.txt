@@ -1,4 +1,4 @@
-﻿#################
+#################
 # SONG METADATA #
 #################
 
@@ -10,6 +10,7 @@ VIDEO ""
 SOURCE ""
 TUTORIAL "Galago"
 COMMENT ""
+# MODE tsd
 
 ################
 # GUITAR SETUP #
@@ -22,7 +23,7 @@ CAPO 0
 # KEY AND TIME SIGNATURE #
 ##########################
 
-KEY C
+KEY E
 TIME 4/4 4 :q
 TEMPO 80
 SHUFFLE ""
@@ -30,6 +31,13 @@ SHUFFLE ""
 ##########
 # CHORDS #
 ##########
+
+CHORD A/E  00022x 000111/2
+CHORD E/G# 400450 T00130 "Doigté à la Clapton"
+CHORD F#m  20022x T00111 "Palm mute pour passer proprement de la fret 4 à la fret 2"
+CHORD D/F# 200230 T00130
+CHORD E7   000230 000130
+CHORD A    x0022x 000111/2
 
 ###########
 # RHYTHMS #
@@ -39,7 +47,16 @@ SHUFFLE ""
 # PARTS #
 #########
 
-PART Intro [:16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)*000220]
+PART Intro
+[:q(#)(#)(#):8(#) :16 {0-----}h{2-----}*   ]
+# simplified version without the triplet of 16th (hammer-on / pull-off)
+# [:8 (5) (3) (2) (3) (623) (6) (23) (623) * A/E::E/G#:qd:F#m]
+[:8 (5) (3) :16 (2) h{----3-} p(2) ^3 :8 (3) (623) (6) (23) (623) * A/E::E/G#:qd:F#m]
+[:8 T(623) (6) (23) (6) (23) (6) (23) (6) * F#m,,,,A/E]
+[:8 (623) (6) (23) (6) :q (623) (623) * D/F#,,,,E7,000130]
+[:8 (523) (5) (23) (5) (23) (5) (23) :16 {0-----}h{2-----} * A]
+
+#PART Verse
 
 #############
 # STRUCTURE #
@@ -48,3 +65,4 @@ PART Intro [:16 (B)h{2-----} :8 (B') (3) :16 (2)h{----3-} :8 p(2) (3)*000220]
 STRUCTURE
 
 Intro ""
+#Verse ""

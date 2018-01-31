@@ -10,76 +10,56 @@
   "capo": 0,
   "signature": {
     "key": "C",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 76,
     "shuffle": ""
   },
   "chords": [
+    {"name": "C", "tablature": "x32010", "fingering": "T32010", "comment": ""},
     {
-      "id": 1,
-      "name": "C",
-      "tablature": "x32010",
-      "fingering": "T32010",
-      "comment": ""
-    },
-    {
-      "id": 2,
       "name": "C Maj7",
       "tablature": "x32000",
       "fingering": "T32000",
       "comment": "C without finger 1"
     },
     {
-      "id": 3,
       "name": "F",
       "tablature": "xx3211",
       "fingering": "T33211",
       "comment": "F without E and A strings"
     },
     {
-      "id": 4,
       "name": "F/E",
       "tablature": "xx2211",
       "fingering": "T33211/1",
       "comment": "Finger 3 moved left by 1 fret"
     },
     {
-      "id": 5,
       "name": "Dm",
       "tablature": "xx0231",
       "fingering": "T00241",
       "comment": "Finger 4 instead of 3"
     },
     {
-      "id": 6,
       "name": "Dm/C",
       "tablature": "x30231",
       "fingering": "T30241",
       "comment": "Dm adding finger 3 on A string"
     },
     {
-      "id": 7,
       "name": "G",
       "tablature": "320003",
       "fingering": "320004",
       "comment": "G with 3 fingers"
     },
     {
-      "id": 8,
       "name": "G7",
       "tablature": "320001",
       "fingering": "320001",
       "comment": "G with finger 1 on e string"
     },
+    {"name": "E", "tablature": "022100", "fingering": "023100", "comment": ""},
     {
-      "id": 9,
-      "name": "E",
-      "tablature": "022100",
-      "fingering": "023100",
-      "comment": ""
-    },
-    {
-      "id": 10,
       "name": "F'",
       "tablature": "133211",
       "fingering": "113211/1",
@@ -87,209 +67,154 @@
     }
   ],
   "rhythms": [
-    {"id": 1, "name": "R1", "score": ":8 ()d (B)d ()d (B)d ()d (B)d ()d (B)d"},
+    {"name": "R1", "score": ":8 ()d (B)d ()d (B)d ()d (B)d ()d (B)d"},
     {
-      "id": 2,
       "name": "R2",
       "score": ":8 ()d ()d ()d :16 ()d ()u :16 ()d ()u :8 ()d ()d :16 ()d ()u"
-    },
-    {
-      "id": 3,
-      "name": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
-      "score": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
-      "inline": true
-    },
-    {
-      "id": 4,
-      "name": ":hd ()d :q (#)",
-      "score": ":hd ()d :q (#)",
-      "inline": true
-    },
-    {
-      "id": 5,
-      "name": ":q ()d {3-----}d {-0----}d {-2----}d",
-      "score": ":q ()d {3-----}d {-0----}d {-2----}d",
-      "inline": true
-    },
-    {"id": 6, "name": ":h ()dd (#)", "score": ":h ()dd (#)", "inline": true}
+    }
   ],
   "parts": [
     {
-      "id": 1,
-      "name": "A",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 2,
-      "name": "B",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 4]},
-            {"rhythm": 2, "chords": [5, 5, 5, 5, 6]},
-            {"rhythm": 2, "chords": [7]},
-            {"rhythm": 4, "chords": [8]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 3,
-      "name": "C1",
-      "phrases": [{"bars": [{"rhythm": 1, "chords": [10, 10, 10, 10, 7]}]}],
-      "sub": true
-    },
-    {
-      "id": 4,
-      "name": "C2",
-      "phrases": [{"bars": [{"rhythm": 1, "chords": [1, 1, 1, 1, 9]}]}],
-      "sub": true
-    },
-    {
-      "id": 5,
       "name": "Intro",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]}
+            {"rhythm": "R1", "chords": "C,,,,,,C Maj7"},
+            {
+              "rhythm": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+              "chords": "F"
+            },
+            {"rhythm": "R1", "chords": "C,,,,,,C Maj7"},
+            {
+              "rhythm": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+              "chords": "F"
+            }
           ]
         }
       ]
     },
     {
-      "id": 6,
       "name": "Verse",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]}
+            {"rhythm": "R1", "chords": "C,,,,,,C Maj7"},
+            {
+              "rhythm": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+              "chords": "F"
+            },
+            {"rhythm": "R1", "chords": "C,,,,,,C Maj7"},
+            {
+              "rhythm": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+              "chords": "F"
+            }
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 1, 1, 2]},
-            {"rhythm": 3, "chords": [3]}
+            {"rhythm": "R1", "chords": "C,,,,,,C Maj7"},
+            {
+              "rhythm": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+              "chords": "F"
+            },
+            {"rhythm": "R1", "chords": "C,,,,,,C Maj7"},
+            {
+              "rhythm": ":8 ()d (B)d ()d (B)d ()d (B)d :16 {---2--}d h{---3--}u :8 {----0-}d",
+              "chords": "F"
+            }
           ]
         }
       ]
     },
     {
-      "id": 7,
       "name": "PreChorus",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 2, "chords": [3, 3, 3, 3, 4]},
-            {"rhythm": 2, "chords": [5, 5, 5, 5, 6]},
-            {"rhythm": 2, "chords": [7]},
-            {"rhythm": 4, "chords": [8]}
+            {"rhythm": "R2", "chords": "F,,,,F/E"},
+            {"rhythm": "R2", "chords": "Dm,,,,Dm/C"},
+            {"rhythm": "R2", "chords": "G"},
+            {"rhythm": ":hd ()d :q (#)", "chords": "G7"}
           ]
         }
       ]
     },
     {
-      "id": 8,
       "name": "Chorus",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 9]},
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 9]}
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": "R1", "chords": "C,,,,E"},
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": "R1", "chords": "C,,,,E"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 9]},
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 5, "chords": [1]}
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": "R1", "chords": "C,,,,E"},
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": ":q ()d {3-----}d {-0----}d {-2----}d", "chords": "C"}
           ]
         }
       ]
     },
     {
-      "id": 9,
       "name": "Final Chorus",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 9]},
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 9]}
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": "R1", "chords": "C,,,,E"},
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": "R1", "chords": "C,,,,E"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 1, "chords": [1, 1, 1, 1, 9]},
-            {"rhythm": 1, "chords": [10, 10, 10, 10, 7]},
-            {"rhythm": 6, "chords": [1]}
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": "R1", "chords": "C,,,,E"},
+            {"rhythm": "R1", "chords": "F',,,,G"},
+            {"rhythm": ":h ()dd (#)", "chords": "C"}
           ]
         }
       ]
     }
   ],
   "structure": [
-    {"id": 1, "part": 5, "lyrics": "||\n"},
+    {"part": "Intro", "lyrics": "||\n"},
     {
-      "id": 2,
-      "part": 6,
+      "part": "Verse",
       "lyrics": ":Imagine:there's:no hea-|ven|\n:It's ea-:sy if:you|try|\n:No:hell:below|us|\n:Above:us:only|sky"
     },
     {
-      "id": 3,
-      "part": 7,
+      "part": "PreChorus",
       "lyrics": ":Imagine:all:the|people|\nLi:ving:for:to-|day:ah:ah:ahaha"
     },
     {
-      "id": 4,
-      "part": 6,
+      "part": "Verse",
       "lyrics": ":Imagine:there's:no coun-|tries|\n:It isn't:hard:to|do|\n:Nothing:to kill:or die|for|\n:And no:reli-:gion|too"
     },
     {
-      "id": 5,
-      "part": 7,
+      "part": "PreChorus",
       "lyrics": ":Imagine:all:the|peo-:ple:|\nLi:ving:life:in|peace:youh:ouh:ouhouhou"
     },
     {
-      "id": 6,
-      "part": 8,
-      "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|be as one"
+      "part": "Chorus",
+      "lyrics": ":8:You:may:say:I'm a|dreamer|\n:8:But:I'm:not:the only|one|\nI:8:hope:some:day:you'll|join us|\n:8:And:the:world:will|be as one"
     },
     {
-      "id": 7,
-      "part": 6,
+      "part": "Verse",
       "lyrics": ":Imagine:no:posse-|ssions|\n:I won-:der if:you|can|\n:No:need for:greed or|hunger|\n:A bro-:ther:hood of|man"
     },
     {
-      "id": 8,
-      "part": 7,
+      "part": "PreChorus",
       "lyrics": ":Imagine:all:the|peo-:ple:|\nSha-:ring:all:the|world:youh:ouh:ouhouhou"
     },
     {
-      "id": 9,
-      "part": 9,
-      "lyrics": ":8:You:8:may:say:I'm a|dreamer|\n:8:But:8:I'm:not:the only|one|\nI:8:hope:8:some:day:you'll|join us|\n:8:And:8:the:world:will|live as one"
+      "part": "Final Chorus",
+      "lyrics": ":8:You:may:say:I'm a|dreamer|\n:8:But:I'm:not:the only|one|\nI:8:hope:some:day:you'll|join us|\n:8:And:the:world:will|live as one"
     }
   ]
 }

@@ -10,175 +10,152 @@
   "capo": 3,
   "signature": {
     "key": "Em",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 160,
     "shuffle": ":8"
   },
   "chords": [
     {
-      "id": 1,
       "name": "Em",
       "tablature": "022000",
       "fingering": "023000/-",
       "comment": ""
     },
     {
-      "id": 2,
       "name": "Am",
       "tablature": "x02210",
       "fingering": "T02310/-",
       "comment": ""
     },
     {
-      "id": 3,
       "name": "G",
       "tablature": "320003",
       "fingering": "210003/-",
       "comment": "G with 3 fingers."
     },
     {
-      "id": 4,
       "name": "D",
       "tablature": "xx0232",
       "fingering": "T00132/-",
       "comment": ""
     },
-    {
-      "id": 5,
-      "name": "C",
-      "tablature": "x32010",
-      "fingering": "T32010/-",
-      "comment": ""
-    }
+    {"name": "C", "tablature": "x32010", "fingering": "T32010/-", "comment": ""}
   ],
-  "rhythms": [
-    {"id": 1, "name": "R1", "score": ":q (B)d :8 ()d()uT()()u()d()u"}
-  ],
+  "rhythms": [{"name": "R1", "score": ":q (B)d :8 ()d()uT()d()u()d()u"}],
   "parts": [
     {
-      "id": 1,
       "name": "Intro",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]}
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Em"}
           ]
         }
       ]
     },
     {
-      "id": 2,
       "name": "Verse",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [1]}
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Em"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [2]}
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Am"}
           ]
         }
       ]
     },
     {
-      "id": 3,
       "name": "Chorus",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [5]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [5]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [4]}
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "D"},
+            {"rhythm": "R1", "chords": "D"},
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "D"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [1]}
+            {"rhythm": "R1", "chords": "D"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "D"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "D"},
+            {"rhythm": "R1", "chords": "Em"}
           ]
         }
       ]
     },
     {
-      "id": 4,
       "name": "Interlude",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [2]}
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [2]}
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Am"}
           ]
         }
       ]
     }
   ],
   "structure": [
-    {"id": 1, "part": 1, "lyrics": ""},
+    {"part": "Intro", "lyrics": ""},
     {
-      "id": 2,
-      "part": 2,
+      "part": "Verse",
       "lyrics": ":Bel-:inda:was|mine:h:\nTill:the|time:h:that I:found|her|\n:h:Hol-:ding|Jim|:And:Lo-:ving|Him"
     },
     {
-      "id": 3,
-      "part": 2,
+      "part": "Verse",
       "lyrics": ":Then Sue came a-|long:h:\nLoved:me|strong:h:that's:what I|thought|\n:h:Me and|Sue|:But:that:died|too"
     },
     {
-      "id": 4,
-      "part": 3,
+      "part": "Chorus",
       "lyrics": "|:Don't know that I|will but un-|til I can|find me|\n:A girl who’ll|stay and won't|play games be-|hind me|\nI'll be what I|am|\n:A solitary|man|\n:Solitary|man "
     },
     {
-      "id": 5,
-      "part": 2,
+      "part": "Verse",
       "lyrics": ":I've had it to|here:h:\nBeing|where:h:love's a|small:word|\n:A:part:time|thing|:h:a pa-:per|ring"
     },
     {
-      "id": 6,
-      "part": 2,
+      "part": "Verse",
       "lyrics": ":I know it's been |done:h:\nHaving|one girl:h:who|loves me|\n:h:Right or|wrong|:h:weak or|strong"
     },
     {
-      "id": 7,
-      "part": 3,
+      "part": "Chorus",
       "lyrics": "|:Don't know that I|will but un-|til I can|find me|\n:The girl who’ll|stay and won't|play games be-|hind me|\nI'll be what I|am|\n:A solitary|man|\n:Solitary|man "
     },
-    {"id": 8, "part": 4, "lyrics": "||||\n||||"},
+    {"part": "Interlude", "lyrics": "||||\n||||"},
     {
-      "id": 9,
-      "part": 3,
+      "part": "Chorus",
       "lyrics": "|:Don't know that I|will but un-|til I can|find me|\n:The girl who’ll|stay and won't|play games be-|hind me|\nI'll be what I|am|\n:A solitary|man|\n:Solitary|man "
     }
   ]

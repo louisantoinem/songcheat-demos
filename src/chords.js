@@ -1,12 +1,14 @@
-import { ChordPix } from 'songcheat-core'
+import { ChordPix, Compiler } from 'songcheat-core'
 import samples from '../dist/samples.json'
 
 // https://github.com/rollup/rollup/issues/1803/
 // import $ from 'jQuery'
 let $ = window.jQuery
 
-// get a random sample songcheat
-let songcheat = samples[Math.floor(Math.random() * samples.length)]
+// get a random sample songcheat and compile it
+let sample = samples[Math.floor(Math.random() * samples.length)]
+let compiler = new Compiler(0)
+let songcheat = compiler.compile(sample)
 $('body>h1').html(`${songcheat.title} (${songcheat.artist}, ${songcheat.year})`)
 
 // display chord diagrams

@@ -10,265 +10,199 @@
   "capo": 0,
   "signature": {
     "key": "C",
-    "time": {"beatsPerBar": "4", "beatDuration": ":qd", "symbol": "12/8"},
+    "time": {"beatsPerBar": "4", "beat": ":qd", "symbol": "12/8"},
     "tempo": 85,
     "shuffle": ""
   },
   "chords": [
     {
-      "id": 1,
       "name": "C01",
       "tablature": "0xxCCE",
       "fingering": "000113/C",
       "comment": "Barrer en 12 sur 3 cordes"
     },
     {
-      "id": 2,
       "name": "C02",
       "tablature": "xxxCCC",
       "fingering": "000111/C",
       "comment": "Enlever un doigt"
     },
     {
-      "id": 3,
       "name": "C03",
       "tablature": "xxxBAC",
       "fingering": "000213/-",
       "comment": "Barrer en 10 sur 2 cordes"
     },
     {
-      "id": 4,
       "name": "C04",
       "tablature": "xxxBAA",
       "fingering": "000211/A",
       "comment": "Enlever un doigt"
     },
     {
-      "id": 5,
       "name": "C05",
       "tablature": "xxx98A",
       "fingering": "000213/-",
       "comment": "Barrer en 8 sur 2 cordes"
     },
     {
-      "id": 6,
       "name": "C06",
       "tablature": "xxx988",
       "fingering": "000211/8",
       "comment": "Enlever un doigt"
     },
     {
-      "id": 7,
       "name": "C07",
       "tablature": "xxx778",
       "fingering": "000112/7",
       "comment": "Barrer en 7 sur 3 cordes"
     },
     {
-      "id": 8,
       "name": "C08",
       "tablature": "xxx777",
       "fingering": "000111/7",
       "comment": "Enlever un doigt"
     },
     {
-      "id": 9,
       "name": "C09",
       "tablature": "xxx557",
       "fingering": "000113/5",
       "comment": "Barrer en 5 sur 3 cordes"
     },
     {
-      "id": 10,
       "name": "C10",
       "tablature": "xxx555",
       "fingering": "000111/5",
       "comment": "Enlever un doigt"
     },
     {
-      "id": 11,
       "name": "C11",
       "tablature": "xxx435",
       "fingering": "000213/3",
       "comment": "Barrer en 3 sur 2 cordes"
     },
     {
-      "id": 12,
       "name": "C12",
       "tablature": "xxx433",
       "fingering": "000211/3",
       "comment": "Enlever un doigt"
     },
     {
-      "id": 13,
       "name": "C13",
       "tablature": "x0x213",
       "fingering": "000213/-",
       "comment": ""
     },
     {
-      "id": 14,
       "name": "C14",
       "tablature": "2xx212",
       "fingering": "T00213/-",
       "comment": "Fretter la corde E avc le pouce"
     },
     {
-      "id": 15,
       "name": "C15",
       "tablature": "0xx002",
       "fingering": "000003/-",
       "comment": "Enlever tous les doigts sauf le 3ème"
     },
     {
-      "id": 16,
       "name": "C16",
       "tablature": "0xx000",
       "fingering": "000000/-",
       "comment": "Tout à vide"
     },
     {
-      "id": 17,
       "name": "C17",
       "tablature": "0x425x",
       "fingering": "003140/-",
       "comment": "On peut aussi jouer le corde e à vide au lieu de la corde B, ce qui permet de placer le doigt 2 sur la corde B pour C20A"
     },
     {
-      "id": 18,
       "name": "C18",
       "tablature": "x5423x",
       "fingering": "043120/-",
       "comment": "On peut ignorer le petit doigt (i.e. ne pas jouer la basse) ou la jouer sur la corde D à vide"
     },
     {
-      "id": 19,
       "name": "C18b",
       "tablature": "xx421x",
       "fingering": "003210/-",
       "comment": "Ca passe aussi si on reste sur C20A"
     },
     {
-      "id": 20,
       "name": "C18c",
       "tablature": "xx420x",
       "fingering": "003200/-",
       "comment": "Enlever un doigt, soit l'index si on vient de C20B soit le doigt 2 si on vient de C20A"
-    },
-    {
-      "id": 21,
-      "name": "0xx002",
-      "tablature": "0xx002",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 22,
-      "name": "xxx003",
-      "tablature": "xxx003",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 23,
-      "name": "xxx000",
-      "tablature": "xxx000",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
-    },
-    {
-      "id": 24,
-      "name": "xxx007",
-      "tablature": "xxx007",
-      "fingering": "000000/-",
-      "comment": "",
-      "inline": true
     }
   ],
   "rhythms": [
-    {
-      "id": 1,
-      "name": "R1",
-      "score": ":8   (1)(2)(3)  (1)(2)(3)  (1)(2)(3)  (1)(2)(3)"
-    },
-    {
-      "id": 2,
-      "name": "R2",
-      "score": ":8  (B1)(2)(3)  (1)(2)(3)  (1)(2)(3)  (1)(2)(3)"
-    },
-    {
-      "id": 3,
-      "name": "R3",
-      "score": ":8  (B2)(3)(4)  (2)(3)(4)  (2)(3)(4)  (2)(3)(4)"
-    }
+    {"name": "R1", "score": ":8   (1)(2)(3)  (1)(2)(3)  (1)(2)(3)  (1)(2)(3)"},
+    {"name": "R2", "score": ":8  (B1)(2)(3)  (1)(2)(3)  (1)(2)(3)  (1)(2)(3)"},
+    {"name": "R3", "score": ":8  (B2)(3)(4)  (2)(3)(4)  (2)(3)(4)  (2)(3)(4)"}
   ],
   "parts": [
     {
-      "id": 1,
       "name": "Intro",
       "phrases": [
-        {"bars": [{"rhythm": 2, "chords": [1]}, {"rhythm": 2, "chords": [1]}]}
+        {
+          "bars": [
+            {"rhythm": "R2", "chords": "C01"},
+            {"rhythm": "R2", "chords": "C01"}
+          ]
+        }
       ]
     },
     {
-      "id": 2,
       "name": "Verse",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1]},
-            {"rhythm": 1, "chords": [2]},
-            {"rhythm": 1, "chords": [3]},
-            {"rhythm": 1, "chords": [4]},
-            {"rhythm": 1, "chords": [5]},
-            {"rhythm": 1, "chords": [6]},
-            {"rhythm": 1, "chords": [7]},
-            {"rhythm": 1, "chords": [8]},
-            {"rhythm": 1, "chords": [9]},
-            {"rhythm": 1, "chords": [10]},
-            {"rhythm": 1, "chords": [11]},
-            {"rhythm": 1, "chords": [12]},
-            {"rhythm": 2, "chords": [13]},
-            {"rhythm": 2, "chords": [14]},
-            {"rhythm": 2, "chords": [15]},
-            {"rhythm": 2, "chords": [16]},
-            {"rhythm": 3, "chords": [17]},
-            {"rhythm": 3, "chords": [18, 18, 18, 18, 18, 18, 19, 19, 19, 20]},
-            {"rhythm": 2, "chords": [21, 21, 21, 21, 21, 21, 21, 21, 21, 22]},
-            {"rhythm": 2, "chords": [21, 21, 21, 23, 23, 23, 22, 22, 22, 24]}
+            {"rhythm": "R1", "chords": "C01"},
+            {"rhythm": "R1", "chords": "C02"},
+            {"rhythm": "R1", "chords": "C03"},
+            {"rhythm": "R1", "chords": "C04"},
+            {"rhythm": "R1", "chords": "C05"},
+            {"rhythm": "R1", "chords": "C06"},
+            {"rhythm": "R1", "chords": "C07"},
+            {"rhythm": "R1", "chords": "C08"},
+            {"rhythm": "R1", "chords": "C09"},
+            {"rhythm": "R1", "chords": "C10"},
+            {"rhythm": "R1", "chords": "C11"},
+            {"rhythm": "R1", "chords": "C12"},
+            {"rhythm": "R2", "chords": "C13"},
+            {"rhythm": "R2", "chords": "C14"},
+            {"rhythm": "R2", "chords": "C15"},
+            {"rhythm": "R2", "chords": "C16"},
+            {"rhythm": "R3", "chords": "C17"},
+            {"rhythm": "R3", "chords": "C18,,,,,,C18b,,,C18c"},
+            {"rhythm": "R2", "chords": "0xx002,,,,,,,,,xxx003"},
+            {"rhythm": "R2", "chords": "0xx002,,,xxx000,,,xxx003,,,xxx007"}
           ]
         }
       ]
     }
   ],
   "structure": [
-    {"id": 1, "part": 1, "lyrics": ""},
+    {"part": "Intro", "lyrics": ""},
     {
-      "id": 2,
-      "part": 2,
+      "part": "Verse",
       "lyrics": "La marée je l'ai dans le cœur|\nQui me remonte comme un signe|\nJe meurs de ma petite sœur|\nDe mon enfant et de mon cygne|\nUn bateau ça dépend comment|\nOn l'arrime au port de justesse|\nIl pleure de mon firmament|\nDes années-lumière et j'en laisse|\nJe suis le fantôme Jersey|\nCelui qui vient les soirs de frime|\nTe lancer la brume en baisers|\nEt te ramasser dans ses rimes|\nComme le trémail de juillet|\nOù luisait le loup solitaire|\nCelui que je voyais briller |\n||\nAux doigts du sable de la te-|-rre|"
     },
     {
-      "id": 3,
-      "part": 2,
+      "part": "Verse",
       "lyrics": "Rappelle-toi ce chien de mer|\nQue nous libérions sur parole|\nEt qui gueule dans le désert|\nDes goémons de nécropole|\nJe suis sûr que la vie est là|\nAvec ses poumons de flanelle|\nQuand il pleure de ces temps-là|\nLe froid tout gris qui nous appelle|\nJe me souviens des soirs là-bas|\nEt des sprints gagnés sur l'écume|\nCette bave des chevaux ras|\nAu ras des rocs qui se consument|\nô l'ange des plaisirs perdus|\nô rumeurs d'une autre habitude|\nMes désirs dès lors ne sont plus|\n||\nQu'un chagrin de ma solitu-|-de|"
     },
     {
-      "id": 4,
-      "part": 2,
+      "part": "Verse",
       "lyrics": "Et le diable des soirs conquis|\nAvec ses pâleurs de rescousse|\nEt le squale des paradis|\nDans le milieu mouillé de mousse|\nReviens fille verte des fjords|\nReviens violon des violonades|\nDans le port fanfarent les cors|\nPour le retour des camarades|\nô parfum rare des salants|\nDans le poivre feu des gerçures|\nQuand j'allais géométrisant|\nMon âme au creux de ta blessure|\nDans le désordre de ton cul|\nPoissé dans les draps d'aube fine|\nJe voyais un vitrail de plus|\n||\nEt toi fille verte mon|spleen|"
     },
     {
-      "id": 5,
-      "part": 2,
+      "part": "Verse",
       "lyrics": "Les coquillages figurants|\nSous les sunlights cassés liquides|\nJouent de la castagnette tant|\nQu'on dirait l'Espagne livide|\nDieu des granits ayez pitié|\nDe leur vocation de parure|\nQuand le couteau vient s'immiscer|\nDans leur castagnette figure|\nEt je voyais ce qu'on pressent|\nQuand on pressent l'entrevoyure|\nEntre les persiennes du sang|\nEt que les globules figurent|\nUne mathématique bleue|\nDans cette mer jamais étale|\nD'où nous remonte peu à peu|\n||\nCette mémoire des ét-|-oiles|"
     },
     {
-      "id": 6,
-      "part": 2,
+      "part": "Verse",
       "lyrics": "Cette rumeur qui vient de là|\nSous l'arc copain où je m'aveugle|\nCes mains qui me font du flafla|\nCes mains ruminantes qui meuglent|\nCette rumeur me suit longtemps|\nComme un mendiant sous l'anathème|\nComme l'ombre qui perd son temps|\nà dessiner mon théorème|\nEt sur mon maquillage roux|\nS'en vient battre comme une porte|\nCette rumeur qui va debout|\nDans la rue aux musiques mortes|\nC'est fini la mer c'est fini|\nSur la plage le sable bêle|\nComme des moutons d'infini|\n||\nQuand la mer bergère m'ap-|pelle|"
     }
   ]

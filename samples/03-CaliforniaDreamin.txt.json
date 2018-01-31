@@ -10,132 +10,79 @@
   "capo": 4,
   "signature": {
     "key": "C",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 110,
     "shuffle": ""
   },
   "chords": [
     {
-      "id": 1,
       "name": "Am",
       "tablature": "x02210",
       "fingering": "T02310/-",
       "comment": ""
     },
     {
-      "id": 2,
       "name": "G",
       "tablature": "320003",
       "fingering": "320004/-",
       "comment": "G with 3 fingers. Finger 1 not used (kept for coming F)."
     },
     {
-      "id": 3,
       "name": "F",
       "tablature": "133211",
       "fingering": "134211/1",
       "comment": ""
     },
     {
-      "id": 4,
       "name": "E7sus4",
       "tablature": "020200",
       "fingering": "020300/-",
       "comment": "Same as E but with finger 3 down one string."
     },
     {
-      "id": 5,
       "name": "E7",
       "tablature": "020100",
       "fingering": "020100/-",
       "comment": "Same as E but without finger 3."
     },
-    {
-      "id": 6,
-      "name": "C",
-      "tablature": "x32010",
-      "fingering": "T32010/-",
-      "comment": ""
-    }
+    {"name": "C", "tablature": "x32010", "fingering": "T32010/-", "comment": ""}
   ],
   "rhythms": [
     {
-      "id": 1,
       "name": "R1",
       "score": ":q ()d> :8 ()d()u()d>()uT()()u :8 T()()u()d()u :q ()d :8 ()d()u"
     },
     {
-      "id": 2,
       "name": "R2",
       "score": ":q ()d> :8 ()d()u()d>()u(#)()u :8 (#)()u()d()u :q ()d :8 ()d()u"
     }
   ],
   "parts": [
     {
-      "id": 1,
-      "name": "A",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
-            {"rhythm": 1, "chords": [4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 3]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 2,
-      "name": "B",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 1, "chords": [6, 6, 6, 5, 5, 5, 1, 1, 1, 1, 1, 3]},
-            {"rhythm": 1, "chords": [4, 4, 4, 4, 4, 4, 5]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 3,
-      "name": "C",
-      "phrases": [
-        {
-          "bars": [
-            {"rhythm": 2, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
-            {"rhythm": 2, "chords": [4, 4, 4, 4, 4, 4, 5]}
-          ]
-        }
-      ],
-      "sub": true
-    },
-    {
-      "id": 4,
       "name": "Verse",
       "phrases": [
         {
           "bars": [
-            {"rhythm": 1, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
-            {"rhythm": 1, "chords": [4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 3]}
+            {"rhythm": "R1", "chords": "Am,,,G,,,F,,,,,G"},
+            {"rhythm": "R1", "chords": "E7sus4,,,,,,E7,,,,,F"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 1, "chords": [6, 6, 6, 5, 5, 5, 1, 1, 1, 1, 1, 3]},
-            {"rhythm": 1, "chords": [4, 4, 4, 4, 4, 4, 5]}
+            {"rhythm": "R1", "chords": "C,,,E7,,,Am,,,,,F"},
+            {"rhythm": "R1", "chords": "E7sus4,,,,,,E7"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 2, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
-            {"rhythm": 2, "chords": [4, 4, 4, 4, 4, 4, 5]}
+            {"rhythm": "R2", "chords": "Am,,,G,,,F,,,,,G"},
+            {"rhythm": "R2", "chords": "E7sus4,,,,,,E7"}
           ]
         },
         {
           "bars": [
-            {"rhythm": 2, "chords": [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2]},
-            {"rhythm": 2, "chords": [4, 4, 4, 4, 4, 4, 5]}
+            {"rhythm": "R2", "chords": "Am,,,G,,,F,,,,,G"},
+            {"rhythm": "R2", "chords": "E7sus4,,,,,,E7"}
           ]
         }
       ]
@@ -144,8 +91,7 @@
   "lyricsUnit": ":8",
   "structure": [
     {
-      "id": 1,
-      "part": 4,
+      "part": "Verse",
       "lyrics": "brown:h:|\n:q:and:the:sky:q:is|gray:|\n:qd:I've:been__:q:for:a|walk:|\n:qd:on a:win-:q:ter:'s|day:|\n:qd:I'd:be:q:safe:and|warm:|\n:qd:if:I:q:was:in|L.A|\n:qd:Ca-:li-:q:for-:nia|drea-:q:ming|\n:qd:on:such:q:a win-:ter's|day|"
     }
   ]

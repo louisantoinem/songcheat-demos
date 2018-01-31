@@ -40,7 +40,7 @@ CHORD C	  x32010 T32010/-
 # RHYTHMS #
 ###########
 
-RHYTHM R1	":q (B)d :8 ()d()uT()()u()d()u"
+RHYTHM R1	":q (B)d :8 ()d()uT()d()u()d()u"
 
 #########
 # PARTS #

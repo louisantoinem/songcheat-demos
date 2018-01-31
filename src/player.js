@@ -1,4 +1,4 @@
-import { Compiler, Player } from 'songcheat-core'
+import { Compiler, Player, Score } from 'songcheat-core'
 import samples from '../dist/samples.json'
 
 // https://github.com/rollup/rollup/issues/1803/
@@ -14,23 +14,12 @@ let compiler = new Compiler(0)
 let songcheat = compiler.compile(sample)
 $('body>h1').html(`${songcheat.title} (${songcheat.artist}, ${songcheat.year})`)
 
-// get notes for all units in song
-let notes = []
-for (let unit of songcheat.structure) {
-  for (let phrase of unit.part.phrases) {
-    for (let bar of phrase.bars) {
-      for (let note of bar.rhythm.compiledScore) {
-        let chordedNote = JSON.parse(JSON.stringify(note))
-        chordedNote.chord = note.chord || bar.chords[note.placeholderIndex]
-        if (!chordedNote.chord) throw new Error('No chord found for placeholder ' + (note.placeholderIndex + 1))
-        notes.push(chordedNote)
-      }
-    }
-  }
-}
+// concat score of all units in song
+let score = new Score(songcheat.signature.time)
+for (let unit of songcheat.structure) score.append(unit.part.score)
 
 // play
-let player = new Player(audioCtx, notes, {
+let player = new Player(audioCtx, score, {
   loop: false,
   capo: parseInt(songcheat.capo, 10),
   signature: songcheat.signature,

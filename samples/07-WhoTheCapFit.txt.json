@@ -10,130 +10,164 @@
   "capo": 0,
   "signature": {
     "key": "C",
-    "time": {"beatsPerBar": "4", "beatDuration": ":q", "symbol": "4/4"},
+    "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
     "tempo": 85,
     "shuffle": ""
   },
   "chords": [
     {
-      "id": 1,
       "name": "G",
       "tablature": "320033",
       "fingering": "210034/-",
       "comment": ""
     },
     {
-      "id": 2,
       "name": "Am",
       "tablature": "x02210",
       "fingering": "T02310/-",
       "comment": ""
     },
     {
-      "id": 3,
       "name": "C",
       "tablature": "x32010",
       "fingering": "T32010/-",
       "comment": ""
     },
     {
-      "id": 4,
       "name": "D",
       "tablature": "xx0232",
       "fingering": "T00132/-",
       "comment": ""
     },
     {
-      "id": 5,
       "name": "Em",
       "tablature": "022000",
       "fingering": "023000/-",
       "comment": ""
     }
   ],
-  "rhythms": [
-    {"id": 1, "name": "R1", "score": ":8 (#) ()u (#) ()u (#) ()u (#) ()u"}
-  ],
+  "rhythms": [{"name": "R1", "score": ":8 (#) ()u (#) ()u (#) ()u (#) ()u"}],
   "parts": [
     {
-      "id": 1,
-      "name": "A",
-      "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]}
-      ],
-      "sub": true
-    },
-    {
-      "id": 2,
-      "name": "B",
-      "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]}
-      ],
-      "sub": true
-    },
-    {
-      "id": 3,
-      "name": "C",
-      "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]}
-      ],
-      "sub": true
-    },
-    {
-      "id": 4,
       "name": "Verse A",
       "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]},
-        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]}
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        }
       ]
     },
     {
-      "id": 5,
       "name": "Verse B",
       "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]},
-        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]},
-        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]},
-        {"bars": [{"rhythm": 1, "chords": [3]}, {"rhythm": 1, "chords": [4]}]}
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "D"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "D"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "D"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "C"},
+            {"rhythm": "R1", "chords": "D"}
+          ]
+        }
       ]
     },
     {
-      "id": 6,
       "name": "Chorus",
       "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]}
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        }
       ]
     },
     {
-      "id": 7,
       "name": "Interlude",
       "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]},
-        {"bars": [{"rhythm": 1, "chords": [1]}, {"rhythm": 1, "chords": [2]}]}
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "G"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        }
       ]
     },
     {
-      "id": 8,
       "name": "Outro",
       "phrases": [
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]},
-        {"bars": [{"rhythm": 1, "chords": [5]}, {"rhythm": 1, "chords": [2]}]}
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        }
       ]
     }
   ],
   "structure": [
-    {"id": 1, "part": 4, "lyrics": ""},
-    {"id": 2, "part": 5, "lyrics": ""},
-    {"id": 3, "part": 6, "lyrics": ""},
-    {"id": 4, "part": 4, "lyrics": ""},
-    {"id": 5, "part": 5, "lyrics": ""},
-    {"id": 6, "part": 6, "lyrics": ""},
-    {"id": 7, "part": 7, "lyrics": ""},
-    {"id": 8, "part": 5, "lyrics": ""},
-    {"id": 9, "part": 6, "lyrics": ""},
-    {"id": 10, "part": 8, "lyrics": ""}
+    {"part": "Verse A", "lyrics": ""},
+    {"part": "Verse B", "lyrics": ""},
+    {"part": "Chorus", "lyrics": ""},
+    {"part": "Verse A", "lyrics": ""},
+    {"part": "Verse B", "lyrics": ""},
+    {"part": "Chorus", "lyrics": ""},
+    {"part": "Interlude", "lyrics": ""},
+    {"part": "Verse B", "lyrics": ""},
+    {"part": "Chorus", "lyrics": ""},
+    {"part": "Outro", "lyrics": ""}
   ]
 }

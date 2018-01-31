@@ -69,22 +69,21 @@ let compiler = new Compiler(1);
       songcheat = compiler.compile(songcheat)
       let lyrics = new Lyrics(songcheat, 1)
 
-      // parse lyrics and show warnings if any
+      // show lyrics warnings if any
       let texts = []
       for (let unit of songcheat.structure) {
-        let warnings = lyrics.parseLyrics(unit)
-        if (warnings.length > 0) texts.push('Parse warnings for unit ' + unit.name + ':\n - ' + warnings.join('\n- '))
+        if (unit.lyricsWarnings.length > 0) texts.push('Parse warnings for unit ' + unit.name + ':\n- ' + unit.lyricsWarnings.join('\n- '))
       }
 
       // get lyrics text in various styles
       texts.push(Utils.title('Split as entered / Compact'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 1, 0, 'rhythm', false))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 1, 0, false))
       texts.push(Utils.title('Split as entered / Respect durations'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 0, 0, 'rhythm', true))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 0, 0, true))
       texts.push(Utils.title('Split by 2 bars / Compact'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 1, 2, 'rhythm', false))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 1, 2, false))
       texts.push(Utils.title('Split by 2 bars / Respect durations'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 0, 2, 'rhythm', true))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 0, 2, true))
 
       fs.writeFileSync(file.replace(/(\.[^.]*)$/, '$1') + '.lyrics', texts.join('\n\n'))
       console.info('[' + file + '] LYRICS file written successfully')
