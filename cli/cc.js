@@ -1,4 +1,4 @@
-const { Utils, Parser, ParserException, Compiler, CompilerException, Lyrics, LyricsException } = require('songcheat-core')
+const { Utils, Parser, ParserException, Compiler, CompilerException, Ascii, AsciiException } = require('songcheat-core')
 const { promisify } = require('util')
 const fs = require('fs')
 const readFile = promisify(fs.readFile)
@@ -21,7 +21,7 @@ if (options['help'] || !options['input']) {
       content: [
         'Takes one or several songcheat text files.',
         '- Parser generates a .json file next to each input file',
-        '- Compiler generates .log and .lyrics files next to each input file'
+        '- Compiler generates .log and .ascii files next to each input file'
       ]
     },
     {
@@ -67,7 +67,7 @@ let compiler = new Compiler(1);
 
       // compile songcheat
       songcheat = compiler.compile(songcheat)
-      let lyrics = new Lyrics(songcheat, 1)
+      let ascii = new Ascii(songcheat, 1)
 
       // show lyrics warnings if any
       let texts = []
@@ -75,24 +75,24 @@ let compiler = new Compiler(1);
         if (unit.lyricsWarnings.length > 0) texts.push('Parse warnings for unit ' + unit.name + ':\n- ' + unit.lyricsWarnings.join('\n- '))
       }
 
-      // get lyrics text in various styles
+      // get ascii text in various styles
       texts.push(Utils.title('Split as entered / Compact'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 1, 0, false))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', ascii.getUnitText(unit, 1, 0, false))
       texts.push(Utils.title('Split as entered / Respect durations'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 0, 0, true))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', ascii.getUnitText(unit, 0, 0, true))
       texts.push(Utils.title('Split by 2 bars / Compact'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 1, 2, false))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', ascii.getUnitText(unit, 1, 2, false))
       texts.push(Utils.title('Split by 2 bars / Respect durations'))
-      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', lyrics.getUnitText(unit, 0, 2, true))
+      for (let unit of songcheat.structure) texts.push('[' + unit.name + ']', ascii.getUnitText(unit, 0, 2, true))
 
-      fs.writeFileSync(file.replace(/(\.[^.]*)$/, '$1') + '.lyrics', texts.join('\n\n'))
-      console.info('[' + file + '] LYRICS file written successfully')
+      fs.writeFileSync(file.replace(/(\.[^.]*)$/, '$1') + '.ascii', texts.join('\n\n'))
+      console.info('[' + file + '] ASCII file written successfully')
 
       fs.writeFileSync(file.replace(/(\.[^.]*)$/, '$1') + '.log', log.join('\n'))
       console.info('[' + file + '] LOG file written successfully')
     } catch (e) {
       console.error('[' + file + '] ' + e.toString())
-      if (!(e instanceof ParserException) && !(e instanceof CompilerException) && !(e instanceof LyricsException)) console.error(e)
+      if (!(e instanceof ParserException) && !(e instanceof CompilerException) && !(e instanceof AsciiException)) console.error(e)
     }
   }
 

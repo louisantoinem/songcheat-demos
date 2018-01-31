@@ -1,4 +1,4 @@
-import { Utils, Compiler, Lyrics, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
+import { Utils, Compiler, Ascii, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
 import { PlayerUI } from './player_ui'
 import samples from '../dist/samples.json'
 
@@ -279,8 +279,8 @@ function displayParts (songcheat, part, $partsZone) {
     // if full part display enabled, force maxsp = 0: we want the exact position of chords
     // always split by N bars (no lyrics so split as entered makes no sense, splitParts is never 0)
     // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    let lyrics = new Lyrics(songcheat, DEBUG)
-    $partsZone.append(lyrics.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, false))
+    let ascii = new Ascii(songcheat, DEBUG)
+    $partsZone.append(ascii.getPartText(part, songcheat.partdisplay === 'compact' ? 1 : 0, songcheat.splitParts, false))
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $partsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message))
@@ -294,8 +294,7 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
   $lyricsZone.html('')
 
   try {
-    // parse lyrics
-    let lyrics = new Lyrics(songcheat, DEBUG)
+    let ascii = new Ascii(songcheat, DEBUG)
 
     // display lyrics warnings if any
     for (let warning of unit.lyricsWarnings) {
@@ -303,9 +302,8 @@ function displayLyrics (songcheat, unit, $lyricsZone) {
       console.warn('[' + unit.name + '] ' + warning)
     }
 
-    // build and display lyrics
-    // we can use chord changes mode "rhythm", "bar" or "phrase", use "rhythm" as for vextab
-    $lyricsZone.append(lyrics.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, songcheat.maxsp !== 1))
+    // build and display ascii lyrics
+    $lyricsZone.append(ascii.getUnitText(unit, songcheat.maxsp, songcheat.splitUnits, songcheat.maxsp !== 1))
   } catch (e) {
     // display fatal error while parsing or building lyrics
     $lyricsZone.before($('<p>').addClass('error').css('color', 'red').html('Error: ' + e.message))
