@@ -7,6 +7,7 @@
   "source": "",
   "tutorial": "Galago",
   "comment": "",
+  "mode": "rt",
   "tuning": "standard",
   "capo": 0,
   "signature": {
@@ -41,7 +42,25 @@
       "comment": ""
     },
     {"name": "E7", "tablature": "000230", "fingering": "000130", "comment": ""},
-    {"name": "A", "tablature": "x0022x", "fingering": "000111/2", "comment": ""}
+    {
+      "name": "A",
+      "tablature": "x0022x",
+      "fingering": "000111/2",
+      "comment": ""
+    },
+    {"name": "E", "tablature": "022100", "fingering": "000100", "comment": ""}
+  ],
+  "rhythms": [
+    {
+      "name": "RV1",
+      "score": ":8(5)(3) :16(2)h{----3-} p(2)^3 :8(3) :q(B23) :8(B23)(B23)T(B23)(B)(23)(B)(23)(B)(23)(B)"
+    },
+    {"name": "RV2", "score": ":8(B23)(B)(23)(B) :8(B23)(B)(23)(B)"},
+    {
+      "name": "RV3",
+      "score": ":8(23)(B)(23)(B) :8(23)(B){---43-} :16(B)h{2-----}"
+    },
+    {"name": "RV3'", "score": ":8(23)(B)(23)(B) :8(23)(B){---43-}(B)"}
   ],
   "parts": [
     {
@@ -51,21 +70,42 @@
           "bars": [
             {"rhythm": ":q(#)(#)(#):8(#) :16{0-----}h{2-----}", "chords": " "},
             {
-              "rhythm": ":8(5)(3) :16(2)h{----3-} p(2)^3 :8(3)(623)(6)(23)(623)T(623)(6)(23)(6)(23)(6)(23)(6)",
-              "chords": " A/E::E/G#:qd:F#m,::A/E"
+              "rhythm": ":8(5)(3) :16(2)h{----3-} p(2)^3 :8(3)(B23)(B)(23)(B23)T(B23)(B)(23)(B)(23)(B)(23)(B)",
+              "chords": " A::E/G#:qd:F#m,::A/E"
             },
             {
-              "rhythm": ":8(623)(6)(23)(6) :q(623)(623)",
+              "rhythm": ":8(B23)(B)(23)(B) :q(B23)(B23)",
               "chords": " D/F#,,,,E7,000130"
             },
             {
-              "rhythm": ":8(523)(5)(23)(5)(23)(5)(23) :16{0-----}h{2-----}",
+              "rhythm": ":8(B23)(B)(23)(B)(23)(B)(23) :16{0-----}h{2-----}",
               "chords": " A"
             }
           ]
         }
       ]
+    },
+    {
+      "name": "Verse",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": "RV1", "chords": " A::E/G#:qd:F#m,::A/E"},
+            {"rhythm": "RV2", "chords": " D/F#,,,,A,,,A/E"},
+            {"rhythm": "RV3", "chords": " E::A/E"},
+            {"rhythm": "RV1", "chords": " A::E/G#:qd:F#m,::A/E"},
+            {"rhythm": "RV2", "chords": " D/F#,,,,A/E"},
+            {"rhythm": "RV3'", "chords": " E::A/E"}
+          ]
+        }
+      ]
     }
   ],
-  "structure": [{"part": "Intro", "lyrics": ""}]
+  "structure": [
+    {"part": "Intro", "lyrics": ""},
+    {
+      "part": "Verse",
+      "lyrics": ":Would,,you:know,my,name||\n:If,I,saw,you,in,hea-,ven?|\n:Would,,it:be,the,same||\n:If,I,saw,you,in,hea-,ven?"
+    }
+  ]
 }

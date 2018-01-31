@@ -10,7 +10,7 @@ VIDEO ""
 SOURCE ""
 TUTORIAL "Galago"
 COMMENT ""
-# MODE tsd
+MODE rt
 
 ################
 # GUITAR SETUP #
@@ -38,10 +38,16 @@ CHORD F#m  20022x T00111 "Palm mute pour passer proprement de la fret 4 à la fr
 CHORD D/F# 200230 T00130
 CHORD E7   000230 000130
 CHORD A    x0022x 000111/2
+CHORD E    022100 000100
 
 ###########
 # RHYTHMS #
 ###########
+
+RHYTHM RV1 ":8(5)(3) :16(2)h{----3-} p(2)^3 :8(3) :q(B23) :8(B23)(B23)T(B23)(B)(23)(B)(23)(B)(23)(B)"
+RHYTHM RV2 ":8(B23)(B)(23)(B) :8(B23)(B)(23)(B)"
+RHYTHM RV3 ":8(23)(B)(23)(B) :8(23)(B){---43-} :16(B)h{2-----}"
+RHYTHM RV3' ":8(23)(B)(23)(B) :8(23)(B){---43-}(B)"
 
 #########
 # PARTS #
@@ -49,11 +55,17 @@ CHORD A    x0022x 000111/2
 
 PART Intro
 [:q(#)(#)(#):8(#) :16{0-----}h{2-----}* ]
-[:8(5)(3) :16(2)h{----3-} p(2)^3 :8(3)(623)(6)(23)(623)T(623)(6)(23)(6)(23)(6)(23)(6) * A/E::E/G#:qd:F#m,::A/E]
-[:8(623)(6)(23)(6) :q(623)(623) * D/F#,,,,E7,000130]
-[:8(523)(5)(23)(5)(23)(5)(23) :16{0-----}h{2-----} * A]
+[:8(5)(3) :16(2)h{----3-} p(2)^3 :8(3)(B23)(B)(23)(B23)T(B23)(B)(23)(B)(23)(B)(23)(B) * A::E/G#:qd:F#m,::A/E]
+[:8(B23)(B)(23)(B) :q(B23)(B23) * D/F#,,,,E7,000130]
+[:8(B23)(B)(23)(B)(23)(B)(23) :16{0-----}h{2-----} * A]
 
-#PART Verse
+PART Verse
+[RV1 * A::E/G#:qd:F#m,::A/E]
+[RV2 * D/F#,,,,A,,,A/E]
+[RV3 * E::A/E]
+[RV1 * A::E/G#:qd:F#m,::A/E]
+[RV2 * D/F#,,,,A/E]
+[RV3'* E::A/E]
 
 #############
 # STRUCTURE #
@@ -62,4 +74,35 @@ PART Intro
 STRUCTURE
 
 Intro ""
-#Verse ""
+
+Verse ":Would,,you:know,my,name||
+:If,I,saw,you,in,hea-,ven?|
+:Would,,it:be,the,same||
+:If,I,saw,you,in,hea-,ven?"
+
+#Chorus"I must be strong and carry on|
+#'Cause I know I don't belong here in heaven"
+
+#Verse "Would you hold my hand|
+#If I saw you in heaven?|
+#Would you help me stand|
+#If I saw you in heaven?"
+
+#Chorus "I'll find my way through night and day|
+#'Cause I know I just can't stay here in heaven"
+
+#Bridge "Time can bring you down|
+#Time can bend your knees|
+#Time can break your heart|
+#Have you begging please, begging please"
+
+#Chorus "Beyond the door there's peace I'm sure|
+#And I know there'll be no more tears in heaven"
+
+#Verse "Would you know my name|
+#If I saw you in heaven?|
+#Would it be the same|
+#If I saw you in heaven?"
+
+#Chorus "I must be strong and carry on|
+#'Cause I know I don't belong here in heaven"
