@@ -1,13 +1,12 @@
 {
   "artist": "Eric Clapton",
   "title": "Tears In Heaven",
-  "year": 1900,
+  "year": 1992,
   "difficulty": 4,
-  "video": "",
+  "video": "https://www.youtube.com/watch?v=sSbqm7ZK_9s",
   "source": "",
-  "tutorial": "Galago",
-  "comment": "",
-  "mode": "rt",
+  "tutorial": "https://www.youtube.com/watch?v=lXvCiFgg740",
+  "comment": "'Tears in Heaven' is a song by Eric Clapton and Will Jennings, from the 1991 Rush film soundtrack. In an interview with Sue Lawley in 1992, Clapton said of the song, 'There is a song that I’ve written for a movie, but in actual fact it was in the back of my head but it didn’t really have a reason for being until I was scoring this movie which I did a little while ago and then it sort of had a reason to be. And it is a little ambiguous because it could be taken to be about Conor but it also is meant to be part of the film.' Conor, Clapton's four-year-old son, fell from a window of a 53rd-floor New York apartment owned by his mother's friend on March 20, 1991. Clapton arrived at the apartment shortly after the accident.\n\nThe song was Clapton's best-selling single in the United States and reached number two on the Billboard Hot 100. It won three Grammy Awards for Best Pop Vocal Performance, Male, Song of the Year, and Record of the Year. In 2004, Rolling Stone ranked 'Tears in Heaven' 362nd on the magazine's list of 'The 500 Greatest Songs of All Time'.",
   "tuning": "standard",
   "capo": 0,
   "signature": {
@@ -62,6 +61,7 @@
     },
     {"name": "RV3'", "score": ":8(23)(B)(23)(B) :8(23)(B){---43-}(B)"}
   ],
+  "mode": "nt",
   "parts": [
     {
       "name": "Intro",

@@ -48,7 +48,7 @@ for (let rhythm of songcheat.rhythms) {
 // parse and render full song score with vextab
 try {
   console.info('Converting songcheat to vextab score...')
-  let score = SongcheatVexTab.Songcheat2VexTab(songcheat)
+  let score = SongcheatVexTab.Units2VexTab(songcheat, songcheat.structure, 4, false, true)
   console.info('Parsing score...')
   let artist = new Artist(10, 10, 1200, {scale: 1.0})
   let vextab = new VexTab(artist)

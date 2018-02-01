@@ -62,7 +62,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   // default values for mode, bars per line and scale
   songcheat.scale = songcheat.scale || 0.92
-  songcheat.mode = songcheat.mode || 'rt'
+  songcheat.mode = songcheat.mode || 'nt'
   songcheat.lyricsMode = songcheat.lyricsMode || 's'
   songcheat.showUnit = songcheat.showUnit || '*'
   songcheat.barsPerLine = songcheat.barsPerLine || 4
@@ -193,7 +193,8 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
         let artist = new Artist(10, 10, scoreWidth, { scale: songcheat.scale })
         let vextab = new VexTab(artist)
         console.info('Parsing score...')
-        vextab.parse(SongcheatVexTab.Songcheat2VexTab(songcheat))
+        let units = typeof songcheat.showUnitIndex === 'undefined' || songcheat.showUnitIndex === null ? songcheat.structure : [songcheat.structure[songcheat.showUnitIndex]]
+        vextab.parse(SongcheatVexTab.Units2VexTab(songcheat, units, songcheat.barsPerLine, false, songcheat.lyricsMode === 's', songcheat.lyricsMode === 'h'))
         console.info('Rendering score...')
         artist.render(renderer)
         console.info('Score done!')
@@ -255,7 +256,8 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
     // parse and render full song score with vextab
   try {
     console.info('Converting songcheat to vextab score...')
-    let score = SongcheatVexTab.Songcheat2VexTab(songcheat)
+    let units = typeof songcheat.showUnitIndex === 'undefined' || songcheat.showUnitIndex === null ? songcheat.structure : [songcheat.structure[songcheat.showUnitIndex]]
+    let score = SongcheatVexTab.Units2VexTab(songcheat, units, songcheat.barsPerLine, false, songcheat.lyricsMode === 's', songcheat.lyricsMode === 'h')
     console.info('Parsing score...')
     let artist = new Artist(10, 10, scoreWidth, { scale: songcheat.scale })
     let vextab = new VexTab(artist)

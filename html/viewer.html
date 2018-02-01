@@ -21,10 +21,14 @@
     <h4>Score</h4>
     <div>
       <select name="mode">
-				<option value="rt">Rhythm notation and tablature</option>
-				<option value="r">Rhythm notation only</option>
+				<option value="nt">Notation and tablature</option>
+        <option value="nts">Notation and tablature, with stems up</option>
+        <option value="ntsd">Notation and tablature, with stems down</option>
+				<option value="n">Notation only</option>
+        <option value="r">Rhythm only</option>
 				<option value="t">Tablature only</option>
-				<option value="ts">Tablature only, with stems</option>
+				<option value="ts">Tablature only, with stems up</option>
+        <option value="tsd">Tablature only, with stems down</option>
 			</select> <select name="barsPerLine">
 				<option value="1">One bar per line</option>
 				<option value="2">2 bars per line</option>
@@ -38,7 +42,7 @@
 				<option value="10">10 bars per line</option>
 			</select> <select name="lyricsMode">
 				<option value="s">Show lyrics</option>
-				<option value="h">Hide lyrics</option>
+				<option value="h">Show strokes</option>
 			</select> <select name="showUnit">
 				<option value="*">(show whole song)</option>
 			</select>
