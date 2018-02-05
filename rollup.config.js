@@ -8,7 +8,7 @@ var BANNER = '/**\n' +
   ' * SongCheat Viewer ' + pkg.version + ' built on ' + new Date().toString() + '.\n ' +
   ' * Copyright (c) 2017 Louis Antoine <louisantoinem@gmail.com>\n' +
   ' *\n' +
-  ' * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-viewer\n' +
+  ' * http://www.songcheat.io  http://github.com/louisantoinem/songcheat-demos\n' +
   ' */\n'
 
 export default [{
