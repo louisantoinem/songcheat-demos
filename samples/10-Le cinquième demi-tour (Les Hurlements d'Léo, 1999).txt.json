@@ -1,0 +1,116 @@
+{
+  "artist": "Les Hurlements d'Léo",
+  "title": "Le 5ème demi-tour",
+  "year": 2000,
+  "difficulty": 2,
+  "source": "https://www.easyzic.com/partitions-tablatures/,m21324.html",
+  "video": "https://www.youtube.com/watch?v=1O1Pe1TV6cg",
+  "tutorial": "",
+  "comment": "5ème plage de l'album 'La belle affaire'",
+  "tuning": "standard",
+  "capo": 0,
+  "signature": {
+    "key": "C",
+    "time": {"beatsPerBar": "2", "beat": ":qd", "symbol": "6/8"},
+    "tempo": 72,
+    "shuffle": ""
+  },
+  "chords": [
+    {
+      "name": "Am",
+      "tablature": "x02210",
+      "fingering": "T02310/-",
+      "comment": ""
+    },
+    {
+      "name": "Em",
+      "tablature": "022000",
+      "fingering": "023000/-",
+      "comment": ""
+    },
+    {"name": "Dm", "tablature": "xx0231", "fingering": "T00241", "comment": ""}
+  ],
+  "rhythms": [
+    {"name": "R1", "score": ":8 (B)p> (23)im(23)im(B)p> (23)im(23)im"}
+  ],
+  "parts": [
+    {
+      "name": "Chorus",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Dm"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Dm"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Dm"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Verse",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Dm"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        },
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Dm"},
+            {"rhythm": "R1", "chords": "Am"}
+          ]
+        }
+      ]
+    }
+  ],
+  "structure": [
+    {
+      "part": "Chorus",
+      "lyrics": "Si tu es le cinquième|demi-tour le dernier ?|\nT'en souviens-tu la nuit|passée ?|\nUne nuit pour dormir |l'autre pour s'aimer...|\nJ'ai des airs de terre dans|les yeux|\nRien que de l'ima-|giner|||\n||"
+    },
+    {
+      "part": "Verse",
+      "lyrics": "Oublié des enfers|c'était pour essayer.|\nTrompé par la mer j'avais|pourtant rien fait.|\nDéçu par l'air j'aurais|pu m'en douter.|\nGuidé par la forêt j'avais|juré qu'c'était le dernier."
+    },
+    {
+      "part": "Chorus",
+      "lyrics": "Seras tu le cinquième|demi-tour le dernier ?|\nT'en souviens tu la nuit| passée ?|\nUne nuit pour dormir |l'autre pour s'aimer...|\nCelle où ne pou-|vant parler|\nJe te regardais.||Celle où ne pou-|vant parler|\nJ'te r'gardais|deviner mes pensées."
+    },
+    {
+      "part": "Verse",
+      "lyrics": "J'irai dans ce désert|une dernière fois m'oublier.|\nMe noyer m'aliéner à tes|baisers percés.|\nS'il faut que l'on meurt|de cette passion terminée.|\nje garderai le goût d'ta sueur|ma peur aura changé."
+    },
+    {
+      "part": "Chorus",
+      "lyrics": "Si tu es le cinquième|demi-tour le dernier|\nt'en souviens-tu la nuit|passée ?|\n||||\n||||\n"
+    }
+  ]
+}

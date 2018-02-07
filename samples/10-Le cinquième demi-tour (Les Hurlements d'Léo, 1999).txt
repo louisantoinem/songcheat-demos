@@ -1,0 +1,90 @@
+#################
+# SONG METADATA #
+#################
+
+ARTIST "Les Hurlements d'Léo"
+TITLE "Le 5ème demi-tour"
+YEAR 2000
+DIFFICULTY 2
+
+SOURCE "https://www.easyzic.com/partitions-tablatures/,m21324.html"
+VIDEO "https://www.youtube.com/watch?v=1O1Pe1TV6cg"
+TUTORIAL ""
+COMMENT "5ème plage de l'album 'La belle affaire'"
+
+################
+# GUITAR SETUP #
+################
+
+TUNING standard
+CAPO 0
+
+##########################
+# KEY AND TIME SIGNATURE #
+##########################
+
+KEY C
+TIME 6/8 2 :qd
+TEMPO 72
+SHUFFLE ""
+
+##########
+# CHORDS #
+##########
+
+CHORD Am x02210 T02310/-
+CHORD Em 022000 023000/-
+CHORD Dm xx0231 T00241
+
+###########
+# RHYTHMS #
+###########
+
+RHYTHM R1	":8 (B)p> (23)im(23)im(B)p> (23)im(23)im"
+
+#########
+# PARTS #
+#########
+
+SUB A [R1*Am] [R1*Em] [R1*Dm] [R1*Am]
+SUB B [R1*Em] [R1*Am] [R1*Dm] [R1*Am]
+SUB C [R1*Em] [R1*Am]
+SUB D [R1*Em] [R1*Dm] [R1*Am]
+
+PART "Chorus" A || A || B || C
+PART "Verse" A || A
+
+#############
+# STRUCTURE #
+#############
+
+STRUCTURE
+"Chorus" "Si tu es le cinquième|demi-tour le dernier ?|
+T'en souviens-tu la nuit|passée ?|
+Une nuit pour dormir |l'autre pour s'aimer...|
+J'ai des airs de terre dans|les yeux|
+Rien que de l'ima-|giner|||
+||"
+
+"Verse" "Oublié des enfers|c'était pour essayer.|
+Trompé par la mer j'avais|pourtant rien fait.|
+Déçu par l'air j'aurais|pu m'en douter.|
+Guidé par la forêt j'avais|juré qu'c'était le dernier."
+
+"Chorus" "Seras tu le cinquième|demi-tour le dernier ?|
+T'en souviens tu la nuit| passée ?|
+Une nuit pour dormir |l'autre pour s'aimer...|
+Celle où ne pou-|vant parler|
+Je te regardais.||Celle où ne pou-|vant parler|
+J'te r'gardais|deviner mes pensées."
+
+"Verse" "J'irai dans ce désert|une dernière fois m'oublier.|
+Me noyer m'aliéner à tes|baisers percés.|
+S'il faut que l'on meurt|de cette passion terminée.|
+je garderai le goût d'ta sueur|ma peur aura changé."
+
+"Chorus" "Si tu es le cinquième|demi-tour le dernier|
+t'en souviens-tu la nuit|passée ?|
+||||
+||||
+"
