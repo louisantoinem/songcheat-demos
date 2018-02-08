@@ -63,7 +63,8 @@ STRUCTURE
 T'en souviens-tu la nuit|passée ?|
 Une nuit pour dormir |l'autre pour s'aimer...|
 J'ai des airs de terre dans|les yeux|
-Rien que de l'ima-|giner|||
+Rien que de l'ima-|giner|
+||
 ||"
 
 "Verse" "Oublié des enfers|c'était pour essayer.|
@@ -75,7 +76,8 @@ Guidé par la forêt j'avais|juré qu'c'était le dernier."
 T'en souviens tu la nuit| passée ?|
 Une nuit pour dormir |l'autre pour s'aimer...|
 Celle où ne pou-|vant parler|
-Je te regardais.||Celle où ne pou-|vant parler|
+Je te regardais.||
+Celle où ne pou-|vant parler|
 J'te r'gardais|deviner mes pensées."
 
 "Verse" "J'irai dans ce désert|une dernière fois m'oublier.|
