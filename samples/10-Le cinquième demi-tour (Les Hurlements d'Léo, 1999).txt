@@ -51,6 +51,7 @@ SUB B [R1*Em] [R1*Am] [R1*Dm] [R1*Am]
 SUB C [R1*Em] [R1*Am]
 SUB D [R1*Em] [R1*Dm] [R1*Am]
 
+PART "Intro" [R1*Am] [R1*Em] [R1*Am] [R1*Em]
 PART "Chorus" A || A || B || C
 PART "Verse" A || A
 
@@ -59,6 +60,8 @@ PART "Verse" A || A
 #############
 
 STRUCTURE
+"Intro" ""
+
 "Chorus" "Si tu es le cinquième|demi-tour le dernier ?|
 T'en souviens-tu la nuit|passée ?|
 Une nuit pour dormir |l'autre pour s'aimer...|

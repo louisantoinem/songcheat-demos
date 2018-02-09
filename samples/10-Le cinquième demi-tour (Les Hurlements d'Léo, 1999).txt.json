@@ -35,6 +35,19 @@
   ],
   "parts": [
     {
+      "name": "Intro",
+      "phrases": [
+        {
+          "bars": [
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Em"},
+            {"rhythm": "R1", "chords": "Am"},
+            {"rhythm": "R1", "chords": "Em"}
+          ]
+        }
+      ]
+    },
+    {
       "name": "Chorus",
       "phrases": [
         {
@@ -92,6 +105,7 @@
     }
   ],
   "structure": [
+    {"part": "Intro", "lyrics": ""},
     {
       "part": "Chorus",
       "lyrics": "Si tu es le cinquième|demi-tour le dernier ?|\nT'en souviens-tu la nuit|passée ?|\nUne nuit pour dormir |l'autre pour s'aimer...|\nJ'ai des airs de terre dans|les yeux|\nRien que de l'ima-|giner|\n||\n||"
