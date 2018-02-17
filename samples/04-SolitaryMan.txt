@@ -46,10 +46,10 @@ RHYTHM R1	":q (B)d :8 ()d()uT()d()u()d()u"
 # PARTS #
 #########
 
-PART "Intro" 		 [R1*Em] % % %
-PART "Verse" 		 [R1*Em] [R1*Am] [R1*G] [R1*Em] || [R1*G] [R1*Am] [R1*G] [R1*Am]
-PART "Chorus" 	 [R1*Am] [R1*G]  [R1*C] [R1*G]  [R1*D] % [R1*C] [R1*G] [R1*D] || [R1*D] [R1*Em] [R1*D] [R1*Em] [R1*D] [R1*Em]
-PART "Interlude" [R1*Em] [R1*Em] [R1*Am] [R1*Am] || [R1*Em] [R1*Em] [R1*Am] [R1*Am]
+PART "Intro" 		 "R1*Em" % % %
+PART "Verse" 		 "R1*Em" "R1*Am" "R1*G" "R1*Em" || "R1*G" "R1*Am" "R1*G" "R1*Am"
+PART "Chorus" 	 "R1*Am" "R1*G"  "R1*C" "R1*G"  "R1*D" % "R1*C" "R1*G" "R1*D" || "R1*D" "R1*Em" "R1*D" "R1*Em" "R1*D" "R1*Em"
+PART "Interlude" "R1*Em" "R1*Em" "R1*Am" "R1*Am" || "R1*Em" "R1*Em" "R1*Am" "R1*Am"
 
 #############
 # STRUCTURE #

@@ -51,13 +51,13 @@ RHYTHM R1	":8 ()d ()u ()d ()u T() ()u ()d ()u"
 # PARTS #
 #########
 
-SUB TAIL [R1*Am] [R1*Asus4,,,,,Am] [R1*C] [R1*Cadd9,,,,,C]
+SUB TAIL R1*Am R1*Asus4,,,,,Am R1*C R1*Cadd9,,,,,C
 
-PART "Chorus"   [R1*Am] [R1*E] % [R1*C,,,,,G] || TAIL
-PART "Verse"    [R1*Am] % [R1*C] [R1*G] || TAIL
-PART "Bridge"   [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % ||
-                [R1*Am] % [R1*G] % || [R1*Am] % [R1*G] % || TAIL
-PART "Outro"    [R1*Am] [R1*E] % [R1*C,,,,,G] || [:h ()dd :h (#)*Am]
+PART "Chorus"   R1*Am R1*E % R1*C,,,,,G || TAIL
+PART "Verse"    R1*Am % R1*C R1*G || TAIL
+PART "Bridge"   R1*Am % R1*G % || R1*Am % R1*G % ||
+                R1*Am % R1*G % || R1*Am % R1*G % || TAIL
+PART "Outro"    R1*Am R1*E % R1*C,,,,,G || ":h ()dd :h (#)*Am"
 
 #############
 # STRUCTURE #

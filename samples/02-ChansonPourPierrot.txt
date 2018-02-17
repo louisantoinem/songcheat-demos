@@ -49,9 +49,9 @@ RHYTHM R2	":8 (B)p> :qd (#)"
 # PARTS #
 #########
 
-PART "Intro"	[R1*Em] [R1*C] || [R1*Em] [R1*C] || [R1*Em] [R1*Am] || [R1*Em] [R1*B7]
-PART "Verse"	[R1*Em] [R1*C] || [R1*Em] [R1*C] || [R1*Em] [R1*Am] || [R1*Em] [R1*Am] [R1*B7]
-PART "Chorus"	[R2*B7] || [R1*Em] [R1*Am] || [R1*D] [R2*D] [R1*Em]
+PART "Intro"	"R1*Em" "R1*C" || "R1*Em" "R1*C" || "R1*Em" "R1*Am" || "R1*Em" "R1*B7"
+PART "Verse"	"R1*Em" "R1*C" || "R1*Em" "R1*C" || "R1*Em" "R1*Am" || "R1*Em" "R1*Am" "R1*B7"
+PART "Chorus"	"R2*B7" || "R1*Em" "R1*Am" || "R1*D" "R2*D" "R1*Em"
 
 #############
 # STRUCTURE #

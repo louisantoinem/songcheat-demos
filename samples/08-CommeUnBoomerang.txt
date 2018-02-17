@@ -51,10 +51,10 @@ RHYTHM R2	":8 (2) (3) (4) (B) (4) (4) (4) (B) "
 # PARTS #
 #########
 
-PART Intro [R0*Em] %
+PART Intro "R0*Em" %
 
-PART Verse [R1*Em] [R1*G] [R1*A] [R1*C] [R1*Em]
-           [R2*B7,,,,,,,Em] [R0*Em]
+PART Verse "R1*Em" "R1*G" "R1*A" "R1*C" "R1*Em"
+           "R2*B7,,,,,,,Em" "R0*Em"
 
 PART Chorus Verse
 

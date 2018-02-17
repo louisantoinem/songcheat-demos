@@ -1,4 +1,4 @@
-#################
+﻿#################
 # SONG METADATA #
 #################
 
@@ -46,9 +46,9 @@ RHYTHM R1	":8 (#) ()u (#) ()u (#) ()u (#) ()u"
 # PARTS #
 #########
 
-SUB A [R1*G]  [R1*Am]
-SUB B [R1*C]  [R1*D]
-SUB C [R1*Em] [R1*Am]
+SUB A "R1*G"  "R1*Am"
+SUB B "R1*C"  "R1*D"
+SUB C "R1*Em" "R1*Am"
 
 PART "Verse A"  A || A
 PART "Verse B"  B || B || B || B
@@ -62,15 +62,49 @@ PART "Outro"   C || C
 
 STRUCTURE
 
-"Verse A" ""
-"Verse B" ""
-"Chorus" ""
+"Verse A" "Man to man is so unjust children|
+Ya don't know who to trust.|
+Your worst enemy could be your best friend|
+And your best friend your worse enemy."
 
-"Verse A" ""
-"Verse B" ""
-"Chorus" ""
+"Verse B" "Some will eat and|drink with you|
+Then behind them|su-su 'pon you.|
+Only your friend|know your secrets|
+So only he|could reveal it."
+
+"Chorus" "And who the cap fit|let them wear it!|
+Who the cap fit let|them wear it!|
+Said I throw me|corn me no call no fowl;
+I|saying, \"Cook-cook-cook|cluk-cluk-cluk.\""
+
+"Verse A" "Some will hate you pretend they love you now|
+Then behind they try to eliminate you.|
+But who Jah bless no one curse;|
+Thank God we're past the worse."
+
+"Verse B" "Hypocrites and|parasites|
+Will come up and|take a bite.|
+And if your night|should turn to day|
+A lot of people|would run away."
+
+Chorus "And who the stock fit|let them wear it!|
+Who the (cap fit) let|them (wear it)!|
+And then a-gonna throw me corn|
+And then a-gonna call no fowl|
+And then a-gonna \"Cook-cook-cook|cluk-cluk-cluk.\""
 
 "Interlude" ""
-"Verse B" ""
-"Chorus" ""
-"Outro" ""
+
+"Verse B" "Some will eat and|drink with you|
+Then behind them|su-su 'pon you yeah!|
+And if night|should turn to day now|
+A lot of people|would run away, yeah!"
+
+Chorus "And who the cap fit|let them wear it!|
+Who the cap fit let|them wear it!|
+Throw me corn|me no call no fowl;|
+A-saying: \"Cook-cook-cook|cluk-cluk-cluk.\""
+
+Outro "... : \"Cook-cook-cook|cluk-cluk-cluk.\"|
+Throw me corn (cook-cook-cook);|
+Me call no fowl (cluk-cluk-cluk)"

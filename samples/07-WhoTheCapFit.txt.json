@@ -159,15 +159,42 @@
     }
   ],
   "structure": [
-    {"part": "Verse A", "lyrics": ""},
-    {"part": "Verse B", "lyrics": ""},
-    {"part": "Chorus", "lyrics": ""},
-    {"part": "Verse A", "lyrics": ""},
-    {"part": "Verse B", "lyrics": ""},
-    {"part": "Chorus", "lyrics": ""},
+    {
+      "part": "Verse A",
+      "lyrics": "Man to man is so unjust children|\nYa don't know who to trust.|\nYour worst enemy could be your best friend|\nAnd your best friend your worse enemy."
+    },
+    {
+      "part": "Verse B",
+      "lyrics": "Some will eat and|drink with you|\nThen behind them|su-su 'pon you.|\nOnly your friend|know your secrets|\nSo only he|could reveal it."
+    },
+    {
+      "part": "Chorus",
+      "lyrics": "And who the cap fit|let them wear it!|\nWho the cap fit let|them wear it!|\nSaid I throw me|corn me no call no fowl;\nI|saying, \"Cook-cook-cook|cluk-cluk-cluk.\""
+    },
+    {
+      "part": "Verse A",
+      "lyrics": "Some will hate you pretend they love you now|\nThen behind they try to eliminate you.|\nBut who Jah bless no one curse;|\nThank God we're past the worse."
+    },
+    {
+      "part": "Verse B",
+      "lyrics": "Hypocrites and|parasites|\nWill come up and|take a bite.|\nAnd if your night|should turn to day|\nA lot of people|would run away."
+    },
+    {
+      "part": "Chorus",
+      "lyrics": "And who the stock fit|let them wear it!|\nWho the (cap fit) let|them (wear it)!|\nAnd then a-gonna throw me corn|\nAnd then a-gonna call no fowl|\nAnd then a-gonna \"Cook-cook-cook|cluk-cluk-cluk.\""
+    },
     {"part": "Interlude", "lyrics": ""},
-    {"part": "Verse B", "lyrics": ""},
-    {"part": "Chorus", "lyrics": ""},
-    {"part": "Outro", "lyrics": ""}
+    {
+      "part": "Verse B",
+      "lyrics": "Some will eat and|drink with you|\nThen behind them|su-su 'pon you yeah!|\nAnd if night|should turn to day now|\nA lot of people|would run away, yeah!"
+    },
+    {
+      "part": "Chorus",
+      "lyrics": "And who the cap fit|let them wear it!|\nWho the cap fit let|them wear it!|\nThrow me corn|me no call no fowl;|\nA-saying: \"Cook-cook-cook|cluk-cluk-cluk.\""
+    },
+    {
+      "part": "Outro",
+      "lyrics": "... : \"Cook-cook-cook|cluk-cluk-cluk.\"|\nThrow me corn (cook-cook-cook);|\nMe call no fowl (cluk-cluk-cluk)"
+    }
   ]
 }

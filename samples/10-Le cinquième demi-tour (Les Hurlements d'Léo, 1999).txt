@@ -46,12 +46,12 @@ RHYTHM R1	":8 (B)p> (23)im(23)im(B)p> (23)im(23)im"
 # PARTS #
 #########
 
-SUB A [R1*Am] [R1*Em] [R1*Dm] [R1*Am]
-SUB B [R1*Em] [R1*Am] [R1*Dm] [R1*Am]
-SUB C [R1*Em] [R1*Am]
-SUB D [R1*Em] [R1*Dm] [R1*Am]
+SUB A "R1*Am" "R1*Em" "R1*Dm" "R1*Am"
+SUB B "R1*Em" "R1*Am" "R1*Dm" "R1*Am"
+SUB C "R1*Em" "R1*Am"
+SUB D "R1*Em" "R1*Dm" "R1*Am"
 
-PART "Intro" [R1*Am] [R1*Em] [R1*Am] [R1*Em]
+PART "Intro" "R1*Am" "R1*Em" "R1*Am" "R1*Em"
 PART "Chorus" A || A || B || C
 PART "Verse" A || A
 
