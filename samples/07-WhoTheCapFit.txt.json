@@ -11,7 +11,7 @@
   "signature": {
     "key": "C",
     "time": {"beatsPerBar": "4", "beat": ":q", "symbol": "4/4"},
-    "tempo": 85,
+    "tempo": 105,
     "shuffle": ""
   },
   "chords": [
@@ -46,21 +46,27 @@
       "comment": ""
     }
   ],
-  "rhythms": [{"name": "R1", "score": ":8 (#) ()u (#) ()u (#) ()u (#) ()u"}],
+  "rhythms": [
+    {
+      "name": "R0",
+      "score": ":8 (#) ()u (#) ()u (#) ()u (#) ()u :8 (#) ()u (#) ()u (#) ()u (#) ()u"
+    },
+    {"name": "R1", "score": ":8 (#) ()u (#) ()u (#) ()u (#) ()u"}
+  ],
   "parts": [
     {
       "name": "Verse A",
       "phrases": [
         {
           "bars": [
-            {"rhythm": "R1", "chords": "G"},
-            {"rhythm": "R1", "chords": "Am"}
+            {"rhythm": "R0", "chords": "G"},
+            {"rhythm": "R0", "chords": "Am"}
           ]
         },
         {
           "bars": [
-            {"rhythm": "R1", "chords": "G"},
-            {"rhythm": "R1", "chords": "Am"}
+            {"rhythm": "R0", "chords": "G"},
+            {"rhythm": "R0", "chords": "Am"}
           ]
         }
       ]
@@ -128,14 +134,14 @@
       "phrases": [
         {
           "bars": [
-            {"rhythm": "R1", "chords": "G"},
-            {"rhythm": "R1", "chords": "Am"}
+            {"rhythm": "R0", "chords": "G"},
+            {"rhythm": "R0", "chords": "Am"}
           ]
         },
         {
           "bars": [
-            {"rhythm": "R1", "chords": "G"},
-            {"rhythm": "R1", "chords": "Am"}
+            {"rhythm": "R0", "chords": "G"},
+            {"rhythm": "R0", "chords": "Am"}
           ]
         }
       ]
@@ -161,7 +167,7 @@
   "structure": [
     {
       "part": "Verse A",
-      "lyrics": "Man to man is so unjust children|\nYa don't know who to trust.|\nYour worst enemy could be your best friend|\nAnd your best friend your worse enemy."
+      "lyrics": "Man to man is|so unjust children|\nYa don't know|who to trust.|\nYour worst enemy could|be your best friend|\nAnd your best friend|your worse enemy."
     },
     {
       "part": "Verse B",
@@ -173,7 +179,7 @@
     },
     {
       "part": "Verse A",
-      "lyrics": "Some will hate you pretend they love you now|\nThen behind they try to eliminate you.|\nBut who Jah bless no one curse;|\nThank God we're past the worse."
+      "lyrics": "Some will hate you|pretend they love you now|\nThen behind they try|to eliminate you.|\nBut who Jah bless|no one curse;|\nThank God we're|past the worse."
     },
     {
       "part": "Verse B",

@@ -1,4 +1,4 @@
-﻿#################
+#################
 # SONG METADATA #
 #################
 
@@ -23,7 +23,7 @@ CAPO 0
 
 KEY C
 TIME 4/4 4 :q
-TEMPO 85
+TEMPO 105
 SHUFFLE ""
 
 ##########
@@ -40,13 +40,14 @@ CHORD Em	022000 023000/-
 # RHYTHMS #
 ###########
 
+RHYTHM R0	":8 (#) ()u (#) ()u (#) ()u (#) ()u :8 (#) ()u (#) ()u (#) ()u (#) ()u"
 RHYTHM R1	":8 (#) ()u (#) ()u (#) ()u (#) ()u"
 
 #########
 # PARTS #
 #########
 
-SUB A "R1*G"  "R1*Am"
+SUB A "R0*G" "R0*Am"
 SUB B "R1*C"  "R1*D"
 SUB C "R1*Em" "R1*Am"
 
@@ -62,10 +63,10 @@ PART "Outro"   C || C
 
 STRUCTURE
 
-"Verse A" "Man to man is so unjust children|
-Ya don't know who to trust.|
-Your worst enemy could be your best friend|
-And your best friend your worse enemy."
+"Verse A" "Man to man is|so unjust children|
+Ya don't know|who to trust.|
+Your worst enemy could|be your best friend|
+And your best friend|your worse enemy."
 
 "Verse B" "Some will eat and|drink with you|
 Then behind them|su-su 'pon you.|
@@ -77,10 +78,10 @@ Who the cap fit let|them wear it!|
 Said I throw me|corn me no call no fowl;
 I|saying, \"Cook-cook-cook|cluk-cluk-cluk.\""
 
-"Verse A" "Some will hate you pretend they love you now|
-Then behind they try to eliminate you.|
-But who Jah bless no one curse;|
-Thank God we're past the worse."
+"Verse A" "Some will hate you|pretend they love you now|
+Then behind they try|to eliminate you.|
+But who Jah bless|no one curse;|
+Thank God we're|past the worse."
 
 "Verse B" "Hypocrites and|parasites|
 Will come up and|take a bite.|
