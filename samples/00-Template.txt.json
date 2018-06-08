@@ -15,17 +15,22 @@
     "shuffle": ""
   },
   "chords": [
-    {"name": "C", "tablature": "x32010", "fingering": "T32010", "comment": ""},
+    {
+      "name": "C",
+      "tablature": "x32010",
+      "fingering": "032010/-",
+      "comment": ""
+    },
     {
       "name": "G",
       "tablature": "320003",
-      "fingering": "210003",
+      "fingering": "210003/-",
       "comment": "G with 3 fingers"
     },
     {
       "name": "F",
       "tablature": "133211",
-      "fingering": "113211/1",
+      "fingering": "134211/1",
       "comment": "F Barré"
     }
   ],
