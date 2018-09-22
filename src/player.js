@@ -21,7 +21,7 @@ for (let unit of songcheat.structure) score.append(unit.part.score)
 // play
 let player = new Player(audioCtx, score, {
   loop: false,
-  capo: parseInt(songcheat.capo, 10),
+  fretboard: songcheat.fretboard,
   signature: songcheat.signature,
   type: songcheat.wave
 })

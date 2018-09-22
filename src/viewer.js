@@ -257,7 +257,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
   try {
     console.info('Converting songcheat to vextab score...')
     let units = typeof songcheat.showUnitIndex === 'undefined' || songcheat.showUnitIndex === null ? songcheat.structure : [songcheat.structure[songcheat.showUnitIndex]]
-    let score = SongcheatVexTab.Units2VexTab(songcheat, units, songcheat.barsPerLine, false, songcheat.lyricsMode === 's', songcheat.lyricsMode === 'h')
+    let score = SongcheatVexTab.Units2VexTab(songcheat, units, songcheat.mode, songcheat.barsPerLine, false, songcheat.lyricsMode === 's', songcheat.lyricsMode === 'h')
     console.info('Parsing score...')
     let artist = new Artist(10, 10, scoreWidth, { scale: songcheat.scale })
     let vextab = new VexTab(artist)

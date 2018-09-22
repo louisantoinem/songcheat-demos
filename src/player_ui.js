@@ -24,7 +24,7 @@ export function PlayerUI (audioCtx, songcheat, units, isRhythm) {
   // create player
   let player = new Player(audioCtx, score, {
     loop: isRhythm,
-    capo: parseInt(songcheat.capo, 10),
+    fretboard: songcheat.fretboard,
     signature: songcheat.signature,
     type: songcheat.wave,
     onDone: function () { $stopLink.trigger('click') },
