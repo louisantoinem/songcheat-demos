@@ -89,8 +89,8 @@ DICT['Minor']['Relief fort (Chorus)'] = [
   [1, 4, 7, 5]
 ]
 
-// keep only one random sample for each mode and type
-for (let majmin in MODES) for (let type in DICT[majmin]) DICT[majmin][type] = Utils.shuffle(DICT[majmin][type])[0]
+// // keep only one random sample for each mode and type
+// for (let majmin in MODES) for (let type in DICT[majmin]) DICT[majmin][type] = Utils.shuffle(DICT[majmin][type])[0]
 
 const optionDefinitions = [
   { name: 'help', alias: 'h', type: Boolean, description: 'Print this usage guide.' },
@@ -138,13 +138,15 @@ if (!KEYNOTES.includes(keynote)) {
 
 console.log(Utils.title(`${keynote} ${mode}`))
 for (let type in DICT[mode]) {
-  let degrees = DICT[mode][type]
-  let mode_ = MODES[mode]
-  if (mode === 'Minor' && type.indexOf('moyen') < 0 && type.indexOf('faible') < 0) mode_ = MinorStrong
-  let scale = new Scale(mode_, keynote)
   console.log(`${type} :`)
-  console.log(` ${mode_.degrees(degrees)}`)
-  console.log(` = ${scale.chords(degrees)}`)
+  let counter = 0
+  for (let degrees of DICT[mode][type]) {
+    counter++
+    let mode_ = MODES[mode]
+    if (mode === 'Minor' && type.indexOf('moyen') < 0 && type.indexOf('faible') < 0) mode_ = MinorStrong
+    let scale = new Scale(mode_, keynote)
+    console.log(`${counter}. ${mode_.degrees(degrees)} = ${scale.chords(degrees)}`)
+  }
   console.log('---------')
 }
 console.log('')
