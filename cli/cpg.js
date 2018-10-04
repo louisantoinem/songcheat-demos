@@ -11,7 +11,7 @@ let MODES = {
   Minor: new Mode([2, 1, 2, 2, 1, 2, 2], ['m', '°', '', 'm', 'm', '', '']) // Mode Eolien, Mode de La, "Gamme" Mineure naturelle
 }
 
-// Ici, l’accord Vm est remplacé par V pour renforcer le relief harmonique. Donc par exemple, en tonalité de LA mineur, au lieu de jouer un accord de Mi mineur (Em), tu joues un accord de Mi majeur (E).
+// En "Relief fort" et "Tension", l’accord Vm est remplacé par V pour renforcer le relief harmonique
 let MinorStrong = new Mode([2, 1, 2, 2, 1, 2, 2], ['m', '°', '', 'm', '', '', ''])
 
 let DICT = {
@@ -136,13 +136,14 @@ if (!KEYNOTES.includes(keynote)) {
   process.exit(-1)
 }
 
-console.log(Utils.title(`${keynote} ${mode}`))
+console.log(Utils.title(`${keynote} ${mode} : ${MODES[mode].degrees()} = ${new Scale(MODES[mode], keynote).chords()} `))
 for (let type in DICT[mode]) {
   console.log(`${type} :`)
   let counter = 0
   for (let degrees of DICT[mode][type]) {
     counter++
     let mode_ = MODES[mode]
+    // En "Relief fort" et "Tension", l’accord Vm est remplacé par V pour renforcer le relief harmonique
     if (mode === 'Minor' && type.indexOf('moyen') < 0 && type.indexOf('faible') < 0) mode_ = MinorStrong
     let scale = new Scale(mode_, keynote)
     console.log(`${counter}. ${mode_.degrees(degrees)} = ${scale.chords(degrees)}`)
