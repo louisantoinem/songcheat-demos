@@ -1,4 +1,4 @@
-import { Utils, Compiler, Ascii, ChordPix, VexTab as SongcheatVexTab } from 'songcheat-core'
+import { Utils, Compiler, Ascii, ChordGen, VexTab as SongcheatVexTab } from 'songcheat-core'
 import { PlayerUI } from './player_ui'
 import samples from '../dist/samples.json'
 
@@ -128,7 +128,7 @@ function songcheat (songcheat, $divScore, $divChords, $divParts, $divStructure, 
 
   // chord diagrams
   for (let chord of songcheat.chords) {
-    var url = DEBUG ? '../img/missing_diagram.png' : ChordPix.url(chord, chordWidth)
+    var url = DEBUG ? '../img/missing_diagram.png' : ChordGen.url(chord, chordWidth)
     let $cDiv = $('<div>').css({ 'display': 'inline-block', 'vertical-align': 'top' })
     $divChords.append($cDiv)
     $cDiv.append($('<img>').attr('src', url).attr('title', chord.comment).css({ 'display': 'block' /* removes whitespace below image */, 'width': chordWidth + 'px' }))
