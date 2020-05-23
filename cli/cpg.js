@@ -104,8 +104,9 @@ if (options['help'] || !options['key']) {
     {
       header: 'Chord progression generator',
       content: [
-        'Generates a random chord progression for each song part.',
-        'Keys: ' + KEYNOTES + ' followed by \'m\' if Minor.'
+        'Generates possible chord progressions for each song part.',
+        'Keys: ' + KEYNOTES + ' followed by \'m\' if Minor.',
+        'Use ? or ?m to have a random key chosen for you.'
       ]
     },
     {
@@ -124,7 +125,7 @@ if (options['help'] || !options['key']) {
 }
 
 let mode = 'Major'
-let keynote = options['key'] || 'C'
+let keynote = options['key'].replace('?', Utils.shuffle(KEYNOTES)[0])
 
 if (keynote[keynote.length - 1] === 'm') {
   mode = 'Minor'
