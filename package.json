@@ -42,7 +42,7 @@
     "songcheat-core": "git+https://github.com/louisantoinem/songcheat-core.git"
   },
   "devDependencies": {
-    "npm-watch": "^0.3.0",
+    "npm-watch": "^0.13.0",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.0.0",
